@@ -1,0 +1,35 @@
+#+TITLE: Politics
+#+DATE: <2022-08-12 Fri>
+
+Politics influences the way government takes action and makes policies.
+
+* Politics is Conflictual
+
+People will disagree on the way the government should handle certain issues. This turns the issues /political/.
+
+For example, the idea of abortion itself is not a political issue. It is generally agreed among most people that abortion is the termination of a pregnancy. However, people are conflicted about the /legalization of abortion/. People have different ideas on the government's involvement in the issue.
+
+** Sources of political conflict
+
+- Economic interest
+- Cultural beliefs
+- Identity politics
+- Ideology
+
+* Political Process Matters
+
+#+begin_quote
+It's not who votes that matters, but it's who counts the votes.
+#+end_quote
+
+In order for a population to influence the government, the way the government takes in the population's political beliefs matters. Some states have different requirements to vote, and it will affect how the vote is counted.
+
+** The Senate
+
+Each state gets exactly *two votes* in the Senate regardless of their population, unlike the House of Representatives.
+
+Because of every state receiving an equal amount of votes, it tends to favor smaller states that have significantly less power in the House.
+
+* Politics is Everywhere
+
+Every person's lives are impacted by the actions of the government. The COVID Pandemic influenced lockdowns in many states and cities.

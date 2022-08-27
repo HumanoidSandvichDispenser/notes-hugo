@@ -1,0 +1,132 @@
+#+TITLE: APUSH Period 4
+#+DATE: <2022-05-01 Sun>
+
+* Increased Democracy and Government Relationships
+
+ * Emergence of Political Parties
+   * Federalists vs. Democratic-Republican (1790s)
+     * Hamilton vs. Jefferson
+   * Democrats vs. Whigs (1830s - 1850s)
+     * Jackson vs. Clay
+ * Supreme Court increased the power of the federal government over states
+   * *McCulloch v. Maryland*
+   * *Worcester v. Georgia*
+ * Growth of market economy
+   * *Embargo Act of 1807*
+   * *Nullification Crisis of 1832*
+ * South justified slavery as a "positive good"
+
+** New Institutions
+
+ * 2nd Great Awakening
+   * Stressed importance of achieving perfection
+   * Reform movenets
+     * Abolitionism
+     * Women's Rights
+     * Temperance
+ * Restriction of African Americans' citizenship and rights
+   * Various emancipation plans
+     * *American Colonization Society*
+ * Resistance to democracy
+   * Proslavery arguments
+   * Xenophobia/nativism
+     * *Know-Nothing Party*
+     * Irish
+   * Antiblack sentiments
+   * Anti-Indian policies
+     * *Indian Removal Act, Trail of Tears*
+
+* Emergence of New Cultures
+
+ * New art, architecture, and literature emerged in America
+ * Religious groups and women
+   * Shakers
+   * Mormons
+   * Seneca Falls Convention 1848
+     * Declaration of Sentiments
+ * Free and enslaved blacks respond to their conditions
+   * New family structures (surrogate families)
+   * *Nat Turner's Rebellion 1831*
+
+* Changes in Agriculture and Manufacturing
+
+ * New technological innovations increased efficiency and extended markets
+   * Textile machines
+   * Steam engines
+   * Interchangeable parts
+   * Cotton gin
+   * Canals
+   * Railroads
+   * Telegraph
+   * Agricultural inventions
+     * Mechanical reaper
+ * Production of goods began to replace substinence farming
+   * *Lowell System*
+
+** Regional Specialization
+
+ * Impacts of cotton
+   * Used in textile production
+   * Depleted the soil
+ * Unified national economy
+   * American System
+     * Bank of the US
+     * Tariffs
+     * Internal Improvements
+   * North and Midwest were more linked than the South
+ * Free and forced migration of people across the nation
+   * Cotton depleted land
+ * New labor systems
+   * Unions
+     * *Commonwealth v. Hunt*
+       * Legalized labor unions
+
+** Impacts of Market Revolution
+
+ * Canals and roads helped encourage Westward Expansion
+ * European immigrants settled in the
+   * East - Irish
+   * Midwest - Germans
+ * Increased interdependence between Northeast and Old Northwest
+   * American System
+ * South remained distinctly different from the other regions
+ * Market Revolution changed life
+   * Increased wealth gap
+   * Emergence of working classes
+   * Separation of home and workplace
+     * More goods produced outside home
+   * Changed gender and family roles
+
+* Expansion
+
+ * Post LA Purchase
+   * *Monroe Doctrine 1823*
+   * Oregon border
+   * Annexation of Texas 1845
+   * *Missouri Compromise 1820*
+     * Above 36 deg 30' free
+     * Below 36 deg 30' slave
+     * MO free
+     * ME slave
+     * Preserved balance
+     * Complexity: eventually overturned by KS-NB Act
+
+** Effects of Expansion
+
+ * Debates about new territories
+   * Slave or Free
+ * Resistance to increasing power of Fed Gov
+   * *Hartford Convention*
+   * *Nullification Crisis*
+
+* Review Topics
+
+ * Federalists and Democratic Republicans
+ * Whigs and Democrats
+ * Second Great Awakening
+ * Ways slaves resisted their situations
+ * New technological situations
+ * American System
+ * Market Revolution and its impact
+ * "Old" immigration
+ * Missouri Compromise

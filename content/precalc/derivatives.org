@@ -1,0 +1,152 @@
+#+TITLE: Derivative Basics
+#+DATE: <2021-09-08 Thu>
+
+* Derivatives
+:PROPERTIES:
+:CUSTOM_ID: derivatives
+:END:
+The derivative of a function \(f'(x)\) describes the instantaneous slope
+of a function \(f(x)\) at a given \(x\).
+
+For example, at the constant function \(f(x) = b\), the derivative of
+the function would be \(f'(x) = 0\) as there is no slope in the
+function. At the linear function \(f(x) = mx + b\), the derivative of
+the function would be \(f'(x) = m\) since the slope is constantly \(m\).
+
+To avoid confusion, we will sometimes be using both \(x\) and \(x_0\).
+It is important to know \(f'(x_0)\) is
+\textbf{not the function of a line}, but rather is equal to the slope of
+the line \(f(x)\) at any given \(x_0\).
+
+#+begin_html
+  <center>
+#+end_html
+
+The orange line describes the rate of change of the line tangent to
+\(f(x)\) at \(x_0 = 1\)
+
+The orange line describes the rate of change of the line tangent to
+\(f(x)\) at \(x_0 = 0.1\)
+
+#+begin_html
+  </center>
+#+end_html
+
+The derivative notation \(\frac{d}{dx}[f(x)]\) (differentiation with
+respect to \(x\)) will be used in most other cases instead, but it is
+still equivalent to prime notation \(f'(x)\) (\(f\) prime of \(x\)).
+
+** Power Rule
+:PROPERTIES:
+:CUSTOM_ID: power-rule
+:END:
+How do you find the derivative of any polynomial?
+
+\[ \frac{d}{dx}(ax^n) = anx^2{n-1} \]
+
+So given \(f(x) = x^2\), \(\frac{d}{dx}(f(x)) = 2x\)
+
+Using our function \(f(x) = x^2\) from the previous images, we can
+determine the slope at any point \(x_0\) with \(f'(x_0) = 2x_0\).
+
+*** Example
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+Using the function \(g(x) = 3x^4\), plot the instantaneous rate of
+change on a table.
+
+We can use the power rule to find the derivative.
+
+\[ \frac{d}{dx}(g(x)) = 3(4)^3 = 12x^3 \]
+
+#+begin_html
+  <center>
+#+end_html
+
+| \(x\) | \(g(x)\) | slope at \((x, g(x))\) |
+|-------+----------+------------------------|
+| 0     | 0        | \(g'(0) = 0\)          |
+| 1     | 3        | \(g'(1) = 12\)         |
+| 2     | 16       | \(g'(2) = 96\)         |
+| 3     | 243      | \(g'(3) = 324\)        |
+| 4     | 768      | ...                    |
+
+#+begin_html
+  </center>
+#+end_html
+
+* Difference quotient
+:PROPERTIES:
+:CUSTOM_ID: difference-quotient
+:END:
+The difference quotient determines the average slope over an interval in
+a function. The difference quotient derives from the slope formula:
+
+\[ m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{f(x + h) - f(x)}{x + h - x} =
+\frac{f(x + h) - f(x)}{h} \]
+
+where \(h\) is the length of the interval or change in \(x\).
+
+The difference quotient yields the slope of the secant line passing the
+two points. As the value \(h\) approaches 0, the secant line starts to
+match the tangent line.
+
+#+begin_html
+  <center>
+#+end_html
+
+#+begin_html
+  </center>
+#+end_html
+
+This means the difference quotient can be used to find the derivative.
+
+\[ \lim_{h \to 0}\frac{f(x + h) - f(x)}{h} = f'(x) \]
+
+*** Example
+:PROPERTIES:
+:CUSTOM_ID: example-1
+:END:
+Find the difference quotient of \(p(x) = 2x^2 - 4x\).
+
+\[ \frac{p(x + h) - p(x)}{h} \]
+
+\[ \frac{2(x + h)^2 - 4(x + h) - 2x^2 + 4x}{h} \]
+
+\[ \frac{2x^2 + 4xh + 2h^2 - 4x - 4h - 2x^2 + 4x}{h} \]
+
+\[ \frac{4xh + 2h^2 - 4h}{h} \]
+
+\[ \frac{h(4x + 2h - 4)}{h} \]
+
+\[ 4x + 2h - 4 \]
+
+** Derivative from difference quotient
+:PROPERTIES:
+:CUSTOM_ID: derivative-from-difference-quotient
+:END:
+To find the difference quotient, \(h\) must equal \(0\) that
+\((x, f(x))\) and \((x + h, f(x + h))\) are the same point. It is
+important they are the same point since a tangent line can only pass a
+curve at exactly one point.
+
+Using the difference quotient from the previous example, let \(h = 0\).
+
+\[ p'(x) = 2x + 4(0) - 1 = 4x - 4 \]
+
+Using the power rule, we get the same result:
+\(\frac{d}{dx}p(x) = anx^{n-1} = 2(2)(x)^1 - 4x^0 = 4x - 4\)
+
+* Equation of the tangent line
+:PROPERTIES:
+:CUSTOM_ID: equation-of-the-tangent-line
+:END:
+Since the derivative is the slope of the line tangent to \(f(x)\)
+passing through \((x_0, f(x_0))\), we can use \(f(x_0)\) to determine
+the instantaneous slope at \(x_0\).
+
+We can then use the point-slope form of a linear equation
+\(y - y_0 = m(x - x_0)\).
+
+\[ y - f(x_0) = f'(x)(x - x_0) \]

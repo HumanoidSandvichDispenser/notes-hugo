@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ .Content }}
+<div>
+    <article>
+        <hr>
+        {{ range .Site.Sections }}
+            <details>
+                <summary>
+                /{{ .Title | lower }}/
+                </summary>
+                {{ range $i, $e := .RegularPages }}
+                    {{ partial "post.html" . }}
+                {{ end }}
+            </details>
+        {{ end }}
+    </article>
+</div>
+{{ end }}

@@ -1,0 +1,27 @@
+#+TITLE: Authoritarian vs. Democratic Governments
+#+DATE: <2022-08-18 Thu>
+
+* Authoritarian Governments
+
+Authoritarian governments *are not constitutional governments*. Constitutional governments *are not governments that have constitutions*. A constitutional government has a constitution that places limits on the government's power and protects the people.
+
+** Characteristics of an authoritarian government
+
+- Characterized by leadership that controls aspects of the citizens' lives
+- Few political freedoms
+  - Freedom of speech
+  - Freedom of assembly
+  - *Due process*
+    - Procedures a government has to follow
+- Media controlled by government
+- Difficult to contain governmental corruption
+  
+** Democracy in Authoritarian Governments
+
+Authoritarian governments can sometimes have democratic features such as elections. However, the elections can be rigged, show only one party/candidate, etc.
+
+Democracies can turn into authoritarian governments if the people vote them into power, and there are no checks on the power of the leader, or at the least, they are not enforced.
+
+* Democratic Governments
+
+If a nation and its leaders call their country a democracy, it must be. This statement is false because a democratic government depends on citizen participation, free and fair elections, accepting the results of elections, accountability, and the rule of law.

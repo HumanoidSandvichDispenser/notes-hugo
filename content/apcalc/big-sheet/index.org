@@ -1,0 +1,190 @@
+#+TITLE: Big Sheet
+#+DATE: <2022-08-24 Wed>
+#+startup: latexpreview
+
+* Precalculus/Algebra
+
+** Trig ratios for special angles
+
+\begin{array}{ r | c | c | c | c | c  }
+f & 0 & \frac{\pi}{6} & \frac{\pi}{4} & \frac{\pi}{3} & \frac{\pi}{2} \\ \hline
+\sin & 0 & \frac{1}{2} & \frac{\sqrt{2}}{2} & \frac{\sqrt{3}}{2} &  1 \\
+\cos & 1 & \frac{\sqrt{3}}{2} & \frac{\sqrt{2}}{2} & \frac{1}{2} & 0 \\
+\tan & 0 & \frac{1}{\sqrt{3}} & 1 & \sqrt{3} & \textrm{undef} \\
+\end{array}
+
+** Trig identities
+
+\[
+sin ^2 x + cos ^2 x = 1
+\]
+
+\[
+1 + \tan ^2 x = \sec ^2 x
+\]
+
+\[
+1 + \cot ^2 x = csc ^2 x
+\]
+
+** Range of inverse trig functions
+
+\begin{array}{ r | l }
+\sin^{-1} & [ -\frac{\pi}{2}, \frac{\pi}{2} ] \\
+\cos^{-1} & [ 0, \pi ] \\
+\tan^{-1} & ( -\frac{\pi}{2}, \frac{\pi}{2} ) \\
+\csc^{-1} &  [-\frac{\pi}{2}, 0) \cup (0, \frac{\pi}{2}] \\
+\sec^{-1} & [0, \frac{\pi}{2}) \cup (\frac{\pi}{2}, \pi] \\
+\cot^{-1} & (0, \pi) \\
+\end{array}
+
+** Factoring patterns
+
+\[
+(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
+\]
+
+\[
+a^2 - b^2 = (a + b)(a - b)
+\]
+
+\[
+a^3 + b^3 = (a + b)(a - b)^2
+\]
+
+\[
+a^3 - b^3 = (a - b)(a + b)^2
+\]
+
+** Log and exponent rules
+
+\[
+\log a + \log b = \log(ab)
+\]
+
+\[
+a\log b = \log(b^a)
+\]
+
+** Odd/Even Functions
+
+The degree of the function determines if a function is odd/even. An odd function has an infinite range while an even function "mirrors" and has a limited range.
+
+* Calculus
+
+** Definition of a limit existing
+
+A limit exists at a point when the function approaches a value at the point, /whether or not the function exists at that point/. When a left-hand and right-hand limit both exist at the same point, then a limit exists at that point.
+
+** Continuity at a point (define using limits)
+
+A function is continuous when the limit exists (left-hand and right-hand) and $f(x)$ exists at that point.
+
+$\lim_{x \to c} f(x) = f(c)$
+
+** Continuity of an interval and function
+
+An interval or function is continuous if the domain exists for all real numbers, and a limit exists at the x-value such that $x$ is any arbitrarily selected number.
+
+A continuous function must be continuous at all points $(x, f(x))$ *in its domain*.
+
+** Discontinuity
+
+- Jump discontinuity
+- Infinite discontinuity
+- Removable discontinuity
+
+** Derivative Rules
+
+Sum rule: $(f(x) + g(x))' = f'(x) + g'(x)$
+
+Product rule: $(f(x) \cdot g(x))' = f(x)g'(x) + f'(x)g(x)$
+
+Quotient rule: $(\frac{f(x)}{g(x)})' = \frac{f'(x)g(x) - f(x)g'(x)}{g^2(x)}$
+
+Reciprocal rule: $(\frac{1}{f(x)})' = -\frac{f'(x)}{f^2(x)}$
+
+Chain rule: $(f(g(x)))' = f'(g(x)) \cdot g'(x)$
+
+** Derivatives of Exponentials/Logs
+
+$\log_b'(a) = \frac{1}{a \ln b}$
+
+$(b^a)' = b^a \ln b$
+
+$\ln'(a) = \frac{1}{a}$
+
+$(e^a)' = e^a$
+
+** Physics
+
+| Type         | Derivative | Unit                         |
+|--------------+------------+------------------------------|
+| Displacement | 0th        | Distance                     |
+| Velocity     | 1st        | Distance over time           |
+| Acceleration | 2nd        | Distance over time over time |
+
+** Derivative of an inverse function
+
+$(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}$
+
+** Derivative of  trig functions
+
+\[
+\sin(x)' = \cos(x)
+\]
+
+\[
+\cos(x)' = -\sin(x)
+\]
+
+\[
+\tan(x)' = \sec^2(x)
+\]
+
+\[
+\csc(x)' = -\cot x \csc x
+\]
+
+\[
+\sec(x)' = \sec x \tan x
+\]
+
+\[
+\cot(x)' = -\csc^2(x)
+\]
+
+** Derivatives of Inverse Trig Functions
+
+$\arcsin'(x) = \frac{1}{\sqrt{1 - x^2}}$
+
+$\arccos'(x) = -\frac{1}{\sqrt(1 - x^2)}$
+
+$\arctan'(x) = \frac{1}{x^2 + 1}$
+
+$(cot^{-1})'(x) = -\frac{1}{x^2 + 1}$
+
+$(csc^{-1})'(x) = -\frac{1}{|x|\sqrt{x^2 - 1}}$
+
+$(sec^{-1})'(x) = \frac{1}{|x|\sqrt{x^2 - 1}}$
+
+** Common Limits/Derivatives
+
+\[
+\lim_{x \to 0} \sin(\frac{a \sin x}{b}) = \frac{a}{b}
+\]
+
+** Fun Chart
+
+\begin{array}{ c c c }
+f(x) & \cup & \cap \\
+f'(x) & \textrm{inc} & \textrm{dec} \\
+f''(x) & + & -
+\end{array}
+
+** Second Derivative Tests
+
+$f'(c) < 0$ max
+
+$f'(c) > 0$ min
+

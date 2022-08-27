@@ -1,0 +1,65 @@
+#+TITLE: Unit 8 - Ecology
+#+DATE: <2022-05-02 Mon>
+
+* Populations
+
+A population is a *group of individuals* of:
+ * the *same species*
+ * in the *same area*
+ * at the *same time*
+ * rely on *same resources*
+
+** Factors that affect population size
+
+ * Abiotic factors
+   * Sunlight
+   * Precipitation / water
+   * Soil / nutrients
+ * Biotic factors
+   * Prey
+   * Competitors
+   * Predators, parasites, disease
+
+** Population Dispersion
+
+*** Clumped
+ * Most common
+*** Random
+*** Uniform
+ * May result from direct interactions
+
+** Population Density
+
+ * Changes to pop size
+   * Adding/removing individuals from a popultaion
+     * Birth
+     * Death
+     * Immigration
+     * Emigration
+ * /How can we measure population density?/
+
+** Growth Rates
+
+ * Factors affecting growth rate
+   * Sex ratio
+     * How many females vs males?
+   * Generation ratio
+     * At what age do females reproduce?
+   * Age structure
+     * How many females at reproductive age?
+
+** Reproductive Strategies
+
+ * *k-selected*
+   * Late reproduction
+   * Few offspring
+   * Invest a lot in raising offspring
+ * *r-selected*
+   * Early reproduction
+   * Large amounts of offspring
+   * Little parental care
+
+** Exponential Growth Rate
+
+ * Characteristic of populations without *limiting factors*
+   * Introduced to a new environment or rebounding from a catastrophe

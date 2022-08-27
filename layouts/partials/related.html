@@ -1,0 +1,5 @@
+{{ $related := .Site.RegularPages.Related . }}
+<h3>RELATED</h3>
+{{ range first 3 $related }}
+    {{ partial "post.html" . }}
+{{ end }}

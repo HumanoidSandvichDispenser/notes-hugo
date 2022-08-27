@@ -1,0 +1,24 @@
+<header>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a class="logo" href="/">
+                <!--The<span class="accent">Bat</span>Jam-->
+            </a>
+        </div>
+        <!--div class="navbar-right">
+            {{ $page := . }}
+            {{ range .Site.Menus.main }}
+                {{ $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
+                {{ $active = or $active (eq .Identifier ($page.Section)) }}
+                {{ $active = or $active (eq .Identifier ($page.Title | lower)) }}
+                <a class="{{ if $active }} active {{ else }} inactive {{ end }}"
+                        href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+        </div-->
+        <div class="navbar-right">
+            {{ range .Site.Sections }}
+                <a href="{{ .RelPermalink }}">/{{ .Title | lower }}/</a>
+            {{ end }}
+        </div>
+    </nav>
+</header>

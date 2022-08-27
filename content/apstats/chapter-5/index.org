@@ -1,0 +1,31 @@
+#+TITLE: Chapter 5
+
+* Standard Deviation
+
+By definition, the standard deviation $s$ is known as the square root of the variance $s^2$ of a dataset.
+
+$$ s^2 = \frac{\Sigma(x - \bar{x})^2}{n - 1} $$
+
+#+begin_src python
+import math
+
+data = [ 5, 11, 12, 17, 22 ]
+
+def mean():
+    sum_of_list = 0
+    for x in data:
+        sum_of_list += x
+    return sum_of_list / len(data)
+
+def std_dev():
+    sigma = 0
+    mean_of_data = mean()
+    for x in data:
+        sigma += pow(x - mean_of_data, 2)
+    return math.sqrt(sigma / (len(data) - 1))
+
+return "The mean is {}; the standard deviation is {}".format(mean(), std_dev())
+#+end_src
+
+#+RESULTS:
+: The mean is 13.4; the standard deviation is 6.4265076052238514

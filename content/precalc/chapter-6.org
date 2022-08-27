@@ -1,0 +1,224 @@
+#+TITLE: Chapter 6 - Vectors
+#+DATE: <2021-08-30 Mon>
+
+* 6.1 Law of Sines
+:PROPERTIES:
+:CUSTOM_ID: law-of-sines
+:END:
+\[ \sin \frac{A}{a} = \sin \frac{B}{b} = \sin \frac{C}{c} \]
+
+The Law of Sines works best with AAS and ASA triangles.
+
+It /can/ work with SSA triangles. It may give you two solutions, one
+solution, or no solution at all.
+
+** Area of a Triangle
+:PROPERTIES:
+:CUSTOM_ID: area-of-a-triangle
+:END:
+\[ A = \frac{1}{2}ab \sin C\]
+
+** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples
+:END:
+Given \(a = 7\), \(b = 6,\) and \(A = 26.3^\circ\), find \(B\).
+
+\(B = 22.320^\circ\)
+
+Given \(a = 6\), \(b = 7\), and \(A = 30^\circ\), find \(B\).
+
+\(B = 28.377^\circ\)
+
+* 6.2 Law of Cosines
+:PROPERTIES:
+:CUSTOM_ID: law-of-cosines
+:END:
+There are three formulations for the law of cosines:
+
+\[ a^2 = b^2 + c^2 - 2bc\cos A \]
+
+\[ b^2 = a^2 + c^2 - 2ac\cos B \]
+
+\[ c^2 = a^2 + b^2 - 2ab\cos C \]
+
+In a SSS triangle, try to solve for the biggest side for easier
+computations.
+
+** Heron's Formula
+:PROPERTIES:
+:CUSTOM_ID: herons-formula
+:END:
+\[ \sqrt{s(s-a)(s-b)(s-c)} \textrm{where } s \textrm{ is the semiperimeter} \]
+
+* 6.3 Vectors
+:PROPERTIES:
+:CUSTOM_ID: vectors
+:END:
+Quantities can be divided into two formats: scalars and vectors. A
+scalar is a single numerical value which represents something such as
+temperature, time, or mass. A vector is something which contains a
+magnitude and a direction such as force or velocity.
+
+\(\vec v\) - A vector
+
+\(||v||\) - Magnitude of a vector
+
+** Important details for vectors
+:PROPERTIES:
+:CUSTOM_ID: important-details-for-vectors
+:END:
+- Magnitude
+- Direction
+- Components
+- Unit Vector Notation
+
+*** Magnitude
+:PROPERTIES:
+:CUSTOM_ID: magnitude
+:END:
+The magnitude can be found using the Pythagorean Theorem.
+
+$ a^2 + b^2 = c^2 $
+
+$ ||v||^2 = ||v_x||^2 + ||v_y||^2 $
+
+*** Direction
+:PROPERTIES:
+:CUSTOM_ID: direction
+:END:
+A vector's direction can be determined by angles or by compass bearings.
+
+A \(0^\circ\) angle is always in the standard position, but a
+\(0^\circ\) compass bearing is always due north.
+
+*** Components
+:PROPERTIES:
+:CUSTOM_ID: components
+:END:
+\(\langle a, b \rangle\) or \(\langle \Delta x, \Delta y \rangle\)
+
+*** Unit Vector Notation
+:PROPERTIES:
+:CUSTOM_ID: unit-vector-notation
+:END:
+\(v = xi + yj = \langle x, y \rangle\)
+
+** Vectors as Directed Line Segments (Examples)
+:PROPERTIES:
+:CUSTOM_ID: vectors-as-directed-line-segments-examples
+:END:
+1. Consider the points \(A(2, 5)\) and \(B(4, -7)\).
+
+If \(A\) were the initial point of a vector \(\vec u\) and \(B\) was its
+terminal point, how could we describe vector \(\vec u\)?
+
+$\langle 4, -7 \rangle - \langle 2, 5 \rangle = \langle 2, -12 \rangle
+
+\(4 + 144 = ||v||^2\)
+
+\(v = \sqrt{148}\)
+
+2. [@2] \(a = (-5, 7), b = (0, -3) c = 4i - 3j\)
+
+\(\vec a + \vec c = \langle -5, 7 \rangle + \langle 4, -3 \rangle = \langle 1, 4 \rangle\)
+
+3. [@3] A plane flies 2.4 hours at 110 mph on a bearing of 40 degrees.
+   The plane then turns and flies 1.8 hours at 130 mph on a bearing of
+   140 degrees. How far is the plane from its initial point?
+
+** Dot Product
+:PROPERTIES:
+:CUSTOM_ID: dot-product
+:END:
+Given two vectors such that \(\vec v = \langle v_x, v_y \rangle\) and
+\(\vec u = \langle u_x, u_y \rangle\)
+
+\[ \vec u \cdot \vec v = u_x v_y + u_x v_y \]
+
+When two vectors \(\vec v\) and \(\vec u\) are *orthogonal*, then
+\(\vec v \cdot \vec u = 0\)
+
+*** The Angle Between Two Vectors
+:PROPERTIES:
+:CUSTOM_ID: the-angle-between-two-vectors
+:END:
+To find the angle between two vectors, the following formula is used:
+
+\[ \cos \theta = \frac{\vec u \cdot \vec v}{||\vec u|| ||\vec v||} \]
+
+**** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples-1
+:END:
+1. Find the angle between the vectors \(\vec u = \langle 4, 3 \rangle\)
+   and \(\vec v = \langle 3, 5 \rangle\)
+
+\(\theta = \cos^{-1}(\frac{12 + 15}{5\sqrt{34}})\)
+
+\(\theta = 0.387\) or \(22.166^\circ\)
+
+* 6.5 Complex Coordinates
+:PROPERTIES:
+:CUSTOM_ID: complex-coordinates
+:END:
+Recall that complex numbers can be written in the format \(z = a + bi\),
+where \(a\) is the real component and \(b\) is the imaginary component.
+This is very similar to unit vector notation \(\vec v = ai + bj\).
+
+A *modulus* of a complex number is the same as the magnitude of a
+vector.
+
+An *argument* of a complex number is the same as an angle of the vector.
+
+** Example
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+Find the absolute value (modulus) of the complex number \(z = -2 + 5i\)
+
+\[ z = \sqrt{-2^2 + 5^2} = \sqrt{29} \]
+
+Find the argument of the complex number \(z = -2 + 5i\)
+
+\[ z = 180^\circ - \tan^{-1}(\frac{5}{2}) = 111.801^\circ \]
+
+** Trigonometric Form
+:PROPERTIES:
+:CUSTOM_ID: trigonometric-form
+:END:
+Using the modulus \(r\) and the argument \(\theta\), create another way
+of representing the complex number \(z\).
+
+\[ z = r \cos \theta + i r \sin \theta \]
+
+This can be shortened or abbreviated to
+
+\[ r c i s \theta \]
+
+Given only the components \(a\) and \(b\), you can use the formula
+
+\[ z = \sqrt{a^2 + b^2} \cos(\tan^{-1}(\frac{b}{a})) + i \cdot \sqrt{a^2 + b^2} \sin(\tan^{-1}(\frac{b}{a})) \]
+
+** Moivre's Theorem
+:PROPERTIES:
+:CUSTOM_ID: moivres-theorem
+:END:
+\[ (r \cis \theta^\circ)^x = r^x \cis x \theta^\circ \]
+
+*** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples-2
+:END:
+1. Write the complex number \(z = -2 - 2\sqrt{3}\) in trigonometric
+   form.
+
+\[ 4 \cos 60^\circ + 4 \sin(60^\circ) i \]
+
+2. [@2] Find all of the fifth roots of \(-1\).
+
+There are five possible answers since it is the fifth root.
+
+Rewrite as a complex number
+
+$$ z = -144

@@ -1,0 +1,333 @@
+#+TITLE: Chapter 7 - Matrices
+#+DATE: <2021-09-01 Wed>
+
+* Solving Systems of Equations
+:PROPERTIES:
+:CUSTOM_ID: solving-systems-of-equations
+:END:
+1. Solving by graphing
+2. Solving by substitution
+3. Solving by elimination
+
+* Solving Multivariable Systems of Equations
+:PROPERTIES:
+:CUSTOM_ID: solving-multivariable-systems-of-equations
+:END:
+- Row-echelon form
+
+** Row Operations
+:PROPERTIES:
+:CUSTOM_ID: row-operations
+:END:
+1. Interchange any two equations
+2. Multiply an equation by a non-zero constant
+3. Add an equation to another equation
+
+* Partial Fraction Decomposition
+:PROPERTIES:
+:CUSTOM_ID: partial-fraction-decomposition
+:END:
+A rational expression can often be written as the sum of two or more
+simpler rational expressions (fractions).
+
+** Example
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+1. \(\frac{x + 7}{x^2 - x - 6} = \frac{x + 7}{(x - 3)(x + 2)}\)
+
+\[ \frac{A}{x - 3} + \frac{B}{x + 2} \]
+
+\[ (\frac{x + 7}{(x - 3)(x + 2)} = \frac{A}{x - 3} + \frac{B}{x + 2})(x + 2) \]
+
+\[ \frac{x + 7}{x - 3} = \frac{A(x + 2)}{x - 3} + B \]
+
+Let \(x = -2\)
+
+\[ B = \frac{-2 + 7}{-2 + 3} = 5 \]
+
+2. [@2] \(\frac{x - 3}{x^2 - 16}\)
+
+\[ \frac{x - 3}{(x + 4)(x - 4)} \]
+
+\[ \frac{} \]
+
+* Matrices
+:PROPERTIES:
+:CUSTOM_ID: matrices
+:END:
+A matrix is a way of organizing mathematical data into rows and columns.
+
+- *row* --- horizontal
+- *column* --- vertical
+- *element* --- a specific component of a matrix given by its location
+  (e.g. \(a_{23}\) in row 2, column 3)
+- *dimension* --- description of rows and columns
+
+A 2x3-dimensional matrix \[
+\begin{bmatrix}
+    a & b & c \\
+    d & e & f
+\end{bmatrix}
+\]
+
+** Matrix Multiplication
+:PROPERTIES:
+:CUSTOM_ID: matrix-multiplication
+:END:
+When multiplying matrices \(A \cdot B = C\), an element \(e\) at
+\(C_{y,x}\) is the sum of the products of \(A\) at row \(y\) by its
+corresponding elements \(B\) at column \(x\).
+
+** Inverse of a Square Matrix
+:PROPERTIES:
+:CUSTOM_ID: inverse-of-a-square-matrix
+:END:
+- Two types of inverses in real numbers:
+  - Additive inverse, called the opposite, \(x + y = 0\)
+  - Multiplicative inverse, called the reciprocal, \(x \cdot y = 1\)
+
+\[
+\begin{bmatrix}
+    A
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+    A
+\end{bmatrix}^{-1}
+=
+\begin{bmatrix}
+    I
+\end{bmatrix}
+\]
+
+- Identity matrix contains all ones in the main diagonal
+- All other elements must be zero
+- *Not all matrices have inverses*
+  - Only square matrices are capable of having inverses
+  - Square matrices that do not have inverses are known as /singular/ or
+    /non-invertible/
+
+** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples
+:END:
+Given that \(AX = I\) where \(X = A^{-1}\)
+
+\[
+\begin{bmatrix}
+    A
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1 & 4 \\
+    -1 & -3
+\end{bmatrix},
+\]
+
+\[
+\left[\begin{array}{rr|rr}
+    1 & 4 & 1 & 0 \\
+    -1 & -3 & 0 & 1
+\end{array}\right]
+\]
+
+\[
+\left[\begin{array}{rr|rr}
+    1 & 4 & 1 & 0 \\
+    0 & 1 & 1 & 1
+\end{array}\right]
+\]
+
+\[
+\left[\begin{array}{rr|rr}
+    1 & 0 & -3 & -4 \\
+    0 & 1 & 1 & 1
+\end{array}\right]
+\]
+
+What we have on the right hand side is the matrix
+\(\begin{bmatrix} X \end{bmatrix}\)
+
+** Algorithm to Solve
+:PROPERTIES:
+:CUSTOM_ID: algorithm-to-solve
+:END:
+\[
+\left[\begin{array}{cc|cc}
+    a & b & 1 & 0 \\
+    c & d & 0 & 1
+\end{array}\right]
+\]
+
+\[
+\left[\begin{array}{cc|cc}
+    1 & \frac{b}{a} & \frac{1}{a} & 0 \\
+    c & d & 0 & 1
+\end{array}\right]
+\]
+
+\[
+\left[\begin{array}{cc|cc}
+    1 & \frac{b}{a} & \frac{1}{a} & 0 \\
+    0 & \frac{ad - bc}{a} & -\frac{c}{a} & 1
+\end{array}\right]
+\]
+
+\[
+\left[\begin{array}{cc|cc}
+    1 & \frac{b}{a} & \frac{1}{a} & 0 \\
+    0 & 1 & -\frac{c}{ad - bc} & \frac{a}{ad - bc}
+\end{array}\right]
+\]
+
+\[
+\left[\begin{array}{cc|cc}
+    1 & 0 & \frac{d}{ad - bc} & -\frac{b}{ad - bc} \\
+    0 & 1 & -\frac{c}{ad - bc} & \frac{a}{ad - bc}
+\end{array}\right]
+\]
+
+\[
+\frac{1}{ad - bc}
+\left[\begin{array}{rr}
+    d & -b \\
+    -c & a
+\end{array}\right]
+\]
+
+** Inverse Matrices to Solve Systems of Equations
+:PROPERTIES:
+:CUSTOM_ID: inverse-matrices-to-solve-systems-of-equations
+:END:
+An equation
+
+\[
+\begin{array}{c}
+    x + 2y = 4 \\
+    3x - 5y = 1
+\end{array}
+\]
+
+can be written in the form
+
+\[
+\left[\begin{array}{cc}
+    1 & 2 \\
+    3 & -5
+\end{array}\right]
+\left[\begin{array}{c}
+    x \\
+    y
+\end{array}\right]
+=
+\left[\begin{array}{c}
+    4 \\
+    1
+\end{array}\right]
+\]
+
+The second matrix \(B = A^{-1}C\). Therefore, \[
+B = -\frac{1}{11}
+\left[\begin{array}{cc}
+    -5 & -2 \\
+    -3 & 1
+\end{array}\right]
+\left[\begin{array}{c}
+    4 \\
+    1
+\end{array}\right] \\
+= -\frac{1}{11}
+\left[\begin{array}{cc}
+    -22 \\
+    -11
+\end{array}\right]
+= 
+\left[\begin{array}{cc}
+    2 \\
+    1
+\end{array}\right]
+\]
+
+* Determinants
+:PROPERTIES:
+:CUSTOM_ID: determinants
+:END:
+Determinants are the scalars of a matrix
+
+The determinant of a 2x2 matrix:
+
+\[
+A =
+\left[\begin{array}{cc}
+    a & b \\
+    c & d
+\end{array}\right],
+|A| = ad - bc
+\]
+
+** Array of Signs and Expansion by Minors
+:PROPERTIES:
+:CUSTOM_ID: array-of-signs-and-expansion-by-minors
+:END:
+\[
+\left[\begin{array}{ccc}
+    a_{11} & a_{12} & a_{13} \\
+    a_{21} & a_{22} & a_{23} \\
+    a_{31} & a_{32} & a_{33}
+\end{array}\right]
+\]
+
+Minor
+
+\[
+a_{11}
+\left[\begin{array}{cc}
+    a_{22} & a_{23} \\
+    a_{32} & a_{33}
+\end{array}\right]
+\]
+
+3x3 determinant
+
+\[
+\left[\begin{array}{ccc}
+    a & b & c \\
+    d & e & f \\
+    g & h & i
+\end{array}\right]
+\]
+
+\[
+a(ei - fh) - b(di - fg) + c(dh - eg)
+=
+(aei + bfg + cdh) - (afh - bdi + ceg)
+\]
+
+** Example
+:PROPERTIES:
+:CUSTOM_ID: example-1
+:END:
+\[
+A =
+\left[\begin{array}{ccc}
+    4 & -3 & 0 \\
+    2 & -1 & 2 \\
+    1 & 5 & 7
+\end{array}\right],
+|A| = 4((-1)(7) - (2)(5)) - (-3)((2)(7) - (2)(1)) + 0
+\]
+
+\[ |A| = -32 \]
+
+* Cramer's Rule
+:PROPERTIES:
+:CUSTOM_ID: cramers-rule
+:END:
+\[ x = \frac{D_x}{D}, y = \frac{D_y}{D}, z = \frac{D_z}{D} \]
+
+$$ D_x = \left[\begin{array}{ccc}
+d_1 & b_1 & c_1 \\
+d_2 & b_2 & c_2 \\
+d_3 & b_3 & c_3
+\right]

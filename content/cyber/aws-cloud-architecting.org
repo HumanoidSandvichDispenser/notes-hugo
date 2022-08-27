@@ -1,0 +1,177 @@
+#+TITLE: AWS Cloud Architect
+#+DATE: <2022-08-15 Mon>
+
+* Introduction to Cloud Architecting
+
+** What is Cloud Architecting?
+
+*** Origins of AWS
+
+- To solve the problem of Amazon's complicated web architecture, Amazon created AWS
+  - Applications were built *without proper planning*
+  - It was *difficult to separate services* from each other
+
+*** Cloud Architecture
+
+Cloud architecture applies characteristics of the cloud to develop a solution using cloud services to meet an organization's demands, like a blueprint or achitect in real life.
+
+AWS services can easily create *highly available, scalable, and reliable* cloud architectures.
+
+** AWS Well-Architected Framework
+
+There are five pillars that make up the well-architected framework:
+
+- Security
+- Operational Excellence
+- Reliability
+- Performance Efficiency
+- Cost Optimization
+
+*** Security
+
+- Protection of information, systems, and assets
+- Risk assessments
+- Mitigation strategies
+
+*** Operation Excellence
+
+- Run amd monitor systems
+- Continuously improve supporting process and procedures
+
+*** Reliability
+
+- Quick and effortless mitigation and recovery from service disruption
+- Automatic scaling of computing resources to meet demand
+
+*** Performance Efficiency
+
+- Maintain efficient resources to enable easier scaling as demands change
+- Employ mechanical sympathy
+
+*** Cost Optimization
+
+- Measure efficiency
+- Eliminate unneeded expense
+- Using the appropriate service for the situation
+
+*** AWS Well-Architected Tool
+
+This service allows you to review the state of your workloads and compare them to AWS architectural best practices.
+
+** Building Solutions
+
+*** Design Tradeoffs
+
+- Evaluate tradeoffs so you can select the most optimal approach
+  - e.g. trade durability and space for time and latency
+- Design your decisions based on empirical data
+
+*** Enable scalability
+
+- Ensure scalability is implemented *at every layer of your infrastructure*
+- Reduce the need for manual intervention
+- Monitoring solutions
+  - Amazon CloudWatch
+
+*Example of bad scalability:* when servers reach full capacity, users are prevented from accessing the application. Administrators them manually launch one or more new instances to manage the load. It then takes a few minutes for an instance to become available to your users. Thus this significantly increases the time that users can't access the application.
+
+*** Treat resources as disposable
+
+Take advantage of the dynamically provisioned nature of cloud computing.
+
+- Automate deployment and configuration
+- Terminate resources that are not in use
+- Test updates on new resources, and replace old resources with newer, updated versions
+  - Rolling release/development servers that update instantly
+
+What **NOT** to do:
+
+- Manage servers with different configurations
+- Leave resources idle
+- Hardcode IP addresses in applications and configurations
+
+*** Use loosely coupled components
+
+The Unix philosophy emphasizes simple, compact, modular, extensible programs/applications that can be easily maintained and repurposed. It is loosely coupled compared to monolithic design.
+
+With AWS, deisgn architectures with independent components that are not reliant on each other and can easily be switched out or replaced.
+
+Instead of having web servers directly access different application servers, set up an Elastic Load Balancer to direct traffic from an arbitrary web server to an arbitrary application server.
+
+*** Design services, not servers
+
+Don't limit your infrastructure to servers. This means to run the appropriate solution or service rather than manually configuring them in a simple compute server.
+
+- When appropriate, use serverless solutions or containers
+- Use message queues to handle communication
+- Use AWS managed services to simplify implementation
+
+*** Avoid single points of failure
+
+When a service fails, it will prevent other parts of your architecture from communicating with each other. Bottlenecking your system to a single point can bring down the entire system if one component fails rather than shifting traffic to another point.
+
+An application should continue to function even if a single instance is unavailable. *Always assume everything fails. Then design backwards.*
+
+- Create a standby service in case the main service fails
+- Automatically launch components when needed
+- Use AWS-managed services to reduce the need for manual intervention
+
+*** Optimize for cost
+
+Take advantage of the flexibility of AWS to increase your cost efficiency. Consider the following:
+
+- Are my resources the right size and type for the job?
+- What metrics should I monitor?
+- How do I make sure to turn off resources that are not in use?
+- How often will I need to use this resource?
+- Can I replace any of my services with managed services?
+
+*** Secure your entire infrastructure
+
+Bulid security into every layer of your infrastructure.
+
+- Isolate parts of your infrastructure
+- Encrypt data in transit and at rest
+- Principle of least privilege
+- Use MFA
+- Use managed services
+- Log access of resources
+- Automate deployments to keep security consistent
+
+** AWS Global Infrastructure
+
+*** Regions and Availability Zones
+
+*Regions* span across the world that are made up of at least two isolated locations known as *availability zones*. Each availability zone is made up of at least one data center that is abstracted from the AWS customer.
+
+*** AWS Local Zones
+
+- Run *latency-sensitive* portions of applications closer to end users
+- Managed by AWS
+
+* S3
+
+** Objects
+
+- Objects (files)
+- Files on S3 can be *between 0B and 5TB*
+- Upload objects in a single ~PUT~ operation *up to 5 GB*
+- Objects are stored with by key-value
+  - The filename is the key and the value is the actual contents of the file
+  - *Key* - name of the object
+  - *Value* - data the object holds
+  - *Version ID* - important for versioning
+  - *Metadata* - data about the data in an object
+  - *Access Control Lists* - permissions for objects
+- Objects uploaded to S3 are _private by default_
+
+** Buckets
+
+- All root folders are buckets
+  - Must have a unique name
+- Bucket naming policy/rule
+  - Bucket name
+    - 3-63 characters long
+    - Only lower-case, numbers, periods, and dash
+  - Label must start with lowercase
+- Private by default

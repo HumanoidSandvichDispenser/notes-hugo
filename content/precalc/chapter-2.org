@@ -1,0 +1,410 @@
+#+TITLE: Chapter 2 - Polynomials
+#+DATE: <2021-08-26 Thu>
+
+* 2.1 Polynomials
+:PROPERTIES:
+:CUSTOM_ID: polynomials
+:END:
+A polynomial is an equation with multiple terms. Exact definitions may
+very, but multiple terms may be either 4+ terms, or 1+ terms. It is
+mostly agreed upon that a polynomial is an umbrella term that also
+captures /monomials/, /binomials/, and /trinomials/.
+
+*All polynomials can not have negative or fraction exponents.*
+
+\[ ax^n + ... + c \]
+
+** Quadratic Functions
+:PROPERTIES:
+:CUSTOM_ID: quadratic-functions
+:END:
+A quadratic function is a function whose highest degree is the second
+power.
+
+The form \(f(x) = a(x - h)^2 + k\) is known as the standard form of a
+quadratic. It is also known as the vertex form because of the
+information about the vertex it conveys to you. It is most similar to
+the point slope form of a linear equation \(y - y_1 = m(x - x_1)\).
+
+Where \((x_1, y_1)\) is the point a linear equation would intercept,
+\((h, k)\) is the point of the vertex of a quadratic function.
+
+*** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples
+:END:
+1. The height of a golf ball as a function of time is modeled by the
+   equation \(h(t) = -16t^2 + 85t + 20\)
+
+In this problem, we have to find the vertex.
+
+\[ x = - \frac{b}{2a} = - \frac{85}{2(-16)} = \frac{85}{32} s \]
+\[ y = h(x) = 132.891 ft \]
+
+* 2.2 Graphs of Polynomial Functions
+:PROPERTIES:
+:CUSTOM_ID: graphs-of-polynomial-functions
+:END:
+Polynomials will never have in their graphs:
+
+- Cusps
+- Discontinuities
+- Corners
+
+All non-linear polynomials *will form smooth curves*.
+
+*** End Behavior of a Polynomial Function
+:PROPERTIES:
+:CUSTOM_ID: end-behavior-of-a-polynomial-function
+:END:
+The end behavior describes what happens at the left and right ends of a
+function.
+
+One correct format for indicating end behavior is:
+
+\[ \textrm{as } x \to \infty, y \to ? \]
+\[ \textrm{as } x \to - \infty, y \to ? \]
+
+Other forms may use limit notation.
+
+\[ \lim_{x \to \infty} y \to ? \] \[ \lim_{x \to - \infty} y \to ? \]
+
+*** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples-1
+:END:
+State the end behavior of each function
+
+1. \(y = -x^3 + 4x\)
+
+#+begin_html
+  <center>
+#+end_html
+
+#+begin_html
+  </center>
+#+end_html
+
+\[ \lim_{x \to - \infty}{y \to \infty} \]
+
+\[ \lim_{x \to \infty}{y \to - \infty} \]
+
+2. [@2] \(y = x^4 - 5x^2 + 4\)
+
+#+begin_html
+  <center>
+#+end_html
+
+#+begin_html
+  </center>
+#+end_html
+
+\[ \lim_{x \to - \infty}{y \to \infty} \]
+
+\[ \lim_{x \to \infty}{y \to \infty} \]
+
+3. [@3] \(y = x^5 - x\)
+
+#+begin_html
+  <center>
+#+end_html
+
+#+begin_html
+  </center>
+#+end_html
+
+\[ \lim_{x \to - \infty}{y \to - \infty} \]
+
+\[ \lim_{x \to \infty}{y \to \infty} \]
+
+** Facts about the polynomial \(p(x) + ax^n + bx^{n - 1} ...\)
+:PROPERTIES:
+:CUSTOM_ID: facts-about-the-polynomial-px-axn-bxn---1-...
+:END:
+1. \(p(x)\) has at most \(n\) real zeros.
+
+2. The graph of \(p(x)\) has at most \(n - 1\) local extrema.
+
+** Zeroes
+:PROPERTIES:
+:CUSTOM_ID: zeroes
+:END:
+Zeroes and associated items go by four different names.
+
+Given that \(f(x)\) is a polynomial and \(a\) is a real number:
+
+- \(x = a\) is a zero off
+- \(x = a\) is a solution to the equation \(f(x) = 0\)
+- \((x - a)\) is a factor off
+- \((a, 0)\) is an x-intercept of the graph of \(f(x)\)
+
+*** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples-2
+:END:
+1. Find the zeroes of the function \(f(x) = x^3 - x^2 - 2x\)
+
+| \(f(x) = x(x^2 - x - 2)\)  |
+| \(f(x) = x(x + 1)(x - 2)\) |
+| \(x(x + 1)(x - 2) = 0\)    |
+
+The zeroes are \(\{ -1, 0, 2 \}\)
+
+2. [@2] Experiment with the exponents \(m\) and \(n\) in the function
+   \(f(x) = (x + 2)^m (x - 3)^n\). Both \(m\) and \(n\) must be positive
+   integers.
+
+The numbers \(m\) and \(n\) give us multiplicity.
+
+An /even multiplicity/ causes the polynomial at that point to bounce off
+the x-axis. An /odd multiplicity/ causes the polynomial to pass through.
+
+*** Manually graphing \(p(x)\)
+:PROPERTIES:
+:CUSTOM_ID: manually-graphing-px
+:END:
+1. Find the end behavior
+
+2. Find zeroes --- by factoring or other methods
+
+3. Plot a few intermediate points --- find the different points between
+   the zeroes
+
+4. Draw the graph
+
+*** Intermediate Value Theorem (IVT)
+:PROPERTIES:
+:CUSTOM_ID: intermediate-value-theorem-ivt
+:END:
+The table below gives values of a polynomial function \(p(x)\). Give
+three one-unit long intervals that contain zeroes of \(p(x)\).
+
+| \(x\)    | 0  | 1  | 2 | 3  | 4  | 5 | 6 |
+|----------+----+----+---+----+----+---+---|
+| \(p(x)\) | -4 | -2 | 1 | -7 | -1 | 6 | 3 |
+
+Give three one-unit long intervals that contain zeroes of \(p(x)\).
+
+\((1, 2), (2, 3) (4, 5)\)
+
+*Intermediate Value Theorem (IVT)* - any interval in a /continuous/
+function between \([a, b]\) is guaranteed to contain the range of
+\([f(a), f(b)]\) (other y-values may also exist in this interval)
+
+Using the intermediate value theorem, we can determine a sign change in
+the interval \([m, n]\) will always contain a zero as it guarantees to
+contain the range passing through 0.
+
+**** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples-3
+:END:
+1. Find the expanded form of a polynomial function \(p(x)\) whose zeroes
+   are \(-2, 1, 3\)
+
+\[ (x + 2)(x - 1)(x - 3) \]
+
+\[ (x^2 + x - 2)(x - 3) \]
+
+#+begin_html
+  <center>
+#+end_html
+
+|    | x^2   | x   | -2  |
+| x  | x^3   | x^2 | -2x |
+| -3 | -3x^2 | -3x | 6   |
+
+#+begin_html
+  </center>
+#+end_html
+
+2. [@2] Find the expanded form of a polynomial function \(p(x)\) whose
+   zeroes are \(4 \pom \sqrt{2}\)
+
+\[ (x + 4 - \sqrt{2})(x + 4 + \sqrt{2}) \]
+
+#+begin_html
+  <center>
+#+end_html
+
+|              | x             | 4             | \(-\sqrt{2}\)  |
+| x            | x^2           | 4x            | \(-\sqrt{2}x\) |
+| 4            | 4x            | 16            | \(-\sqrt{32}\) |
+| \(\sqrt{2}\) | \(\sqrt{2}x\) | \(\sqrt{32}\) | -2             |
+
+#+begin_html
+  </center>
+#+end_html
+
+\[ p(x) = x^2 + 8x + 14 \]
+
+* 2.3 Real Zeroes of Polynomial Functions
+:PROPERTIES:
+:CUSTOM_ID: real-zeroes-of-polynomial-functions
+:END:
+To solve for zeroes of a polynomial, synthetic division can be used.
+
+Show that \((x - 2)\) are factors of \(2x^4 + 7x^3 - 4x^2 - 27x - 17\)
+
+| 2 | 2 | 7  | -4 | -27 | -18 |
+|   |   | 4  | 22 | 36  | 18  |
+|   | 2 | 11 | 18 | 9   | 0   |
+
+** Finding zeroes
+:PROPERTIES:
+:CUSTOM_ID: finding-zeroes
+:END:
+The possible rational zeroes in a function can be found with
+\frac{p}{q}, where \(p\) is all the factors of coefficient of the
+lowest-degree term, and \(q\) is all the factors of the coefficient of
+the highest-degree term.
+
+Sometimes this result in a lengthy list of possible rational zeroes. For
+this reason, it's good to have some tools to help trim down the list.
+Some helpful items include:
+
+1. Descartes's Rule of Signs
+2. Upper bound theorem
+3. Lower bound theorem
+
+*** Descartes's Rule of Signs
+:PROPERTIES:
+:CUSTOM_ID: descartess-rule-of-signs
+:END:
+Descartes's Rule of Signs will only tell you the types of zeroes.
+
+To find the number of /positive real/ zeroes, find the number of
+variations in signs as you go from term to term in the polynomial. The
+number of positive real zeroes will be the number of variations \(v\)
+minus any /positive/ number \(n\) except for \(v - n \lt 0\)
+
+To find the number of negative real zeroes, find the number of
+variations of \(f(-x)\) (negate all odd-power terms). The number of
+negative real zeroes will be the number of variatiosn \(v\) minus any
+/positive/ number \(n\) except for \(v - n \lt 0\)
+
+**** Example
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+Find the number of possible positive and negative real zeroes of the
+function \(f(x) = 3x^3 - 5x^2 + 6x - 4\)
+
+3 sign changes, 3 or 1 possible positive real zeroes.
+
+\(f(-x) = -3x^3 - 5x^2 - 6x - 4\)
+
+0 sign changes, 0 possible negative real zeroes.
+
+*** Upper and Lower Bounds
+:PROPERTIES:
+:CUSTOM_ID: upper-and-lower-bounds
+:END:
+Upper and lower bounds establish a floor and ceiling for all possible
+zeroes.
+
+Using synthetic division, a value is an upper boundPepega Clap WR Pepega
+Clap WR when the result has no negative terms.
+
+A value is a lower bound when all the sign alternates.
+
+**** Example
+:PROPERTIES:
+:CUSTOM_ID: example-1
+:END:
+Is 1 from the factor \((x - 1)\) an upper bound, lower bound, or neither
+for the polynomial below?
+
+\(6x^3 - 4x^2 + 3x - 2\)
+
+| 1 | 6 | -4 | 3 | 2 |
+|   |   | 6  | 2 | 5 |
+|   | 6 | 2  | 5 | 3 |
+
+No negative terms --- an *upper bound*.
+
+* 2.5 The Fundamental Theorem of Algebra
+:PROPERTIES:
+:CUSTOM_ID: the-fundamental-theorem-of-algebra
+:END:
+Recall that real numbers are a subset of complex numbers.
+
+\(\{ 1, 2, 3, ... \} \subset \{ 1, 2, 3, i, 2i, 3i, ... \}\)
+
+*Original statement of The Fundamental Theorem of Algebra*
+
+/If \(p(x)\) is a polynomial of degree \(n\) where \(n > 0\), \(p(x)\)
+has at least one zero in the comple number system./
+
+*Improved form of The Fundamental Theorem of Algebra*
+
+/An \(n\)-th degree polynomial has exactly \(n\) complex zeroes./
+
+*Factored form of The Fundamental Theorem of Algebra*
+
+/A polynomial of degree \(n\) has precisely \(n\) linear factors such
+that \(f(x) = a(x - z_1)(x - z_2)...\) where \(z\) represents a complex
+number./
+
+** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples-4
+:END:
+1. Show that \(x^3 + 4x\) has exactly 3 zeroes.
+
+\[x(x^2 + 4) = 0\]
+
+\[x = \{0, ...\}\]
+
+\[x^2 + 4 = 0\]
+
+\[x^2  = -4\]
+
+\[x = \pm \sqrt{-4}\]
+
+\[x = \{ 0, \pm 2i \}\]
+
+2. [@2] Given \(f(x) = x^4 - x^2 - 20\)
+   - Factor \(f(x)\) over the rational numbers
+     - \(f(x) = (x^2 - 5)(x^2 + 4)\)
+   - Factor \(f(x)\) over the real numbers
+     - \(f(x) = (x - \sqrt{5})(x + \sqrt{5})(x^2 + 4)\)
+   - Factor \(f(x)\) completely
+     - \(f(x) = (x - \sqrt{5})(x + \sqrt{5})(x - 2i)(x + 2i)\)
+
+* 2.6 Rational Functions
+:PROPERTIES:
+:CUSTOM_ID: rational-functions
+:END:
+A rational function can be expressed such that
+\(R(x) = \frac{N(x)}{D(x)}\) where \(N(x)\) and \(D(x)\) are
+polynomials. \(D(x)\) must not be the zero polynomial.
+
+What is the domain of the rational function \(R(x)\)?
+\(x \| D(x) \ne 0\)
+
+Given $R(x) = \frac{x - c}{(x - a)(x - b)}, we can find - Removable
+discontinuity when \(a\) or \(b = c\) - Vertical asymptote at \(x = a\)
+and \(x = b\)
+
+** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples-5
+:END:
+1. Find all horizontal and vertical asymptotes of
+   \(f(x) = \frac{2x^2}{x^2 - 1}\)
+
+\[ \frac{2x^2}{x^2 - 1} = \frac{2x^2}{(x-1)(x+1)} \] Asymptotes at
+\(x = \pm 1\)
+
+2. [@2] Find all asymptotes and removable discontinuities of
+   \(f(x) = \frac{x^2+x-2}{x^2-x-6}\)
+
+\[ \frac{(x + 2)(x - 1)}{(x - 3)(x + 2)} \]
+
+Removable discontinuities at \((-2, f(-2))\)
+
+Degrees are the same. Horizontal asymptotes at
+\(y = \frac{x^2}{x^2} = 1\)
+
+Vertical asymptote at \(x = 3\)

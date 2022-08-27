@@ -1,0 +1,281 @@
+#+TITLE: Unit 7 - Natural Selection
+#+DATE: <2022-05-01 Sun>
+#+STARTUP: latexpreview
+
+
+* Population Genetics
+
++ The *gene pool* is the sum of alleles within a population
++ A *population* is a localized group of organisms of the same species
+
+** Impacts on a Population
+
++ Changes in frequency often indicate evolution
++ Small populations are more susceptible to random impact than large populations
+  + Small gene pool
+  + Less variation within gene pool
+
+*** Genetic Drift
+
+Genetic dift is the random fluctuation in allele frequency between generations.
+
+**** Founder Effect
+
+ * A very small population is isolated from a major population
+ * The small population may have less genetic variation
+
+**** Genetic Bottleneck
+
+ * In a genetic bottleneck, allele frequency is altered due to a population
+   crash.
+ * Small bottlenecked populations = big effect
+
+*** Introduction of New Alleles
+
+**** Gene Flow
+
++ Genetic exchange due to the migration of fertile individuals or gametes between
+  populations
+  + Reduces differences between populations
+
+**** Mutations
+
++ Change in an organism's DNA
++ Original source of genetic variation
+
+* Hardy Weinberg Equillibrium
+
+Where $p$ is the dominant allele and $q$ is the recessive allele:
+
+$$
+\left\{\begin{array}{l}
+p + q = 1 \\
+p^2 + 2pq + q^2 = 1
+\end{array}
+$$
+
+
++ Hypothetical, non-evolving population
++ Natural populations are never in Hardy-Weinberg equillibrium
+
+** Hardy Weinberg Rules
+
+*** Large population size
+A large population has a lower chance of significant changes in the gene
+pool
+*** No migration
+*** No mutation
+*** Random mating
+No sexual selection or competitive advantages
+*** No natural selection
+Everyone is equally fit
+
+** Solving
+
+Always try to solve for $q$ first, since recessive phenotypes guarantee
+homozygous recessive traits.
+
+** Examples
+
+*** Example 1
+
+If the statistics for people who have PKU is 1 in 10000, what percentage of the
+population carries the gene but not exhibit the disease?
+
+Given $q^2 = 0.0001$,
+
+$q = 0.01$
+
+$p + q = 1$, so $p = 0.99$
+
+$2pq = 2(0.01)(0.99) = 0.0198$
+
+*** Example 2
+
+If only 6% of the population displays pale eyes (recessive gene /e/), what is
+the frequency of genotype /Ee/ in this population?
+
+Given $q^2 = 0.06$,
+
+$q = \sqrt{0.06}$
+
+$p + q = 1$, so $p = 1 - \sqrt{0.06}$
+
+$2pq = 2(1 - \sqrt{0.06})(0.06) = 0.369 = 36.9\%$
+
+*** Example 3
+
+In Drosophila, the allele for normal length wings is dominant over the allele
+for vestigial wings (vestigial wings are stubby little curls that cannot be used
+for flight). In a population of 1,000 individuals, 360 show the recessive
+phenotype. How many individuals would you expect to be homozygous dominant for
+this trait?
+
+Given $q^2 = \frac{360}{1000} = 0.36$,
+
+$q = \sqrt{0.36} = 0.6$,
+
+$p + q = 1$, so $p = 1 - 0.6 = 0.4$
+
+Therefore, $p^2 = 0.16 = 16\%$
+
+16% of 1000 = 160
+
+*** Example 4
+
+For foxes there exists a single gene that controls coat thickness. Allele /C/
+confers a thick coat while allele /c/ is a thin coat. In a population of 540
+foxes, 49 have thin coats. What are the dominant and recessive allelic
+frequencies?
+
+Given $q^2 = \frac{49}{540}$
+
+$q = \sqrt{\frac{49}{540}} = 30\%$
+
+$p + q = 1$, so $p = 1 - \sqrt{\frac{49}{540}} = 70\%$
+
+*** Example 5
+
+The gene for albinism is known to be a recessive allele. In Michigan, 9 people
+in a sample of 10,000 were found to have albino phenotypes.
+
++ What is the allele frequency for the dominant pigmentation allele in this
+  population?
+
+  Given $q^2 = \frac{9}{10000}$,
+
+  $q = \sqrt{\frac{9}{10000}} = 0.03$
+
+  $p = 1 - 0.03 = 0.97$
+
++ How many of the 10000 people in the sample above were expected to be
+  heterozygous for pigmentation?
+
+  Solve for $2pq$
+
+  $2pq = 2(0.97)(0.03) = 0.058$
+
+  5.8% of 10000 = 580
+
+
+* Evidence of Evolution
+** Common ancestry of all life forms
+
+1. DNA and RNA
+2. Universal genetic code
+3. Conserved metabolic pathways
+
+** FAME
+*** Fossil Record
+
+The fossil record can give rise to **transitional species**.
+
+However, not every organism will leave behind a fossil. Fossils are extremely
+rare, and sometimes only the partial fossil will be preserved.
+
+*** Anatomical structure
+*** Molecular homology
+*** Embryological
+
+** Homology
+
+ * Similar structure
+ * Different structure
+ * Implies a common ancestor existed
+ * Molecular Homology
+ * Developmental Error
+ * Convergent Evolution
+   * Analogies are products of convergent evolution
+   * Analogous structures
+     * Structures in different species that have the same appearance, structure, or function, but evolved separately.
+
+* Systematics
+
+Classifying organisms and determining their evolutionary relationships
+
+** Taxonomy
+
+Science of classifying and naming organisms (nomenclature)
+
+** Phylogenies
+
++ Like a family tree, root represents ancestral lineage
+  + Tips of branches represent descendents
++ As you move from root to tip, you are moving forward in time
++ Each lineage has both a shared and unique history
+  + Each lineage has ancestors that are
+    + Unique to that lineage
+    + Shared with other lineages
+
+** Divergent Evolution
+
++ Diversification of a single ancestral species into several new forms
++ Environmental pressures and changes in habitat often drive speciation
+
+*** Evidence for Divergent Evolution
+
++ Homologous structures
+
+** Convergent Evolution
+
+ * Different species of different origin may develop similar structures
+
+** Conserved elements in Eukaryotes
+
+1. Cytoskeleton
+2. Membrane-bound organelles
+3. Linear chromosomes
+4. Endomembrane systems
+5. Genes that contain introns
+
+* Species
+
+** Origin of Species
+
+Speciation - origin of species
+
+Microevolution - changes within a single gene pool
+
+Macroevolution - evolutionary change above the species level
+
+ * Species - population or group of populations whose members have the potential to interbreed in nature and produce viable, fertile offspring
+   * Reproductively viable
+ * Reproductive isolation - barriers that prevent members of two species from
+  producing viable, fertile hybrids
+
+*** Types of Reproductive Barriers
+
+**** Prezygotic barriers
+
+ * Impede mating/fertilization
+ * Habitat isolation
+   * Allopatric speciation
+     * Greek /allo-/ different
+     * Latin /patria/ homeland
+ * Temporal isolation
+ * Behavioral isolation
+   * Mate selection
+ * Mechanical isolation
+   * Incompatible reproductive organs
+
+**** Postzygotic barriers
+
+ * Prevent hybrid zygote from developing into a viable adult
+ * Reduced hybrid viability/fertility
+ * Hybrid breakdown
+
+* Origins of Life
+
+** RNA Hypothesis
+
+ * DNA and proteins only serve one function
+   * DNA stores genetic information
+   * Proteins perform maintenance
+ * RNA served both the functions of DNA and proteins
+ * Through natural selection, RNA later soon evolved to become DNA and proteins
+
+** Miller-Urey Experiment
+
+ * Tested theh Oparin-Haldane Hypothesis
+   * Life arose from inorganic molecules to create amino acids
+ * Suggested that organic molecules /could/ be made from inorganic molecules

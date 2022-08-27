@@ -1,0 +1,5 @@
+baseURL = 'http://notes.sandvich.xyz/'
+languageCode = 'en-us'
+title = 'Notes'
+
+pluralizelisttitles = false

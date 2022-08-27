@@ -1,0 +1,96 @@
+#+TITLE: Chapter 5 - Trigonometric Equations
+#+DATE: <2021-08-29 Sun>
+
+* 5.3 Solving Trigonometric Equations
+:PROPERTIES:
+:CUSTOM_ID: solving-trigonometric-equations
+:END:
+1. Solve \(2\sin x - 1\)
+
+\[ 2\sin x = 1 \]
+
+\[ \sin x = \frac{1}{2} \]
+
+\[ x = \frac{\pi}{6} + 2\pi k\]
+
+2. [@2] Solve \(\sin x + \sqrt{2} = -\sin x\)
+
+\[ 2sin x = -\sqrt{2} \]
+
+\[ sin x = -\frac{\sqrt{2}}{2} \]
+
+\[ x = -\frac{\pi}{3} + 2\pi k \]
+
+2. [@2] Solve \(3\tan^2 x - 1 = 0\)
+
+\[ \tan^2 x = \frac{1}{3} \]
+
+\[ \tan x = \pm \frac{1}{\frac{3}} \]
+
+Don't forget the plus/minus sign.
+
+\[ x = \frac{\pi k}{6}, \textrm{for} k = 1, 5, 7, 11 \]
+
+3. [@3] Solve \(\cot x \cos^2 x = 2 \cot x\)
+
+\[ \cos^2 x = \cot x \]
+
+\[ \cot x \cos^2 x - 2 \cot x = 0 \]
+
+\[ \cot x(\cos^2 x - 2) = 0 \]
+
+\[ \cot x = 0, \cos^2x - 2 = 0 \]
+
+\[ \cot x = 0, x = { \frac{\pi}{2}, \frac{2\pi}{2} } \]
+
+\[ \cos^2x - 2 = 0, x = \emptyset \]
+
+\[ x = { \frac{\pi}{2}, \frac{2\pi}{2} } \]
+
+4. [@4] Solve \(2\sin^2 x - \sin x - 1 = 0\)
+
+\[ (\sin x - 1)(2\sin x + 1) \]
+
+\[ \sin x = 1, x = \frac{\pi}{2} \]
+
+\[ \sin x = -\frac{1}{2}, x = { \frac{7\pi}{6}, \frac{11\pi}{6} } \]
+
+\[ x = { \frac{\pi}{2}, \frac{7\pi}{6}, \frac{11\pi}{6} } \]
+
+* 5.4 Sum and Difference Identities
+:PROPERTIES:
+:CUSTOM_ID: sum-and-difference-identities
+:END:
+** Sum and Difference Identities
+:PROPERTIES:
+:CUSTOM_ID: sum-and-difference-identities-1
+:END:
+\[
+\sin(x \pm y) = \sin x \cos y \pm \cos x \sin y
+\] \[
+\cos(x \pm y) = \cos x \cos y \mp \sin x \sin y
+\] \[
+\tan(x \pm y) = \frac{\tan x \pm \tan y}{1 \mp \tan x \tan y}
+\]
+
+** Example
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+1. Evaluate \(\cos75°\)
+
+\[ \cos75° = \cos(120°-45°) = \cos120°\cos45° + sin120°sin45° \]
+
+* 5.5 Multiple and Half Angle Identities
+:PROPERTIES:
+:CUSTOM_ID: multiple-and-half-angle-identities
+:END:
+\[ \sin(2\theta) = \sin(\theta + \theta) \]
+
+\[ = \sin\theta\cos\theta + \cos\theta\sin\theta \]
+
+\[ = 2\sin\theta\cos\theta \]
+
+\[ \sin(3\theta) = \sin(2\theta + \theta) = (2\sin\theta\cos\theta)\cos(\theta) + (1 - 2\sin^2\theta)\sin(\theta) \]
+
+$$ \sin(\frac{\theta}{2}) = \pm \sqrt{\frac{1 - \cos\theta}{2}}

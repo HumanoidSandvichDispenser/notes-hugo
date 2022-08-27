@@ -1,0 +1,386 @@
+#+TITLE: Chapter 4 - Analyzing Graphs
+#+DATE: <2022-08-25 Thu>
+#+STARTUP: latexpreview inlineimages
+
+* Extrema of a Function
+
+** Absolute Extrema
+
+An absolute extremum can only exist in an open interval of $f$. A closed interval has an infinite amount of values that approach the start and end of the intervals, so it is impossible to define an exact extremum on a closed interval.
+
+There may not be an absolute extremum in a function if the function is unbounded.
+
+** Local Extrema
+
+A local extremum exists at point $x$ if $f'(x) = 0$ with odd multiplicity (i.e. the function /passes/ $y = 0$). A value of $x$ with even multiplicity (e.g. $f'(x) = (x -2)^2$) will simply bounce off the y-axis, and $f'(x)$ does not change sign at $x$.
+
+If the sign of $f'(x)$ at $x$ changes from *negative to positive*, there must exist a *local minimum* at $(x, f(x))$.
+
+If the sign changes from *positive to negative*, there must exist a *local maximum* at $(x, f(x))$.
+
+If the function has a removable discontinuity, a local maximum exists when  $f(x) > \lim_{c \to x} f(c)$ and a local minimum exists when $f(x) < \lim_{c \to x} f(c)$
+
+* Mean Value Theorem (Derivatives)
+
+If $f(x)$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then a value $x = c$ must exist in $(a, b)$ such that $f'(c) = \frac{f(b) - f(a)}{b - a}$
+
+*Note:* This means that within the interval, there must be a /tangent/ line with the same slope as the /secant/ line that passes through the endpoints of the interval.
+
+** Example
+
+Show that the function $f(x) = x^2$ satisfies the hypotheses of the MVT over the interval $[-2, 4]$. Then find a value of $c$ such that $f'(c) = \frac{f(b) - f(a)}{b - a}$ on this interval.
+
+*Solution:*
+
+The interval $[a, b]$ = $[-2, 4]$
+
+$f(x) = x^2$
+
+$f'(x) = 2x$
+
+$\frac{f(4) - f(-2)}{4 - (-2)} = 2$
+
+$f'(c) = 2 = 2c$
+
+$c = 1$
+
+In a graph, the slope of the secant line from $(a, f(a))$ to $(b, f(b))$ *will be the same* as the slope of the tangent line at $(c, f(c))$
+
+#+caption: Secant line and tangent line
+#+attr_org: :width 20
+[[./mvt.png]]
+
+** Example 2
+
+Determine whether or not the function $f(x) = |x|$ satisfies the hypotheses of the MVT over the following intervals. If yes, find the values of $c$ guaranteed by the MVT.
+
+1. $[-2, 2]$
+
+   The interval in $[-2, 2]$ is continuous, but it's not differentiable when $x = 0$. Therefore, it does not satisfy the conditions of the MVT.
+
+2. $[0, 4]$
+
+   The interval $[0, 4]$ is continuous, and the interval $(0, 4)$ is differentiable.$f'(x) = 1$ if $x > 0$
+
+    $\frac{f(4) - f(0)}{4 - 0} = 1$
+
+** Rolle's Theorem
+
+*Definition:* Let the function $f$ be continuous of the closed interval $[a, b]$ and differentiable on the open interval $(a, b)$. If $f(a) = f(b)$, then there is at least one number $c$ in $(a, b)$ such that $f'(c) = 0$.
+
+In other words, if $f(a) = f(b)$, then there is at least one point where the *average slope is zero* between $[a, b]$.
+
+*** Example
+
+$f(x) = x^4 - 2x^2$
+
+$f'(x) = 4x^3 - 4x$
+
+$f'(c) = 4c^3 - 4c = 0$
+
+$c = 0$
+
+** Example 3
+
+Show that the function $f(x) = x^3$ satisfies the hypothesis of the MVT over the interval $[0, 1]$. Find a value of $c$.
+
+* First Derivative - Increasing/Decreasing
+
+- *Increasing Function* - A function is increasing on the interval $I$ if for all $x_1 < x_2$ in $I, f(x_1) < f(x_2)$
+
+  Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$.
+
+  $f$ *increases* on $[a, b]$ if $f' > 0$.
+
+- *Decreasing Function* - A function is decreasing on the interval $I$ if for all $x_1 > x_2$ in $I, f(x_1) > f(x_2)$
+
+  Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$.
+
+  $f$ *decreases* on $[a, b]$ if $f' > 0$.
+
+- *Monotonic Function* - A function that is /strictly/ increasing or decreasing on an interval.
+
+- *Constant Function* - A function that can be defined as $f(x) = C$, where $C$ is a constant, and $f'(x) = 0$
+
+*** Examples
+
+1. Determine what intervals the function $f(x) = x^3 - 27x$ is increasing and decreasing.
+
+   $f'(x) = 3x^2 - 27 = 0$
+
+   $3(x + 3)(x - 3) = 0$
+
+   $x = \{ -3, 3 \}$
+
+   $f'(-4) > 0$
+
+   $f'(-2) < 0$
+
+   $f'(4) > 0$
+
+   :         +        -         +
+   :     <-------|----------|------->
+   :            -3          3
+
+   $f$ is increasing on the interval $(-\infty, -3] \cup [3, \infty)$ and decreasing on the interval $[-3, 3]$
+
+2. $f(x) = xe^{\frac{1}{x}}$
+
+   \[
+   f'(x) = x \cdot e^{\frac{1}{x}} \cdot -x^{-2} + e^{\frac{1}{x}} \cdot 1 = 0
+   \]
+
+   $f'(x) = (e^\frac{1}{x})(-x^{-1} + 1)$
+
+   $f'(x) = e^\frac{1}{x}(\frac{x - 1}{x}) = 0$
+
+   $x = 1$ , and $f'(x) = \textrm{DNE}$ if $x = 0$
+
+   $f(-1) > 0$
+
+   $f(\frac{1}{2}) < 0$
+
+   $f(2) > 0$
+
+   $f$ is increasing on $(-\infty, 0) \cup [1, \infty)$ and decreasing on $(0, 1)$
+
+
+*** Sample AP Question
+
+1. The graph of $f'$, the derivative of the function $f$, is shown.
+
+   [[./ap-question-interval.png]]
+
+   Which of the following statements is true about $f$?
+
+   (A) $f$ is decreasing for $-1 \ge x \ge 1$
+
+   *(B) $f$ is increasing for $-2 \ge x \ge 0$*
+
+* Second Derivative - Concavity
+
+- A function is *concave up* on an open interval if $f'$ is increasing
+- A function is *concave down* on an open interval $f'$ is decreasing
+
+** Concavity Test
+
+- *Concave up* on any interval where $f''(x) > 0$
+- *Concave down* on any interval where $f''(x) < 0$
+- *Point of inflection* - a point where the graph of a function has a tangent line and where the concavity/sign /changes/ (i.e. the point $(x, f(x))$ such that $f''(x) = 0$)
+  - A possible POI may exist when $f''(x) = 0$, but a POI must exist when the sign changes
+
+** Examples
+
+1. Determine the concavity of $y = 2 + \sin x$ on $[0, 2\pi]$ and any points of inflection.
+
+   $y' = \cos x$
+
+   $y'' = -\sin x = 0$
+
+   $x = \{ 0, \pi, 2\pi \}$
+
+   $y'' < 0$ if $0 < x < \pi$ - *concavity down* at $(0, \pi)$
+
+   $y'' > 0$ is $\pi < x < 2\pi$ - *concavity up* at $(\pi, 2\pi)$
+
+2. Determine the concavity of $f(x) = \frac{2x}{x^2 - 4}$
+
+   $f''(x) = \frac{4x(x^2 + 12)}{(x^2 - 4)^3}$
+
+   $f''(0) = 0$
+
+   $f''(\pm 2) = \textrm{DNE}$
+
+   $f''(-3) < 0$
+
+   $f''(-1) > 0$
+
+   $f''(1) < 0$
+
+   $f''(3) > 0$
+
+   :     -       +      -       +
+   : <-------------------------------> f''(x)
+   :        |       |       |
+   :        2       0      4/3
+
+   *Concavity down* on $(-\infty, -2) \cup (0, 2)$
+
+   *Concavity up* on $(-2, 0) \cup (2, \infty)$
+
+   3 possible points of inflection: $\{ -2, 0, 2 \}$
+
+   Since $\pm 2$ does not exist in the domain of the original function, they could not be considered points of inflection. Therefore, the only point of inflection is $(0, 0)$.
+
+3. $f'(x) = 4x^3 - 8x^2$
+
+   $f''(x) = 12x^2 - 16x$
+
+   $f''(x) = 4x(3x - 4)$
+
+   $x = \{0, \frac{4}{3}\}$
+
+   $f''(x) > 0; x = -1$
+
+   $f''(x) < 0; x = 1$
+
+   $f''(x) > 0; x = 2$
+
+   :       +         -          +
+   :   <-------------------------------> f''(x)
+   :         |         |
+   :             0        4/3
+
+   *Concavity down* on $(0, \frac{4}{3})$
+
+   *Convacity up* on $(-\infty, 0) \cup (\frac{4}{3}, \infty)$
+
+** Sample AP Questions
+
+1. Let $f$ be the function given by $f(x) = 2xe^x$.  The graph of $f$  is concave down when
+
+   $f'(x) = 2e^x + 2xe^x$
+
+   $f''(x) = 2e^x + 6xe^x$
+
+   $x = \{ -2, 0 \}$
+
+   :          -
+   :   <-------------------------------> f''(x)
+   :              |      |
+   :             -2      0
+
+   *Concave down* $(-\infty, -2)$
+
+2. The second derivative of the function $f$ is given by $f''(x) = x(x - a)(x - b)^2$. The graph of $f''(x)$ is shown. For what values does $f$ have a point of inflection?
+
+   [[./ap-question-poi.png]]
+
+   $f$ has a *point of inflection at $0, a, b$* because the value of $f$ at those points is zero. By definition, it is a point of inflection.
+
+3. The function $f$ has first derivative given by $f'(x) = \frac{\sqrt{x}}{1 + x + x^3}$
+
+   $f''(x) = \frac{-5x^3 - x + 1}{2\sqrt{x}(1 + x + x^3)^2} = 0$
+
+   $-5x^3 - x + 1 = 0$ Solve the numerator for 0
+
+   $x = 0.473$ (x-coordinate of point of inflection)
+
+4. For all $x$ in the closed interval $[2, 5]$, the function $f$ has a positive first derivative and a derivative. Which of the following could be a table of values for $f$?
+
+   [[./ap-question-poi-tables.png]]
+
+   B is most likely the answer because $f$ in that interval is concave down. Therefore, the rate of change should slow down but not be negative.
+
+* Second Derivative Test
+
+If $f'(c) = 0$ and $f''(c) < 0$, then a local maximum exists at $x = c$. If $f'(c) = 0$ and $f''(c) > 0$, then a local minimum exists at $x = c$.
+
+** Examples
+
+1. Find where the extreme values of $f(x) = x^3 - 12x - 5$ occur.
+
+   \begin{array}{ r l }
+   f'(x) & = 3x^2 - 12 \\
+   & = 3(x^2 - 4) \\
+   & = 3(x + 2)(x - 2) \\
+   \end{array}
+
+   $x = \pm 2$
+
+   $f''(x) = 6x$
+
+   $f''(2) = 12$ --- a local maximum occurs at $x = 2$
+
+   $f''(-2) = -12$ --- a local minumum occurs at $x = -2$
+
+** AP Sample Questions
+
+1. Let $g$ be a twice-differentiable function with $g' > 0$ and $g''(x) > 0$ for all real numbers $x$, such that $g(4) = 12$ and $g(5) = 18$. Which is a possible value of $g(6)$?
+
+   a. 15
+   b. 21
+   c. 24
+   d. 27
+
+   The most likely answer is (D) because $g'$ is positive, and $g''$ is also positive, which means that $g$ must be *exponentially increasing*.
+
+2. The function $f$ has property $f(x), f'(x), f''(x)$ are negative for all real values of $x$. Which of the following could be the graph for $f$?
+
+   [[./ap-question-second-derivative.png]]
+
+Graph (B) is most likely the answer. The range of $f$ is always negative, so it can never be positive at any point. Since $f'$ is negative, $f$ should be decreasing. Since $f''$ is negative, $f'$ should be decreasing, which means $f$ should be exponentially decreasing (i.e. no deceleration).
+
+* Curve Sketching
+
+1. Identify the domain, range, intercepts, asymptotes, and end behavior
+2. Find critical points and determine on which intervals the function is inceasing or decreasing
+3. Determine points of inflection and the direction of concavity between POIs
+4. Plot a few points if necessary to draw the curve about
+
+** Example
+
+Sketch the graph of $f(x) = \frac{2x}{x^2 - 4}$
+
+x-intercept: $(0, 0)$
+
+y-intercept: $(0, 0)$
+
+Vertical asymptote: $x = \pm 2$
+
+Horizontal asymptote: $\lim_{x \to \pm \infty} f(x) = 0$
+
+$f(x) = 2x(x^2 - 4)^{-1}$
+
+$f'(x) = \frac{-2x(x^2 + 4)}{(x^2 - 4)^2}$
+
+$f''(x) = \frac{4x(x^2 + 12)}{(x^2 - 4)^3}$
+
+$f'(0) = 0$
+
+$f'(\pm 2) = \textrm{undefined}$
+
+$f''(0) = 0$
+
+$f''(\pm2) = \textrm{undefined}$
+
+   :         -          -         -         -
+   :  <-------------------------------------------> f'(x)
+   :               2         0         2
+
+   :        -          +         -         +
+   : <-------------------------------------------> f''(x)
+   :              2         0         2
+
+   :                   Decreasing
+   :      CCU         CCD       CCU       CCD
+   : <-------------------------------------------> f(x)
+   :              2         0         2
+
+* Kinematics
+
+\begin{array}{ r l }
+    \textrm{Position} & x(t) \\
+    \textrm{Velocity} & x'(t) = v(t) \\
+    \textrm{Acceleration} & x''(t) = v'(t) = x(t)
+\end{array}
+
+** Example
+
+A particle moves along a horizontal axis with velocity given by the function
+
+\[
+v(t) = -5 + 2.3e^{\sin(t^2)}
+\]
+
+Is the particle speeding up or slowing down at $t = 27$?
+
+\[
+v'(t) = 2.3(e^{\sin(t^2)} + -2t\cos(t^2))
+\]
+
+\[
+a(27) = v'(27) = -120
+\]
+
+Because $a(27) < 0$, the particle is decelerating, and which means the particle is slowing down.

@@ -1,0 +1,254 @@
+#+TITLE: Chapter 3 - Exponential Functions
+#+DATE: <2021-08-27 Fri>
+
+* 3.1 Exponential Functions and Their Graphs
+:PROPERTIES:
+:CUSTOM_ID: exponential-functions-and-their-graphs
+:END:
+** Linear vs Exponential Growth
+:PROPERTIES:
+:CUSTOM_ID: linear-vs-exponential-growth
+:END:
+Linear functions grow at a constant rate.
+
+An exponential function grows by a multiple of its current value.
+
+*** Example
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+1. Using the equation \(y = a(2)^{b(x-c)} + d\), change the values of
+   \(a, b, c, d\) and determine the effects of them on the graph.
+   - \(a\) vertically dilates the graph
+   - \(b\) horizontally compresses the graph
+   - \(c\) horizontally translates the graph
+   - \(d\) vertically translates the graph
+
+** Euler's Number
+:PROPERTIES:
+:CUSTOM_ID: eulers-number
+:END:
+Create the graph of \(y = (\frac{1}{x})^x\). What is the right end
+behavior of this graph?
+
+\[ \lim_{x \to \infty} y \to 2.718... \]
+
+This special value 2.718... equates to /Euler's number/ \(e\).
+
+\[ \lim_{x \to \infty} y \to e \]
+
+** Compound Interest Formula
+:PROPERTIES:
+:CUSTOM_ID: compound-interest-formula
+:END:
+\[ A = P(1 + \frac{r}{n})^{nt} \]
+
+\(A\) = Total amount
+
+\(P\) = Principle amount (starting amount)
+
+\(r\) = Interest rate
+
+\(n\) = Number of times applied per time period
+
+\(t\) = Number of time periods elapsed
+
+*** Continuous Compounding
+:PROPERTIES:
+:CUSTOM_ID: continuous-compounding
+:END:
+\[ A = Pe^{rt} \]
+
+All terms \(A\), \(P\), \(r\), and \(t\) have the same meaning as the
+compound interest formula.
+
+This is because continuous compounding is derived from the compound
+interest formula.
+
+Given we have \(A = P(1 + \frac{r}{n})^{nt}\), we can plug in \(n\) to
+an infinitely large number.
+
+Remember Euler's number that \((1 + \frac{1}{x})^{x}\), where as \(x\)
+approaches infinity, the value approaches \(2.718...\)
+
+*TODO:* Finish proofs
+
+*** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples
+:END:
+1. Nelson invests $12000 at a 3% interest rate for 4 years. Compute the
+   value of his investment considering the following ypes of
+   compounding:
+
+   - Anually --- \(12000(1 + \frac{0.03}{1})^{1 \cdot 4} = \$13506.10\)
+   - Quarterly ---
+     \(12000(1 + \frac{0.03}{4})^{4 \cdot 4} = \$13523.90\)
+   - Continuously --- \(12000 \cdot e^{0.03 \cdot 4} = \$13529.96\)
+
+2. Let \(y\) represent a mass, in grams, of radioactive H-3 whose
+   half-life is approximately 12 years. The quantity of Hydrogen-3
+   present after \(t\) years if \(y = 10(\frac{1}{2})^{\frac{t}{12}}\).
+
+   - What is the initial mass of Hydrogen-3? 10
+   - How much of the initial mass is present after 60 years?
+     \(y = 10(\frac{1}{2})^{\frac{60}{12}} = 0.312\)
+
+3. The approximate number of fruit flies in an experimental population
+   after \(t\) hours is given by the equation
+
+   \[Q(t) = 30e^{0.04t}\]
+
+   - Find the initial number of fruit flies in the population. \(30\)
+
+   - How large is the population after 72 hours?
+     \(30e^{0.04 \cdot 72} = 534\)
+
+   - When would you estimate the population of fruit flies to become
+     greater than 500?
+
+     \[500 = 30e^{0.04t}\]
+
+     \[\frac{500}{30} = e^{0.04t}\]
+
+     \[ln(\frac{500}{30}) = ln(e^{0.04t})\]
+
+     \[0.04t = ln(\frac{500}{30})\]
+
+     \[t = ln(\frac{500}{30}) \cdot \frac{1}{0.04} = 70.335\]
+
+* 3.2 Logarithms and Their Graphs
+:PROPERTIES:
+:CUSTOM_ID: logarithms-and-their-graphs
+:END:
+A logarithm is the inverse of an exponential.
+
+\[ y = a^x \]
+
+\[ \log_a(y) = \log_a(a^x) = x \]
+
+** Properties
+:PROPERTIES:
+:CUSTOM_ID: properties
+:END:
+\[ \log_a 1 = 0 \]
+
+\[ \log_a a = 1 \]
+
+\[ \log_a(a^x) = x \]
+
+\[ \log_a(\frac{1}{a^x}) = -x \]
+
+If \(\log_a x = \log_a y\), then \(x = y\)
+
+If \(y = \log_a x\), then \(a^y = x\)
+
+*** Example
+:PROPERTIES:
+:CUSTOM_ID: example-1
+:END:
+What is the domain of an untransformed logarithmic function?
+
+\[ (0, \infty) \]
+
+** Types of Logarithms
+:PROPERTIES:
+:CUSTOM_ID: types-of-logarithms
+:END:
+\(\log x\) is the common logarithm. It is equal to \(\log_10 x\)
+
+\(\ln x\) is the natural log. It is equal to \(\log_e x\)
+
+** Properties of \(\ln\)
+:PROPERTIES:
+:CUSTOM_ID: properties-of-ln
+:END:
+\[ \ln 1 = 0 \]
+
+\[ \ln e = 1 \]
+
+\[ \ln e^x = x \]
+
+If \(\ln x = \ln y\), then \(x = y\)
+
+*** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples-1
+:END:
+\[ \ln \frac{1}{e} = -1 \]
+
+\[ e^{ln 5} = 5 \]
+
+\[ 4 \ln 1 = 0 \]
+
+\[ 2 \ln e = 2 \]
+
+* 3.3 Properties of Logarithms
+:PROPERTIES:
+:CUSTOM_ID: properties-of-logarithms
+:END:
+** Proof \(\log_b(uv) = \log_b u + \log_b v\)
+:PROPERTIES:
+:CUSTOM_ID: proof-log_buv-log_b-u-log_b-v
+:END:
+Let \(a^{log_a u + log_a v} = uv\)
+
+\(a^u \cdot a^v = a^{u+v}\)
+
+\(a^{log_a u} \cdot a^{log_a v} = uv\)
+
+\(u \cdot v = uv\)
+
+Therefore \(\log_b(uv) = \log_b u + \log_b v\), *quod erat
+demonstrandum*
+
+** Proof \(\log_b(u^n) = n \log_b u\)
+:PROPERTIES:
+:CUSTOM_ID: proof-log_bun-n-log_b-u
+:END:
+Let \((a^{\log_a u})^n = u^n\)
+
+** Change of Base
+:PROPERTIES:
+:CUSTOM_ID: change-of-base
+:END:
+\[ \log_b(a) = \frac{\log_c(a)}{\log_c(b)} \]
+
+** Examples
+:PROPERTIES:
+:CUSTOM_ID: examples-2
+:END:
+1. Expand \(3log(100x^4y^2)\)
+
+   \(6 + 12\log x + 6\log y\)
+
+2. Condense \(\log_3(64) + 2\log_3(x) - 4\log_3(y)\)
+
+   \(\log_3(64x^2y^{-4})\) OR \(\log_3(\frac{64x^2}{y^4})\)
+
+* Review
+:PROPERTIES:
+:CUSTOM_ID: review
+:END:
+1. The population of a town in 2007 is 113505 and is increasing at a
+   rate of 1.2% per year. What will the population be in 2012? Set up
+   the formula.
+
+!||\(113505 \cdot (1.012)^5\)||
+
+2. [@2] A set of bacteria begins with 20 and doubles every 2 hours. How
+   many bacteria would be present 15 hours after the experiment began?
+   Set up the formula.
+
+!||\(20(2)^{\frac{15}{2}}\)||
+
+3. [@3] The cost of manufactured goods is rising at the rate of
+   inflation (2.3%) /anually/. Suppose an item costs $12 today. How much
+   will it cost five years from now due to inflation?
+
+!||\(12 \cdot (1.023)^5 = \$13.44\)||
+
+4. [@4] The cost of a new ATV is $7200. It depreciates at 18% per year.
+   Find the value of the ATV when it is ten years old.
+
+!||\(\$7200 \cdot (1 - 0.18)^{10} = \$989\)||

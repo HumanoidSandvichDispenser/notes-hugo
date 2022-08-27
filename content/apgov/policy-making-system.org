@@ -1,0 +1,21 @@
+#+TITLE: Policy Making System
+#+DATE: <2022-08-24 Wed>
+
+* Elitism and Pluralism
+
+Although 24 states give voters the ability to directly vote on legislation through initiatives and referendums, the participatory democracy model does not describe democracy in America. Many Americans fear that a set of elite citizens is really in charge of government in the United States and that others have no influence. This belief is called the *elite theory of government*. 
+
+*Pluralist theorists* (pluralist democracy model) assume that citizens who want to get involved in the system do so because of the great number of access points to government. That is, the U.S. system, with several levels and branches, has many places where people and groups can engage the government.
+
+Although elitists and pluralists present political influence as a tug-of-war with people at opposite ends of a rope trying to gain control of government, *in reality government action and public policy are influenced by an ongoing series of tradeoffs or compromises*
+
+- The wealthy people are listened to
+- The people have the votes
+
+** Hyperpluralism
+
+Government and politics contending that groups are so strong, and the government is weakened (too many tradeoffs).
+
+- Prevents government from acting
+- Difficulty in coordinating policy implementation
+- Contradictory policies that try to satisfy each group

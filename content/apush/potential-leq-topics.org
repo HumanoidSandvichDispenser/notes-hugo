@@ -1,0 +1,76 @@
+#+TITLE: Potential LEQ Topics
+
+* Triangular Trade
+
+ * Causes
+   * Desire for goods/trade (economic)
+   * Desire to develop colonies (political)
+   * Demand for slave labor
+ * Effects
+   * Introduction of new crops
+   * Development of colonies
+   * Further demand for slave labor
+   * Exchange of culture
+
+* Market Revolution
+
+ * Causes and effects are mostly similar; you can interchange causes and effects unless asked to compare the causes and effects
+ * Causes
+   * Rapid improvements of transportation and communication
+   * Industrial machines and inventions
+   * Increased federal power
+ * Effects
+   * Economic growth (economical)
+   * Emergence of middle class (social)
+   * Increased federal power as regional markets shift to national markets (political)
+     * Railroads
+
+* Gilded Age
+
+ * Causes
+   * Industrial Revolution
+   * Laissez-faire economics
+   * Advances in technology
+   * Emergence of middle class
+ * Effects
+   * Social reform - strikes (economic)
+     * Knights of Labor
+     * Homestead Strike
+   * Political corruption and political machines
+   * Emergence of middle class (social)
+   * More immigrants (social)
+
+* Civil War
+
+ * Causes of the Civil War 1830-1850
+   * Dred Scott v. Sandford
+   * Sectionalism
+     * Compromise of 1850
+     * Popular sovereignty
+   * Increased federal power
+     * Tariff of 1832 and Force Bills
+ * Causes of Union Victory
+   * Better economy
+     * Industrial vs. agricultural economy
+   * Technology
+     * Railroads
+     * Telegraphs
+   * Political support
+     * Free soiler to abolitionist
+     * "Preserve the union" to slavery
+
+** Reconstruction
+
+   * Changes/Effects (group this as one change)
+     * Amendments XIII, XIV, XV
+     * No slavery
+     * Sharecropping
+   * Continuities
+     * Limited freedoms of blacks
+       * Black codes
+       * Literacy tests
+     * Discrimination
+       * KKK
+       * White League
+     * Continued use of African Americans for slave labor
+       * Sharecropping

@@ -1,0 +1,128 @@
+#+TITLE: APUSH Period 5
+#+DATE: <2022-05-02 Mon>
+
+* Manifest Destiny
+
+ * Based on racial and cultural superiority
+ * Main focus of political debates
+
+** Acquiring territory
+
+ * **Mexican-American War**
+ * **Wilmot Proviso**
+   * Debates over slavery
+
+** Impacts of Expansion
+
+ * Environmental changes
+ * Settlement of Indian lands
+ * Old Immigrants, pre-Civil War
+   * Germans
+   * Irish
+   * Faced nativism
+     * **Know-nothing party**
+
+* Westward Expansion
+
+ * Opportunities out West
+   * Increased due to legislation promoting economic development
+     * *Homestead Act of 1862*
+
+** Impacts
+
+ * Conflicts with Hispanics and Natives
+   * *Sand Creek Massacre*
+   * *Little Big Horn*
+
+* North vs South
+
+ * North
+   * Dependent on labor manufacturing
+ * South
+   * Dependent on agriculture and slavery
+   * Slow population growth
+ * As a result, the North has more power in the House
+   * Why Wilmot Proviso passes in the House but not the Senate
+
+** Slavery
+
+ * Abolitionists
+   * /The Liberator/ by WLG
+   * Helped slaves escape (Underground Railroad)
+   * Violence (John Brown)
+ * Defense for slavery
+   * "Positive good" (John C. Calhoun)
+   * Nullification
+   * Minstrel shows
+
+* Compromises
+
+ * Compromise of 1850
+   * Popular sovereignty in land from Mexican Cession
+ * *Kansas-Nebraska Act*
+   * *Bleeding Kansas*
+ * *Dred Scott decision*
+ * Election of 1860
+   * Lincoln elected on Free Soil platform
+   * Immediate cause of secession
+     * Civil War
+
+* Civil War
+
+ * North and South mobilized their economies and societies for the war effort
+   * Conscription
+ * Emancipation Proclamation
+ * Union victory
+   * Military leadership
+   * *Anaconda Plan*
+   * Greater resources
+   * Destruction to the Southern infrastructure and environment
+     * *"March to the Sea"*
+
+* Reconstruction
+
+ * 13th Amendment
+   * Sharecropping
+ * Radical Republicans
+   * Former slaves and African Americans gained political opportunities
+     * *Hiram Revels*
+   * North's resolve for Reconstruction was waning
+     * *Compromise of 1877*
+
+** Constitutional Amendments
+
+ * 14th Amendment
+   * Equal protection of the laws
+ * 15th Amendment
+   * Suffrage for men
+ * African American rights were still limited
+   * Segregation
+     * Jim Crow
+   * Violence
+     * KKK
+     * White League
+   * Supreme Court Decisions
+     * *Plessy v Ferguson*
+     * *Civil Rights Cases*
+   * Local Political Tactics
+     * Poll taxes
+     * Literacy tests
+     * Grandfather clauses
+
+*** Impacts of these amendments on Women's Rights
+
+ * Split the group
+   * Some only advocated the 15th Amendment if it included women
+   * Others said that African Americans have suffered enough
+
+* Review Questions
+
+ * Manifest Destiny and its impacts
+ * Mexican-American War and debates over slavery
+ * Immigrants and nativism
+ * Abolitionist tactics
+ * Compromise of 1850, etc.
+ * Election of 1860
+ * Emancipation Proclamation
+ * 13-15th Amendments
+ * End of Reconstruction, waning
