@@ -1,0 +1,175 @@
+<head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Solving Systems of Equations Solving by graphing Solving by substitution Solving by elimination Solving Multivariable Systems of Equations Row-echelon form Row Operations Interchange any two equations Multiply an equation by a non-zero constant Add an equation to another equation Partial Fraction Decomposition A rational expression can often be written as the sum of two or more simpler rational expressions (fractions).
+Example \(\frac{x + 7}{x^2 - x - 6} = \frac{x + 7}{(x - 3)(x + 2)}\) \[ \frac{A}{x - 3} + \frac{B}{x + 2} \]"><script type=text/javascript src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type=text/x-mathjax-config>
+    MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+    });
+    </script><meta property="og:title" content="Chapter 7 - Matrices"><meta property="og:type" content="website"><meta property="og:url" content="http://notes.sandvich.xyz/precalc/chapter-7/"><meta property="og:description" content="Solving Systems of Equations Solving by graphing Solving by substitution Solving by elimination Solving Multivariable Systems of Equations Row-echelon form Row Operations Interchange any two equations Multiply an equation by a non-zero constant Add an equation to another equation Partial Fraction Decomposition A rational expression can often be written as the sum of two or more simpler rational expressions (fractions).
+Example \(\frac{x + 7}{x^2 - x - 6} = \frac{x + 7}{(x - 3)(x + 2)}\) \[ \frac{A}{x - 3} + \frac{B}{x + 2} \]"><link rel=stylesheet type=text/css href=/css/style.css><link rel=stylesheet type=text/css href=/css/toc.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css><link rel=canonical href=http://notes.sandvich.xyz/precalc/chapter-7/><title>Chapter 7 - Matrices
+|
+Notes</title></head><header><nav class=navbar><div class=navbar-left><a class=logo href=/></a></div><div class=navbar-right><a href=/apcalc/>/apcalc/</a>
+<a href=/apgov/>/apgov/</a>
+<a href=/cyber/>/cyber/</a>
+<a href=/apush/>/apush/</a>
+<a href=/apbio/>/apbio/</a>
+<a href=/precalc/>/precalc/</a>
+<a href=/apstats/>/apstats/</a></div></nav></header><div class=body-content><div id=toc><nav id=TableOfContents><ul><li><a href=#solving-systems-of-equations>Solving Systems of Equations</a></li><li><a href=#solving-multivariable-systems-of-equations>Solving Multivariable Systems of Equations</a><ul><li><a href=#row-operations>Row Operations</a></li></ul></li><li><a href=#partial-fraction-decomposition>Partial Fraction Decomposition</a><ul><li><a href=#example>Example</a></li></ul></li><li><a href=#matrices>Matrices</a><ul><li><a href=#matrix-multiplication>Matrix Multiplication</a></li><li><a href=#inverse-of-a-square-matrix>Inverse of a Square Matrix</a></li><li><a href=#examples>Examples</a></li><li><a href=#algorithm-to-solve>Algorithm to Solve</a></li><li><a href=#inverse-matrices-to-solve-systems-of-equations>Inverse Matrices to Solve Systems of Equations</a></li></ul></li><li><a href=#determinants>Determinants</a><ul><li><a href=#array-of-signs-and-expansion-by-minors>Array of Signs and Expansion by Minors</a></li><li><a href=#example-1>Example</a></li></ul></li><li><a href=#cramers-rule>Cramer's Rule</a></li></ul></nav></div><article><header><h1>Chapter 7 - Matrices</h1><hr><table class=single-info><tr id=info-date><td><i class="bi bi-clock"></i></td><td>Wednesday, 1 September 2021</td></tr><tr id=info-reading-time><td><i class="bi bi-hourglass"></i></td><td>4-minute read</td></tr><tr id=info-word-count><td><i class="bi bi-book"></i></td><td>843 words</td></tr><tr id=info-tags><td><i class="bi bi-tag"></i></td><td></td></tr></table></header><div id=outline-container-solving-systems-of-equations class=outline-2><h2 id=solving-systems-of-equations>Solving Systems of Equations</h2><div id=outline-text-solving-systems-of-equations class=outline-text-2><ol><li>Solving by graphing</li><li>Solving by substitution</li><li>Solving by elimination</li></ol></div></div><div id=outline-container-solving-multivariable-systems-of-equations class=outline-2><h2 id=solving-multivariable-systems-of-equations>Solving Multivariable Systems of Equations</h2><div id=outline-text-solving-multivariable-systems-of-equations class=outline-text-2><ul><li>Row-echelon form</li></ul><div id=outline-container-row-operations class=outline-3><h3 id=row-operations>Row Operations</h3><div id=outline-text-row-operations class=outline-text-3><ol><li>Interchange any two equations</li><li>Multiply an equation by a non-zero constant</li><li>Add an equation to another equation</li></ol></div></div></div></div><div id=outline-container-partial-fraction-decomposition class=outline-2><h2 id=partial-fraction-decomposition>Partial Fraction Decomposition</h2><div id=outline-text-partial-fraction-decomposition class=outline-text-2><p>A rational expression can often be written as the sum of two or more
+simpler rational expressions (fractions).</p><div id=outline-container-example class=outline-3><h3 id=example>Example</h3><div id=outline-text-example class=outline-text-3><ol><li>\(\frac{x + 7}{x^2 - x - 6} = \frac{x + 7}{(x - 3)(x + 2)}\)</li></ol><p>\[ \frac{A}{x - 3} + \frac{B}{x + 2} \]</p><p>\[ (\frac{x + 7}{(x - 3)(x + 2)} = \frac{A}{x - 3} + \frac{B}{x + 2})(x + 2) \]</p><p>\[ \frac{x + 7}{x - 3} = \frac{A(x + 2)}{x - 3} + B \]</p><p>Let \(x = -2\)</p><p>\[ B = \frac{-2 + 7}{-2 + 3} = 5 \]</p><ol><li value=2>\(\frac{x - 3}{x^2 - 16}\)</li></ol><p>\[ \frac{x - 3}{(x + 4)(x - 4)} \]</p><p>\[ \frac{} \]</p></div></div></div></div><div id=outline-container-matrices class=outline-2><h2 id=matrices>Matrices</h2><div id=outline-text-matrices class=outline-text-2><p>A matrix is a way of organizing mathematical data into rows and columns.</p><ul><li><strong>row</strong> — horizontal</li><li><strong>column</strong> — vertical</li><li><strong>element</strong> — a specific component of a matrix given by its location
+(e.g. \(a_{23}\) in row 2, column 3)</li><li><strong>dimension</strong> — description of rows and columns</li></ul><p>A 2x3-dimensional matrix \[
+\begin{bmatrix}
+a & b & c \\
+d & e & f
+\end{bmatrix}
+\]</p><div id=outline-container-matrix-multiplication class=outline-3><h3 id=matrix-multiplication>Matrix Multiplication</h3><div id=outline-text-matrix-multiplication class=outline-text-3><p>When multiplying matrices \(A \cdot B = C\), an element \(e\) at
+\(C_{y,x}\) is the sum of the products of \(A\) at row \(y\) by its
+corresponding elements \(B\) at column \(x\).</p></div></div><div id=outline-container-inverse-of-a-square-matrix class=outline-3><h3 id=inverse-of-a-square-matrix>Inverse of a Square Matrix</h3><div id=outline-text-inverse-of-a-square-matrix class=outline-text-3><ul><li><p>Two types of inverses in real numbers:</p><ul><li>Additive inverse, called the opposite, \(x + y = 0\)</li><li>Multiplicative inverse, called the reciprocal, \(x \cdot y = 1\)</li></ul></li></ul><p>\[
+\begin{bmatrix}
+A
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+A
+\end{bmatrix}^{-1}
+=
+\begin{bmatrix}
+I
+\end{bmatrix}
+\]</p><ul><li>Identity matrix contains all ones in the main diagonal</li><li>All other elements must be zero</li><li><p><strong>Not all matrices have inverses</strong></p><ul><li>Only square matrices are capable of having inverses</li><li>Square matrices that do not have inverses are known as <em>singular</em> or
+<em>non-invertible</em></li></ul></li></ul></div></div><div id=outline-container-examples class=outline-3><h3 id=examples>Examples</h3><div id=outline-text-examples class=outline-text-3><p>Given that \(AX = I\) where \(X = A^{-1}\)</p><p>\[
+\begin{bmatrix}
+A
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & 4 \\
+-1 & -3
+\end{bmatrix},
+\]</p><p>\[
+\left[\begin{array}{rr|rr}
+1 & 4 & 1 & 0 \\
+-1 & -3 & 0 & 1
+\end{array}\right]
+\]</p><p>\[
+\left[\begin{array}{rr|rr}
+1 & 4 & 1 & 0 \\
+0 & 1 & 1 & 1
+\end{array}\right]
+\]</p><p>\[
+\left[\begin{array}{rr|rr}
+1 & 0 & -3 & -4 \\
+0 & 1 & 1 & 1
+\end{array}\right]
+\]</p><p>What we have on the right hand side is the matrix
+\(\begin{bmatrix} X \end{bmatrix}\)</p></div></div><div id=outline-container-algorithm-to-solve class=outline-3><h3 id=algorithm-to-solve>Algorithm to Solve</h3><div id=outline-text-algorithm-to-solve class=outline-text-3><p>\[
+\left[\begin{array}{cc|cc}
+a & b & 1 & 0 \\
+c & d & 0 & 1
+\end{array}\right]
+\]</p><p>\[
+\left[\begin{array}{cc|cc}
+1 & \frac{b}{a} & \frac{1}{a} & 0 \\
+c & d & 0 & 1
+\end{array}\right]
+\]</p><p>\[
+\left[\begin{array}{cc|cc}
+1 & \frac{b}{a} & \frac{1}{a} & 0 \\
+0 & \frac{ad - bc}{a} & -\frac{c}{a} & 1
+\end{array}\right]
+\]</p><p>\[
+\left[\begin{array}{cc|cc}
+1 & \frac{b}{a} & \frac{1}{a} & 0 \\
+0 & 1 & -\frac{c}{ad - bc} & \frac{a}{ad - bc}
+\end{array}\right]
+\]</p><p>\[
+\left[\begin{array}{cc|cc}
+1 & 0 & \frac{d}{ad - bc} & -\frac{b}{ad - bc} \\
+0 & 1 & -\frac{c}{ad - bc} & \frac{a}{ad - bc}
+\end{array}\right]
+\]</p><p>\[
+\frac{1}{ad - bc}
+\left[\begin{array}{rr}
+d & -b \\
+-c & a
+\end{array}\right]
+\]</p></div></div><div id=outline-container-inverse-matrices-to-solve-systems-of-equations class=outline-3><h3 id=inverse-matrices-to-solve-systems-of-equations>Inverse Matrices to Solve Systems of Equations</h3><div id=outline-text-inverse-matrices-to-solve-systems-of-equations class=outline-text-3><p>An equation</p><p>\[
+\begin{array}{c}
+x + 2y = 4 \\
+3x - 5y = 1
+\end{array}
+\]</p><p>can be written in the form</p><p>\[
+\left[\begin{array}{cc}
+1 & 2 \\
+3 & -5
+\end{array}\right]
+\left[\begin{array}{c}
+x \\
+y
+\end{array}\right]
+=
+\left[\begin{array}{c}
+4 \\
+1
+\end{array}\right]
+\]</p><p>The second matrix \(B = A^{-1}C\). Therefore, \[
+B = -\frac{1}{11}
+\left[\begin{array}{cc}
+-5 & -2 \\
+-3 & 1
+\end{array}\right]
+\left[\begin{array}{c}
+4 \\
+1
+\end{array}\right] \\
+= -\frac{1}{11}
+\left[\begin{array}{cc}
+-22 \\
+-11
+\end{array}\right]
+=
+\left[\begin{array}{cc}
+2 \\
+1
+\end{array}\right]
+\]</p></div></div></div></div><div id=outline-container-determinants class=outline-2><h2 id=determinants>Determinants</h2><div id=outline-text-determinants class=outline-text-2><p>Determinants are the scalars of a matrix</p><p>The determinant of a 2x2 matrix:</p><p>\[
+A =
+≤ft[\begin{array}{cc}
+a & b \\
+c & d
+\end{array}\right],</p><table><tbody><tr><td>A</td><td>= ad - bc</td></tr></tbody></table><p>\]</p><div id=outline-container-array-of-signs-and-expansion-by-minors class=outline-3><h3 id=array-of-signs-and-expansion-by-minors>Array of Signs and Expansion by Minors</h3><div id=outline-text-array-of-signs-and-expansion-by-minors class=outline-text-3><p>\[
+\left[\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{array}\right]
+\]</p><p>Minor</p><p>\[
+a_{11}
+\left[\begin{array}{cc}
+a_{22} & a_{23} \\
+a_{32} & a_{33}
+\end{array}\right]
+\]</p><p>3x3 determinant</p><p>\[
+\left[\begin{array}{ccc}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{array}\right]
+\]</p><p>\[
+a(ei - fh) - b(di - fg) + c(dh - eg)
+=
+(aei + bfg + cdh) - (afh - bdi + ceg)
+\]</p></div></div><div id=outline-container-example-1 class=outline-3><h3 id=example-1>Example</h3><div id=outline-text-example-1 class=outline-text-3><p>\[
+A =
+≤ft[\begin{array}{ccc}
+4 & -3 & 0 \\
+2 & -1 & 2 \\
+1 & 5 & 7
+\end{array}\right],</p><table><tbody><tr><td>A</td><td>= 4((-1)(7) - (2)(5)) - (-3)((2)(7) - (2)(1)) + 0</td></tr></tbody></table><p>\]</p><p>\[ |A| = -32 \]</p></div></div></div></div><div id=outline-container-cramers-rule class=outline-2><h2 id=cramers-rule>Cramer's Rule</h2><div id=outline-text-cramers-rule class=outline-text-2><p>\[ x = \frac{D_x}{D}, y = \frac{D_y}{D}, z = \frac{D_z}{D} \]</p><p>$$ D_x = ≤ft[\begin{array}{ccc}
+d_1 & b_1 & c_1<br>d_2 & b_2 & c_2<br>d_3 & b_3 & c_3
+\right]</p></div></div><br><h3>RELATED</h3></article></content>

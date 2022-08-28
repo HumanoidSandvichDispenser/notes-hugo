@@ -1,0 +1,20 @@
+#toc {
+    height: 100%;
+    width: 384px;
+    padding: 8px;
+}
+
+#toc ul {
+    list-style-type: none;
+    padding-left: 32px;
+}
+
+#toc ul li a {
+    font-size: 16px;
+    color: var(--fg3);
+}
+
+#toc ul li a:hover {
+    color: var(--fg0);
+    background-color: transparent;
+}

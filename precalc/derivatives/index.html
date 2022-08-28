@@ -1,0 +1,47 @@
+<head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Derivatives The derivative of a function \(f'(x)\) describes the instantaneous slope of a function \(f(x)\) at a given \(x\).
+For example, at the constant function \(f(x) = b\), the derivative of the function would be \(f'(x) = 0\) as there is no slope in the function. At the linear function \(f(x) = mx + b\), the derivative of the function would be \(f'(x) = m\) since the slope is constantly \(m\)."><script type=text/javascript src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type=text/x-mathjax-config>
+    MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+    });
+    </script><meta property="og:title" content="Derivative Basics"><meta property="og:type" content="website"><meta property="og:url" content="http://notes.sandvich.xyz/precalc/derivatives/"><meta property="og:description" content="Derivatives The derivative of a function \(f'(x)\) describes the instantaneous slope of a function \(f(x)\) at a given \(x\).
+For example, at the constant function \(f(x) = b\), the derivative of the function would be \(f'(x) = 0\) as there is no slope in the function. At the linear function \(f(x) = mx + b\), the derivative of the function would be \(f'(x) = m\) since the slope is constantly \(m\)."><link rel=stylesheet type=text/css href=/css/style.css><link rel=stylesheet type=text/css href=/css/toc.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css><link rel=canonical href=http://notes.sandvich.xyz/precalc/derivatives/><title>Derivative Basics
+|
+Notes</title></head><header><nav class=navbar><div class=navbar-left><a class=logo href=/></a></div><div class=navbar-right><a href=/apcalc/>/apcalc/</a>
+<a href=/apgov/>/apgov/</a>
+<a href=/cyber/>/cyber/</a>
+<a href=/apush/>/apush/</a>
+<a href=/apbio/>/apbio/</a>
+<a href=/precalc/>/precalc/</a>
+<a href=/apstats/>/apstats/</a></div></nav></header><div class=body-content><div id=toc><nav id=TableOfContents><ul><li><a href=#derivatives>Derivatives</a><ul><li><a href=#power-rule>Power Rule</a><ul><li><a href=#example>Example</a></li></ul></li></ul></li><li><a href=#difference-quotient>Difference quotient</a><ul><li><a href=#example-1>Example</a></li><li><a href=#derivative-from-difference-quotient>Derivative from difference quotient</a></li></ul></li><li><a href=#equation-of-the-tangent-line>Equation of the tangent line</a></li></ul></nav></div><article><header><h1>Derivative Basics</h1><hr><table class=single-info><tr id=info-date><td><i class="bi bi-clock"></i></td><td>Wednesday, 8 September 2021</td></tr><tr id=info-reading-time><td><i class="bi bi-hourglass"></i></td><td>3-minute read</td></tr><tr id=info-word-count><td><i class="bi bi-book"></i></td><td>623 words</td></tr><tr id=info-tags><td><i class="bi bi-tag"></i></td><td></td></tr></table></header><div id=outline-container-derivatives class=outline-2><h2 id=derivatives>Derivatives</h2><div id=outline-text-derivatives class=outline-text-2><p>The derivative of a function \(f'(x)\) describes the instantaneous slope
+of a function \(f(x)\) at a given \(x\).</p><p>For example, at the constant function \(f(x) = b\), the derivative of
+the function would be \(f'(x) = 0\) as there is no slope in the
+function. At the linear function \(f(x) = mx + b\), the derivative of
+the function would be \(f'(x) = m\) since the slope is constantly \(m\).</p><p>To avoid confusion, we will sometimes be using both \(x\) and \(x_0\).
+It is important to know \(f'(x_0)\) is
+\textbf{not the function of a line}, but rather is equal to the slope of
+the line \(f(x)\) at any given \(x_0\).</p><div class=html-block><p>&lt;center></p></div><p>The orange line describes the rate of change of the line tangent to
+\(f(x)\) at \(x_0 = 1\)</p><p>The orange line describes the rate of change of the line tangent to
+\(f(x)\) at \(x_0 = 0.1\)</p><div class=html-block><p>&lt;/center></p></div><p>The derivative notation \(\frac{d}{dx}[f(x)]\) (differentiation with
+respect to \(x\)) will be used in most other cases instead, but it is
+still equivalent to prime notation \(f'(x)\) (\(f\) prime of \(x\)).</p><div id=outline-container-power-rule class=outline-3><h3 id=power-rule>Power Rule</h3><div id=outline-text-power-rule class=outline-text-3><p>How do you find the derivative of any polynomial?</p><p>\[ \frac{d}{dx}(ax^n) = anx^2{n-1} \]</p><p>So given \(f(x) = x^2\), \(\frac{d}{dx}(f(x)) = 2x\)</p><p>Using our function \(f(x) = x^2\) from the previous images, we can
+determine the slope at any point \(x_0\) with \(f'(x_0) = 2x_0\).</p><div id=outline-container-example class=outline-4><h4 id=example>Example</h4><div id=outline-text-example class=outline-text-4><p>Using the function \(g(x) = 3x^4\), plot the instantaneous rate of
+change on a table.</p><p>We can use the power rule to find the derivative.</p><p>\[ \frac{d}{dx}(g(x)) = 3(4)^3 = 12x^3 \]</p><div class=html-block><p>&lt;center></p></div><table><thead><tr><th class=align-right>\(x\)</th><th class=align-right>\(g(x)\)</th><th>slope at \((x, g(x))\)</th></tr></thead><tbody><tr><td class=align-right>0</td><td class=align-right>0</td><td>\(g'(0) = 0\)</td></tr><tr><td class=align-right>1</td><td class=align-right>3</td><td>\(g'(1) = 12\)</td></tr><tr><td class=align-right>2</td><td class=align-right>16</td><td>\(g'(2) = 96\)</td></tr><tr><td class=align-right>3</td><td class=align-right>243</td><td>\(g'(3) = 324\)</td></tr><tr><td class=align-right>4</td><td class=align-right>768</td><td>…</td></tr></tbody></table><div class=html-block><p>&lt;/center></p></div></div></div></div></div></div></div><div id=outline-container-difference-quotient class=outline-2><h2 id=difference-quotient>Difference quotient</h2><div id=outline-text-difference-quotient class=outline-text-2><p>The difference quotient determines the average slope over an interval in
+a function. The difference quotient derives from the slope formula:</p><p>\[ m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{f(x + h) - f(x)}{x + h - x} =
+\frac{f(x + h) - f(x)}{h} \]</p><p>where \(h\) is the length of the interval or change in \(x\).</p><p>The difference quotient yields the slope of the secant line passing the
+two points. As the value \(h\) approaches 0, the secant line starts to
+match the tangent line.</p><div class=html-block><p>&lt;center></p></div><div class=html-block><p>&lt;/center></p></div><p>This means the difference quotient can be used to find the derivative.</p><p>\[ \lim_{h \to 0}\frac{f(x + h) - f(x)}{h} = f'(x) \]</p><div id=outline-container-example-1 class=outline-4><h4 id=example-1>Example</h4><div id=outline-text-example-1 class=outline-text-4><p>Find the difference quotient of \(p(x) = 2x^2 - 4x\).</p><p>\[ \frac{p(x + h) - p(x)}{h} \]</p><p>\[ \frac{2(x + h)^2 - 4(x + h) - 2x^2 + 4x}{h} \]</p><p>\[ \frac{2x^2 + 4xh + 2h^2 - 4x - 4h - 2x^2 + 4x}{h} \]</p><p>\[ \frac{4xh + 2h^2 - 4h}{h} \]</p><p>\[ \frac{h(4x + 2h - 4)}{h} \]</p><p>\[ 4x + 2h - 4 \]</p></div></div><div id=outline-container-derivative-from-difference-quotient class=outline-3><h3 id=derivative-from-difference-quotient>Derivative from difference quotient</h3><div id=outline-text-derivative-from-difference-quotient class=outline-text-3><p>To find the difference quotient, \(h\) must equal \(0\) that
+\((x, f(x))\) and \((x + h, f(x + h))\) are the same point. It is
+important they are the same point since a tangent line can only pass a
+curve at exactly one point.</p><p>Using the difference quotient from the previous example, let \(h = 0\).</p><p>\[ p'(x) = 2x + 4(0) - 1 = 4x - 4 \]</p><p>Using the power rule, we get the same result:
+\(\frac{d}{dx}p(x) = anx^{n-1} = 2(2)(x)^1 - 4x^0 = 4x - 4\)</p></div></div></div></div><div id=outline-container-equation-of-the-tangent-line class=outline-2><h2 id=equation-of-the-tangent-line>Equation of the tangent line</h2><div id=outline-text-equation-of-the-tangent-line class=outline-text-2><p>Since the derivative is the slope of the line tangent to \(f(x)\)
+passing through \((x_0, f(x_0))\), we can use \(f(x_0)\) to determine
+the instantaneous slope at \(x_0\).</p><p>We can then use the point-slope form of a linear equation
+\(y - y_0 = m(x - x_0)\).</p><p>\[ y - f(x_0) = f'(x)(x - x_0) \]</p></div></div><br><h3>RELATED</h3></article></content>

@@ -1,0 +1,44 @@
+<head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Standard Deviation By definition, the standard deviation $s$ is known as the square root of the variance $s^2$ of a dataset.
+$$ s^2 = \frac{\Sigma(x - \bar{x})^2}{n - 1} $$
+import math data = [ 5, 11, 12, 17, 22 ] def mean(): sum_of_list = 0 for x in data: sum_of_list += x return sum_of_list / len(data) def std_dev(): sigma = 0 mean_of_data = mean() for x in data: sigma += pow(x - mean_of_data, 2) return math."><script type=text/javascript src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type=text/x-mathjax-config>
+    MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+    });
+    </script><meta property="og:title" content="Chapter 5"><meta property="og:type" content="website"><meta property="og:url" content="http://notes.sandvich.xyz/apstats/chapter-5/"><meta property="og:description" content="Standard Deviation By definition, the standard deviation $s$ is known as the square root of the variance $s^2$ of a dataset.
+$$ s^2 = \frac{\Sigma(x - \bar{x})^2}{n - 1} $$
+import math data = [ 5, 11, 12, 17, 22 ] def mean(): sum_of_list = 0 for x in data: sum_of_list += x return sum_of_list / len(data) def std_dev(): sigma = 0 mean_of_data = mean() for x in data: sigma += pow(x - mean_of_data, 2) return math."><link rel=stylesheet type=text/css href=/css/style.css><link rel=stylesheet type=text/css href=/css/toc.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css><link rel=canonical href=http://notes.sandvich.xyz/apstats/chapter-5/><title>Chapter 5
+|
+Notes</title></head><header><nav class=navbar><div class=navbar-left><a class=logo href=/></a></div><div class=navbar-right><a href=/apcalc/>/apcalc/</a>
+<a href=/apgov/>/apgov/</a>
+<a href=/cyber/>/cyber/</a>
+<a href=/apush/>/apush/</a>
+<a href=/apbio/>/apbio/</a>
+<a href=/precalc/>/precalc/</a>
+<a href=/apstats/>/apstats/</a></div></nav></header><div class=body-content><div id=toc><nav id=TableOfContents><ul><li><a href=#headline-1>Standard Deviation</a></li></ul></nav></div><article><header><h1>Chapter 5</h1><hr><table class=single-info><tr id=info-date><td><i class="bi bi-clock"></i></td><td>Monday, 1 January 0001</td></tr><tr id=info-reading-time><td><i class="bi bi-hourglass"></i></td><td>1-minute read</td></tr><tr id=info-word-count><td><i class="bi bi-book"></i></td><td>101 words</td></tr><tr id=info-tags><td><i class="bi bi-tag"></i></td><td></td></tr></table></header><div id=outline-container-headline-1 class=outline-2><h2 id=headline-1>Standard Deviation</h2><div id=outline-text-headline-1 class=outline-text-2><p>By definition, the standard deviation $s$ is known as the square root of the variance $s^2$ of a dataset.</p><p>$$ s^2 = \frac{\Sigma(x - \bar{x})^2}{n - 1} $$</p><div class="src src-python"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> math
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>data <span style=color:#f92672>=</span> [ <span style=color:#ae81ff>5</span>, <span style=color:#ae81ff>11</span>, <span style=color:#ae81ff>12</span>, <span style=color:#ae81ff>17</span>, <span style=color:#ae81ff>22</span> ]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>mean</span>():
+</span></span><span style=display:flex><span>    sum_of_list <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> x <span style=color:#f92672>in</span> data:
+</span></span><span style=display:flex><span>        sum_of_list <span style=color:#f92672>+=</span> x
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> sum_of_list <span style=color:#f92672>/</span> len(data)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>std_dev</span>():
+</span></span><span style=display:flex><span>    sigma <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    mean_of_data <span style=color:#f92672>=</span> mean()
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> x <span style=color:#f92672>in</span> data:
+</span></span><span style=display:flex><span>        sigma <span style=color:#f92672>+=</span> pow(x <span style=color:#f92672>-</span> mean_of_data, <span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> math<span style=color:#f92672>.</span>sqrt(sigma <span style=color:#f92672>/</span> (len(data) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;The mean is </span><span style=color:#e6db74>{}</span><span style=color:#e6db74>; the standard deviation is </span><span style=color:#e6db74>{}</span><span style=color:#e6db74>&#34;</span><span style=color:#f92672>.</span>format(mean(), std_dev())</span></span></code></pre></div></div><pre class=example>
+The mean is 13.4; the standard deviation is 6.4265076052238514
+</pre></div></div><br><h3>RELATED</h3></article></content>
