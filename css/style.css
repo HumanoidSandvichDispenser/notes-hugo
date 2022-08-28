@@ -39,7 +39,7 @@
     --fg3: #73788b;
     --nav-bg: #232323;
     --nav-fg: #f5f5f5;
-    --accent: #FCA311;
+    --accent: #fa6432;
     --sans-serif: "Quicksand", "Segoe UI", "Cantarell", sans-serif, Arial;
     --serif: "Source Serif Pro", serif;
     --content-gap: 72px;
@@ -49,21 +49,17 @@
 
 .navbar {
     display: flex;
-    background-color: var(--nav-bg);
-    color: var(--nav-fg);
-    padding: 16px;
     margin-bottom: 0;
-    font-size: 28px;
+    font-size: 20px;
 }
 
-.navbar .logo {
-    background-color: inherit;
-    color: inherit;
+.navbar a {
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    font-weight: 800;
-    margin: 8px;
+}
+
+.navbar a:hover {
+    background-color: inherit;
+    color: var(--fg0);
 }
 
 .navbar > .navbar-left {
@@ -93,18 +89,6 @@ details > summary:hover {
     transition-duration: 200ms;
 }
 
-div.navbar-right a, div.navbar-right span {
-    margin: 8px;
-    font-weight: 300;
-    background-color: transparent;
-    color: var(--fg3);
-    text-decoration: none;
-}
-
-div.navbar-right a:hover {
-    color: var(--bg0);
-}
-
 .accent {
     color: var(--accent);
 }
@@ -114,6 +98,22 @@ body {
     color: var(--fg0);
     font-family: var(--sans-serif);
     margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--fg3);
 }
 
 .body-content {
@@ -131,6 +131,11 @@ article {
     margin: 64px;
     padding: 2px 32px 32px 32px;
     flex-grow: 1;
+}
+
+article.list {
+    margin: 64px auto;
+    overflow: unset;
 }
 
 article > header {
@@ -234,7 +239,7 @@ hr {
 
 a, a:visited {
     color: var(--accent);
-    background-color: var(--bg0);
+    background-color: transparent;
     transition-duration: 200ms;
 }
 
@@ -313,22 +318,31 @@ a.tag.large:hover {
 }
 
 .post {
-    /*background-color: var(--bg0-bright);*/
+    /*background-color: var(--bg0-bright);
     width: 100%;
-    margin: var(--small-gap);
+    padding: var(--small-gap);*/
+    font-weight: 500;
 }
 
-.post a.post-title {
-    color: var(--fg0);
-    font-size: 20px;
-    font-weight: 500;
-    background-color: transparent;
+.post > a {
+    display: block;
+    padding: var(--small-gap);
     text-decoration: none;
 }
 
-.post a.post-title:hover {
-    text-decoration: underline;
-    background-color: transparent;
+.post .post-title {
+    color: var(--fg0);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.post > a:hover {
+    background-color: var(--bg1);
+}
+
+.post .post-title .date {
+    color: var(--fg3);
+    margin-right: 2rem;
 }
 
 #nextprev > div {

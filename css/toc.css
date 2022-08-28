@@ -1,7 +1,57 @@
 #toc {
-    height: 100%;
+    position: sticky;
+    max-height: 100vh;
     width: 384px;
     padding: 8px;
+    overflow-y: scroll;
+    top: 0;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#toc h1 {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 16px;
+    padding-left: 32px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #toc {
+        position: fixed;
+        height: 32px;
+        top: 0;
+        left: 50%;
+        margin-left: -200px;
+        background: var(--bg1);
+        overflow: hidden;
+        max-height: 256px;
+        border-radius: 0 0 16px 16px ;
+        font-size: 24px;
+        z-index: 500;
+        transition-duration: 200ms;
+        padding: 16px;
+    }
+
+    #toc:hover {
+        height: min(1024px, 100% - 128px);
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
+        background: var(--bg0);
+        box-shadow: #00000050 2px 2px 16px, #00000080 0 0 1024px;
+        overflow-y: scroll;
+    }
+
+    #toc h1 {
+        position: sticky;
+        pointer-events: none;
+    }
+
+    #toc li {
+        padding-right: 16px;
+    }
 }
 
 #toc ul {
