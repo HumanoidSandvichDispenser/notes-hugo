@@ -1,7 +1,8 @@
 {{ define "main" }}
-{{ .Content }}
-<div>
-    <article>
+<main>
+    <article class="list">
+        {{ partial "header.html" . }}
+        {{ .Content }}
         <hr>
         {{ range .Site.Sections }}
             <details>
@@ -14,5 +15,5 @@
             </details>
         {{ end }}
     </article>
-</div>
+</main>
 {{ end }}

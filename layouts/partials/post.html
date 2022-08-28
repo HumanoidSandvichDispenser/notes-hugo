@@ -1,15 +1,17 @@
 <div class="post">
-    <div>
-        <a href="{{ .RelPermalink }}" class="post-title">
+    <a href="{{ .RelPermalink }}">
+        <span class="post-title">
+            <span class="date">
+                {{ if .Date }}
+                    {{ .Date.Format "2006-01-02" }}
+                {{ end }}
+            </span>
             {{ .Title }}
-        </a>
-        <i class="small">
-           {{ .FuzzyWordCount }} words
-        </i>
-    </div>
-    <div class="small">
-        {{ if .Date }}
-            {{ .Date.Format "2 January 2006" }}
-        {{ end }}
-    </div>
- </div>
+            <!--div>
+                <i class="small">
+                    {{ .FuzzyWordCount }} words
+                </i>
+            </div-->
+        </span>
+    </a>
+</div>

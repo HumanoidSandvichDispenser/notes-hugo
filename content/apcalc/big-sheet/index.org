@@ -80,7 +80,9 @@ A limit exists at a point when the function approaches a value at the point, /wh
 
 A function is continuous when the limit exists (left-hand and right-hand) and $f(x)$ exists at that point.
 
-$\lim_{x \to c} f(x) = f(c)$
+\[
+\lim_{x \to c} f(x) = f(c)
+\]
 
 ** Continuity of an interval and function
 

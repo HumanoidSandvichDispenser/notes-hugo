@@ -1,10 +1,11 @@
 {{ partial "head.html" . }}
-{{ partial "header.html" . }}
 <div class="body-content">
     <div id="toc">
+        <h1>Table of Contents</h1>
         {{ .TableOfContents }}
     </div>
     <article>
+        {{ partial "header.html" . }}
         <header>
             <h1>{{ .Title }}</h1>
             <hr>
@@ -37,8 +38,7 @@
         </header>
         {{ .Content }}
         <br>
-        <!--{{ partial "nextprev.html" . -}}-->
+        {{ partial "nextprev.html" . -}}
         {{ template "_internal/disqus.html" . }}
-        {{ partial "related.html" . -}}
     </article>
 </content>

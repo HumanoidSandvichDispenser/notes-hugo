@@ -1,10 +1,11 @@
 {{ partial "head.html" . }}
-{{ partial "header.html" . }}
-<article>
+<article class="list">
+    {{ partial "header.html" . }}
     {{ if eq .Title "Tags" }}
         <h1>Filter by Tag</h1>
         {{ range .Pages }}
-            <a class="tag large" id="tag_{{ .Title | lower }}" href="{{ .Permalink }}">#{{ .Title }}</a>
+            <a class="tag large" id="tag_{{ .Title | lower }}"
+                    href="{{ .Permalink }}">#{{ .Title }}</a>
         {{ end }}
     {{ else }}
         {{ if eq .Parent.Title "Tags" }}
@@ -20,15 +21,11 @@
                     results
                 {{ end }}
             </h2>
-        {{ else if eq .Section "category" }}
-            <h1>
-                {{ .Title | title | pluralize }}
-            </h1>
         {{ end }}
-        <hr>
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
         {{ range .Pages.ByDate }}
             {{ partial "post.html" . }}
-            <hr>
         {{ end }}
     {{ end }}
 </article>
