@@ -128,7 +128,7 @@ article *::selection {
 article {
     background-color: var(--bg0);
     max-width: 768px;
-    margin: 64px;
+    margin: 32px;
     padding: 2px 32px 32px 32px;
     flex-grow: 1;
 }
@@ -247,6 +247,10 @@ a:hover {
     color: var(--bg0);
     background-color: var(--fg0);
     transition-duration: 200ms;
+}
+
+img.vertical-center {
+    vertical-align: middle;
 }
 
 div.single-info .material-icons {

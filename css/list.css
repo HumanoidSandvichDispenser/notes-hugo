@@ -1,0 +1,31 @@
+.list-header {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.list-header .image-container {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+}
+
+.image-container > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: middle center;
+    filter: brightness(50%);
+}
+
+.list-header .title {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    color: white;
+}
