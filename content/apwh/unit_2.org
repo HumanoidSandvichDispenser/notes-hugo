@@ -1,0 +1,91 @@
+#+TITLE: Unit 2
+#+DATE: <2021-05-08 Sat>
+
+- Silk Road connected China to Europe and passed through Southwest Asia
+- Indian Ocean connected East Asia with East Africa and passed through
+  Southeast and South Asia
+- Trans-Saharan connected North Africa to sub-Saharan Africa
+
+* Similarities Between Trade Routes
+:PROPERTIES:
+:CUSTOM_ID: similarities-between-trade-routes
+:END:
+- Depended on establishments of large states (e.g. Mongols and Silk
+  Road)
+
+- New technologies
+
+  - Magnetic compass
+
+  - Lateen sail
+
+  - Stern-post rudder
+
+- Missionaries
+
+- Introduction of new crops to new places
+
+- Growth of trading cities
+
+- Spread of culture and cross-cultural exchanges
+
+* Differences Between Trade Routes
+:PROPERTIES:
+:CUSTOM_ID: differences-between-trade-routes
+:END:
+- Different technologies and methods of transportation
+
+- Different religions were spread among different trade routes
+
+* Similarities and Differences Chart
+:PROPERTIES:
+:CUSTOM_ID: similarities-and-differences-chart
+:END:
+
+#+begin_center
+|               | Goods                                        | Technology                                        | Religion                                       |
+|---------------+----------------------------------------------+---------------------------------------------------+------------------------------------------------|
+| Silk Roads    | Silk, Porcelain, Gunpowder, Horses, Textiles | Saddles, Caravanserai                             | Buddhism, Neoconfucianism, Islam               |
+| Indian Ocean  | Gold, Ivory, Fruit, Textiles, Pepper, Rice   | Astrolabe, Compass, Sternpost Rudder, Lateen Sail | Christianity, Buddhism, Neoconfucianism, Islam |
+| Trans-Saharan | Horses, Salt, Gold, Slaves                   | Saddles                                           | Islam                                          |
+
+#+end_center
+
+* Cultural Consequences
+:PROPERTIES:
+:CUSTOM_ID: cultural-consequences
+:END:
+- Zen Buddhism originated from China but spread to Korea and Vietnam
+
+- African Bantu converted to Islam
+
+  - Birth of Swahili language
+
+- Ibn Battuta and Marco Polo
+
+* Environmental Consequences
+:PROPERTIES:
+:CUSTOM_ID: environmental-consequences
+:END:
+- Disease traveled
+
+  - Black plague spread from China to Europe
+
+  - Surviving workers negotiated for better working conditions and wages
+
+* Mongols
+:PROPERTIES:
+:CUSTOM_ID: mongols
+:END:
+- Began as scattered tribes
+
+- United by Genghis Khan
+
+- Able to establish Pax Mongolica
+
+- Trade flourished around Afro-Eurasia
+
+- Quickened spread of Black Death
+
+- Most states that arose after the Mongols used similar methods to
+  consolidate power

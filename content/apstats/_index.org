@@ -1,0 +1,3 @@
+#+TITLE: AP Statistics
+#+DESCRIPTION: Math class with formulas people just made up
+#+COVER: /img/forsenE.jpg

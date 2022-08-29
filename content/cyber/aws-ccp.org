@@ -1,0 +1,975 @@
+#+TITLE: AWS Certified Cloud Practitioner
+#+DATE: <2022-05-30 Mon>
+#+OPTIONS: H:5
+
+* Cloud Concepts
+** Introduction to Cloud Computing
+*** NIST Cloud Computing Definition
+- On-demand self-service
+- Broad netework access
+- Resource pooling
+  - Multi-tenant environments
+- Rapid elasticity
+- Measured service
+*** Service Models
+- Infrastructure as a Service (IaaS)
+- Platform as a Service (PaaS)
+- Software as a Service (SaaS)
+*** Deployment Models
+- Private cloud
+- Community cloud
+- Public cloud
+- Hybrid cloud
+** Overview of Amazon Web Services
+*** Compute
+- Amazon Elastic Compute (EC2)
+- AWS Lambda
+- Amazon Elastic Container Service (ECS)
+*** Storage
+- Amazon Elastic Block Store (EBS)
+- Amazon Simple Storage Service (S3)
+- Amazon Glacier
+*** Application Services
+- Amazon Simple Notification Service (SNS)
+- Amazon Simple Email Service (SES)
+- Amazon Simple Queue Service (SQS)
+*** Datastores
+- Amazon Relational Database Service (RDS)
+- Amazon DynamoDB
+- Amazon ElastiCache
+*** Analytics
+- Amazon Kinesis
+- Amazon Elasticsearch Service
+- Amazon Redshift
+- Amazon EMR
+- Amazon Athena
+*** Networking
+- Amazon Virtual Private Cloud (VPC)
+  - Subnets
+  - Routing
+  - Network Access Control Lists
+  - Security Groups
+*** Development/Deployment
+- AWS CodeCommit
+- AWS CodeDeploy
+- AWS CodeBuild
+- AWS CodePipeline
+- AWS Elastic Beanstalk
+- AWS OpsWorks
+** AWS Cloud Value Proposition
+*** What AWS Provides
+- On-demand resources
+  - Get what you need /when you need it/
+- Pay as you go
+  - Pay for what you use
+- No long-term commitments
+  - Elasticity
+- Highly automated
+- Managed services
+*** We Benefit
+- Opex over capex
+- Gain flexibility and agilty
+- Immediate scalability
+- Lower time to market
+- Lower variable costs
+- Lower upfront costs
+- Easier cost allocation
+** Six Advantages and Benefits of Cloud Computing
+- Trade capital expense for variable expense
+- Benefit from massive economies of scale
+- Stop guessing capacity
+- Increase speed and agility
+- Stop spending money on running and maintaining data centers
+- Go global in minutes
+* Technology
+*** Well-Architected Infrastructure
+- Reliable
+  - Fault tolerant
+  - High availability
+  - Durability
+- Secure
+- Performant
+- Cost-effective
+- Operationally excellent
+  - Monitored
+  - Automated
+  - Effective processes
+** AWS Global Infrastructure
+*** Choosing a region
+Things to consider:
+- Available services and features
+- Cost of services
+- Latency and proximity
+- Disaster recovery
+- Security and compliance laws
+*** Availability Zones
+- Regions are split in at least two availability zones
+- Availability zones have at least one data center
+- Spread out and apart
+- Connected to each other with a private fiber line
+*** Edge Locations
+- Important locations for CDN and DNS
+- Reside outside AWS region
+- Customers do not have access to an edge location itself
+** Networking with Amazon VPC
+[[./assets/vpc.png]]
+*** Amazon VPC
+- /Logically/ isolated network
+- Created per account per region
+- A single VPC spans a single region
+- Can all use all AZs in a region
+- Can peer with other VPCs
+- Uses internet and VPN gateways
+*** Three-Tier Architecture
+1. Load Balancing tier
+2. Application tier
+3. Database tier
+*** Subnets enable...
+- Security via isolation
+- High-availability
+- Fault tolerance
+- Performance
+** Routing and Firewalls
+*** Routing
+- Internet gateways allow networks to communicate with each
+- Route tables determines the destination of the traffic
+  - Route tables, by themselves, DO NOT allow instances to communicate to the internet; it only routes traffic
+- Instances need a *Public IP address to route its traffic to the internet*
+*** Network Access Control List
+- Acts as a firewall for the subnet
+- Allow and denies traffic to the subnets and destination ports
+*** Security Groups
+- Firewall for the machine
+- *Implicitly denies, can only allow*
+** DNS, VPN, and Direct Connect
+*** Route 53
+- Register domains
+- Use AWS nameservers
+- Public and private DNS zones
+- Automated via API
+- Health checks
+- Different routing methods
+  - Latency
+  - Geographic
+  - Weighted
+  - *Failover*
+*** Hardware VPN
+- Private VPN connection to VPC
+- Uses two Amazon Routers
+- Good for simple tasks
+*** Direct Connect
+- Fiber connection to AWS Region
+- Through AWS Direct Connect Point of Presence
+** Elastic Compute Service (EC2)
+- Virtual machines or on bare metal
+- Combinations of CPU, memory, disk IO
+- Launch one to thousands of instances
+- On-demand, reserved, spot billing
+- Hourly fee includes OS license
+- Normally multi-tenant
+- Dedicated hosts
+  - Run licensed software
+- Dedicated instances
+  - Single tenant
+*** EC2 Best Practices
+- Treat as disposable
+- "/Immutable infrastructure/"
+- Treat logs as streams (stream to other services)
+- Leverage roles
+- Automate deployments and enable scaling with auto scaling
+- Monitor with CloudWatch
+** Lightsail
+- Simpler than EC2
+- Provides an easier way to host a VPS
+- Less configurable overall than EC2
+** Elastic Block Store (EBS)
+*** Block Storage vs Object Storage
+**** Block Storage
+- Update volume blocks with relevant bits
+- More efficient transfer protocol
+- Can be mounted
+- Best for random IO
+**** Object Storage
+- Upload entire file
+- HTTP to transfer
+- Can not be mounted
+- No random IO, best for static data
+*** EBS
+- Data independent of instance it is attached to
+- Connected over network
+- Pay for provisioned storage
+- *Exist in a single AZ*
+- Point-in-time snapshots
+- Capabilities
+  - Can detach from instances and reattach
+  - Can be encrypted
+  - Can be used in RAID or LVM
+- Best for file systems and random IO
+- *Not encrypted by default*
+** Elastic Load Balancing
+- Distributes requests and traffic across EC2 instances
+- Spans ONE region and can use every AZ
+- Secure, resilient, scalable by design
+- Support EC2 health checks
+- Integrates with Auto Scaling
+- Integrates with Route 53
+- Types of balancers
+  - Classic
+  - Application
+  - Network
+*** Classic Load Balancer
+- Managed by AWS
+- *Layer 4 and 7*
+- /Listens/ to ports
+- /Registers/ onto instances
+- /Forwards/ connections to any port
+- Can offload SSL and allows to choose security options such as the SSL version, etc.
+*** Application Load Balancer
+- *Layer 7* requests
+- /Listens/ to ports
+- Uses target groups made up of EC2 instances
+- Rules can dictate which traffic goes to which target group
+  - Based on URL path or domain name
+  - Content filtering
+- Dynamic port mapping allows instances to receive on different ports
+*** Network Load Balancer
+- *Layer 4* requests
+- /Listens/ to ports
+- Uses target groups
+- Connections to a static IP address can be spread across instances
+- Useful for DNS, firewall rules, and long-running connections
+** Simple Storage Service (S3)
+- Object storage
+- Objects that reside in buckets
+- Powered by distributed cluster that spans region
+- ~https://bucket.aws-region.com/object~
+- *Data at rest is not encrypted by default*
+*** Use Cases
+- Static websites
+- CSS, JS
+- Images
+- Software downloads
+- Assets that do not change often
+*** S3 Infrequent Access
+- Accessed less frequently but still has rapid access
+- Standard
+  - Stores in multiple AZs
+- One-Zone
+  - Stores in only a single AZ
+  - More cost effective
+*** Bucket Policies and ACLs
+- Data can not be publicly accessed by default
+- Policies are only at the bucket level
+- ACLs can control access to both the bucket and its objects
+** Snowball
+- Petabyte scale data migration
+- Physical transfer of data from private data center to AWS infrastructure
+- Saving money on internet usage
+** Storage Gateway
+- Seamless integration between private data centers and the AWS infrastructure
+- Snapshots of private data center on S3
+** Amazon CloudWatch
+- Collects metrics from services
+- Stores metrics up to 2 weeks
+- Accessible via API
+- Unique set of metrics per service
+- Custom metrics (billed extra)
+*** Types of metrics
+- EC2
+  - Default 5 minute interval
+  - 1 minute extra
+  - Reported by hypervisor
+- ELB
+  - Requests/min
+  - Healthy and unhealthy hosts
+  - 1 minute interval
+- RDS
+  - Memory, connections, disk
+- DynamoDB
+  - Read/write throughput, storage
+- Billing usage (different from AWS Budgets is that Budgets notifies on *forecasted expenditure threshold*)
+*** CloudWatch Alarms (Notifications)
+- Triggered on breach of threshold
+- Can trigger
+  - Auto Scaling
+  - Termination
+  - Reboot
+- Up to 5000 alarms per account
+*** CloudWatch Logs
+- Collect logs by streaming
+  - Configure agent on instances to automatically stream logs to CloudWatch
+- Collect Route 53 DNS queries
+- Monitor CloudTrail events
+- Can archive to S3
+- Can process with Lambda
+**** Searching and Filtering Log Data
+- Search using specific syntax
+- Create metric filters
+  - Counts as custom metric
+  - Several different filters
+    - Number of 404s
+    - Bytes transferred
+    - Number of exceptiosn
+** Auto Scaling
+- Replaces failed and unhealthy instances
+- Change capacity according to load
+- Maintain fixed size fleet
+- Works with Amazon CloudWatch
+- Supports events
+  - SNS
+  - Lambda
+*** Demand-Based Scaling
+- Scaling policies
+- CloudWatch alarms triggered by a CPU threshold
+*** Reliable Applications
+- Easily replace failing machines
+- In the event an AZ goes down, autoscaling scales a proportionate amount to the other availability zones
+** CloudFront
+- Caches content at *edge locations*
+- Can be configured to fetch data from multiple services based on URL, geography, etc.
+- Static and dynamic content
+- Capabilities
+  - Custom domain name
+  - Custom SSL certificates
+  - RTMP and HLS streaming
+** Lambda
+- "Serverless" computing (PaaS)
+  - AWS managed
+- Great for
+  - Scheduled tasks
+  - Microservices
+  - Event handlers
+- Pay for compute time per 100ms
+- How it works
+  - Create functions
+  - Invoke functions
+    - CLI or SDK
+    - Events
+  - AWS handles:
+    - Infrastructure
+    - Deployment of code
+    - Scaling
+** Relational Database Service (RDS)
+- AWS manages the infrastructure, platform, and database software (SaaS)
+  - Reduced operational burden
+  - AWS handles:
+    - OS & DB installation
+    - OS Patches
+    - DB engine minor updates
+    - Backups
+    - Failover
+- RDS is *not a database* but a database management service
+  - Therefore it is a SaaS
+- Choice of
+  - MySQL
+  - SQL Server
+  - Oracle
+  - PostgreSQL
+  - MariaDB
+  - Amazon Aurora
+- Read replicas
+*** Multi-AZ Deployment
+- AWS handles synchronous replication to increase availability
+- Automatic failover
+*** Backups
+- Customers can control backup window
+- Point-in-time restore
+- Retained /up to 35 days/
+- *Backups are deleted along with the instance*
+**** Manual Snapshots
+- Can copy snapshots to other regions
+- Retained /indefinitely/
+*** Amazon Aurora
+- May see performance increase (5x faster) compared to MySQL
+- Storage up to 64TB
+  - Auto-scaled and storage automatically provisioned
+  - Six copies of data replicated across three AZs
+- Up to 15 read replicas
+- Aurora Serverless (new service)
+*** Database Migration
+- AWS Database Migration Service
+  - Supports widely-used DBs
+  - Heterogeneous/homogeneous DBs
+  - Virtually zero downtime
+  - Schema conversion tool, allowing to migrate to another DB engine
+** DynamoDB
+- NoSQL database management service
+  - Non-relational database
+- Fast, single-digit millisecond response regardless of database size
+- AWS Managed
+  - Built-in security, resilience
+  - Replicated across multiple AZs
+  - *No manual intervention required*
+  - No limits to storage or throughput
+  - Customer provisions the throughput
+    - Reads
+    - Writes
+    - Can auto-scale
+*** DynamoDB Tables
+- No joins/relationships
+- *Schema-less*
+  - Key-value and documents
+- No table size limit
+- 400KB item size limit
+*** Use Cases
+- Ad impression/clicks
+- Gaming leaderboards
+- Shopping carts
+- Session/state storage
+- Operational state/history
+** ElastiCache
+- Scale a distributed cache-in environment in the cloud
+- Frequent queries are stored and cached
+  - Data retrieval becomes faster
+** S3 Glacier
+- Archival storage
+- Lower cost
+- Write archives
+  - Transition from S3
+  - Direct upload
+- *No on-demand access to data*
+  - Download via retrieval request
+- Encrypted by default
+- Composed of Archives, Vaults, and Access Policies
+  - Vaults are composed of Archives, access to which is controlled by Access Policies
+** Redshift
+- Petabyte scale data warehouse
+- AWS Managed
+- Parallel queries
+- Ideal for analytical applications
+** Elastic Beanstalk
+- /Application/ management platform
+- Upload applications without dealing with the underlying infrastructure
+  - Ideal for developers
+  - Automatically manages an environment of AWS services and deploys applications
+- Automatically handles
+  - Capacity provisioning
+  - Load balancing
+  - Auto scaling
+  - Monitoring
+  - Deploying
+** CloudFormation
+- Template-based infrastructure management
+  - Describe the resources through templates and ways they should be used
+  - *"Infrastructure as Code"*
+- /Declarative/ programming
+- Write once, deploy many (repeatable)
+** Web Application Firewall
+- *Layer 7* content filtering
+  - Rule-based
+- Can block, allow, or count
+- Integrates with CloudFront
+- Protects against
+  - SQL injection
+  - XSS
+- Blocks based on
+  - IP
+  - URI strings
+  - HTTP headers and bodies
+- Rate limits
+- Managed rules for common threats
+** AWS Shield
+- DDOS Protection
+- Standard
+  - Available for free to everyone
+  - UDP reflection
+  - SYN floods
+  - SSL renegotiation
+  - SSL regeneration
+  - Slow loris attacks
+- Advanced
+  - Integrates with AWS WAF
+  - Access to DDoS Response Team
+** End of Chapter FRQs
+In this section, you are given 12 free response questions, nine of which will be a Short Answer Question, and the other three being a simple free response.
+*** Stimulus-Based SAQs
+1. A customer wants to be able to store archived data in Glacier. The data should be archived almost immediately after 10 days of age.
+   a. Explain ONE drawback of storing data in Glacier.
+   b. Identify ONE service the customer should use to store the data before archiving it.
+   c. Identify ONE responsibility of AWS in Glacier that is typically managed by the customer.
+*** No Stimulus SAQs
+1. The following prompts pertain to Amazon VPC.
+   a. Explain ONE major difference between Network Access Control Lists (NACLs) and Security Groups.
+   b. Explain another major difference between Network Access Control Lists (NACLs) and Security Groups.
+   c. Explain ONE major difference between VPC Endpoints and Internet Gateways.
+2. The following prompts pertain to Amazon EBS
+   a. Explain ONE disadvantage of EBS over EFS.
+   b. Explain ONE advantage of EBS over EFS.
+   c. Identify ONE service in which EBS can store snapshots in.
+*** Simple Free response
+1. A customer wants to automatically scale instances based on demand and trigger a Lambda function when services reach a specified limit. What service can be used to accomplish both of these tasks?
+2. What service allows for large scale data analysis?
+3. What service is fully managed by AWS that can run a MySQL database?
+* Security
+** Shared Responsibility Model
+- AWS is responsible for security *OF* the cloud
+  - Physical security
+  - Network
+  - APIs
+  - Hypervisor
+  - Managed Services (storages, databases)
+- Customer is responsible for security *IN* the cloud
+  - Operating system
+  - Network & firewall configuration
+  - Identity and access
+  - Applications
+  - Data
+  - Encryption at rest and in transit
+- Controls
+  - Inherited
+  - Shared
+    - Patch management
+    - Configuration management
+  - Customer specific
+  - Zone security
+** Identity and Access Management (IAM)
+IAM authenticates and authorizes via policies.
+- Users
+- Groups
+- Password policy
+- MFA
+
+| Credential               | Used for                   |
+|--------------------------+----------------------------|
+| Email address + password | Master account             |
+| Username + password      | AWS Web Console (IAM User) |
+| Access Key + Secret Key  | CLI, SDK                   |
+
+*** Policies
+- Determine authorization or permissions
+- Written in JSON
+- Policy types
+  - Managed policy
+    - Can be used for multiple users
+  - Inline policy
+    - Written directly on a user
+- Evaluation logic
+  1. Implicitly deny
+  2. Explicit deny
+  3. Explicit allow
+*** Roles
+- Use /temporary/ credentials
+- Delegate permissions to
+  - EC2 instance
+  - AWS service
+  - A user (elevating privileges)
+  - Separate account for cross account sharing
+*** Federated Users
+- Organizational users
+- Web/mobile app users
+  - Bypass APIs
+*** AWS New Account First Steps
+1. Enable /CloudTrail/
+2. Create an admin user in IAM
+3. Enable MFA on root account
+4. Enable /Cost and Usage Report/
+5. Log out of root account
+6. Log in with admin user
+7. Create additional users, groups, etc.
+*** IAM Best Practices
+- Root credentials
+- Follow principle of least privilege
+- Rotate access keys
+- Enable MFA
+- Monitor with CloudTrail
+** AWS Organizations
+- Eases management of multiple AWS accounts
+- Automate creation of accounts
+- Service Control Policies (SCPs)
+*** Organization Billing
+- Consolidated billing
+  - One bill, many accounts
+  - Aggregated volume pricing
+- Detailed billing
+  - Published to S3 bucket
+  - Import into spreadsheet
+  - Filter by service, tag, etc.
+** AWS Assurance Programs
+- Certifications/Attestations
+- Laws/Regulations/Privacy
+- Alignments/Frameworks
+AWS is compliant to many programs at the physical level. The customer
+must work towards compliance, and is responsible at the application
+level.
+*** Global Assurance Programs
+- Cloud Security Alliance
+- ISO 9001
+- ISO 27001
+- ISO 27017
+- ISO 27018
+- PCI DSS Level 1
+- SOC 1, 2, 3
+*** US Assurance Programs
+- FedRAMP
+- FIPS
+- FISMA
+- HIPAA
+- ITAR
+- MPAA
+*** HIPAA Compliance
+- AWS is not directly certified, but customers can
+- AWS is compliant at the physical layer
+- Medical records
+*** PCI DSS Compliance
+- Cardholder data
+- Sensitive authentication data
+** AWS Config
+- Resource inventory
+- Configuration history
+- Determine compliance against rules
+- Compliance auditing
+- Security analysis
+- Change tracking
+** AWS Service Catalog
+- Manage catalogs of approved IT services
+- Achieve consistent governance
+** AWS Artifact
+- Reports/details of >2500 security controls
+- On-demand access to security and compliance documents
+** AWS CloudTrail
+- Records all calls made to AWS APIs
+- Delivers log files to S3 bucket
+  - Identity
+  - Source IP
+  - Request and response details
+  - Encrypted by default
+- Does *NOT* record
+  - OS system logs
+  - DB queries
+** Amazon Guard Duty
+- Threat detection service
+- Monitors for malicious, suspicious activity and unauthorized behavior
+- Uses ML to analyze for AWS logs
+  - CloudTrail logs
+  - VPC Flow logs
+  - DNS logs
+** Amazon Macie
+- Fully managed service
+- Uses ML to monitor *S3 data access* activity for anomalies and data leaks
+- Sensitive data
+** Encryption and Key Management
+- Services that offer encryption
+  - S3
+  - EBS
+  - RDS
+  - S3 Glacier
+  - SQS
+- *AWS Key Management Service (KMS)* to manage encryption keys
+  - Fully managed
+  - Multi-tenant
+- *AWS CloudHSM*
+  - Hardware security module
+  - Single-tenant
+  - On-demand
+  - SSL offloading
+  - Private key storage
+  - Transparent Data Encryption
+** Resource Groups and Tagging
+- Tags are "keys" that act as metadata for organizing AWS resources
+- Resource groups are resources that share similar tags
+** Vulnerability and Penetration Testing
+- *Permission is required*
+- Identify the instances to be tested
+- Specify start and end date/times
+- AWS does not permit testing of specific instances
+  - =m1.small=
+  - =t1.micro=
+  - =t2.nano=
+- Testing is permitted on
+  - EC2
+  - RDS
+  - Aurora
+  - CloudFront
+  - API Gateway
+  - Lambda
+  - Lightsail
+  - DNS Zone Walking
+** End of Chapter FRQs
+In this section, you are given 5 free response questions, three of which
+will be a Short Answer Question, and the other two being a simple free
+response.
+1. Explain how TWO differences between CloudHSM and KMS determine their
+   own specific use case.
+2. Identify ONE specific example of the customer's responsibility in the
+   cloud according to the shared responsibility model.
+3. Identify ONE AWS feature similar to the evaluation logic of policies.
+4. A customer wants to migrate from on-premises to AWS services. What
+   aspects of the services would the customer still be responsible for?
+5. What feature allows two units of the same organization to achieve a
+   lower bill than when under separate organizations?
+* Billing and Pricing
+[[./assets/instance-pricing.png]]
+** Compute Pricing
+*** EC2 On-Demand Pricing
+- No long-term commitments
+- Large fixed costs to smaller variable costs
+- Fees include OS license
+- Mostly billed per second, with a minimum of 60 seconds
+*** EC2 Reserved Instances
+- Up to 75% discount
+- Provide /capacity reservation/
+- 1-year or 3-year term
+**** Reserved Instance Types
+- Standard RIs
+  - Up to 75% off on-demand
+  - Best for steady-state usage (24/7)
+- Convertible RIs
+  - Up to 54% off
+  - Can change the attributes of reserved instance
+  - Best for steady-state usage
+- Scheduled RIs
+  - Available and discounted during a specified time window
+  - Best for a predictable schedule
+*** EC2 Spot Pricing
+- Discounts on spare capacity
+- Save up to 90%
+- Price changes, depending on instance type, AZ, supply/demand
+- Essentially a clearance sale
+- *Can be interrupted*
+- Integrated with
+  - EMR
+  - Autoscaling
+  - ECS
+  - CloudFormation
+- Best for flexible schedule and test environments
+*** Lambda Pricing
+- Charged per GB per 100ms
+- Charged per 1 million requests
+- Free tier available (1 mil req/mo, 400 TB-sec/mo)
+- Additional charges for bandwidth and S3
+*** Data Transfer Pricing
+- Charged $/GB/mo
+- Inbound is generally free
+- S3 to CloudFront is free
+- Outbound to internet charged, with tiered pricing
+  - Cross-region traffic
+- Cross-AZ traffic may be charged depending on the service
+  - Generally free for most services
+- VPC peering
+** Database Pricing
+*** RDS Pricing
+- Instance type
+- DB engine (license fees)
+- Reserved instance discounts
+- Storage, $/GB/mo, $/IOPS/mo
+- Multi-AZ deployment charged double
+*** DynamoDB Pricing
+- Provisioned throughput, $/rw capacity unit
+- Consumed storage, $/GB/mo
+- Reserved /capacity/ discounts
+** Storage Pricing
+*** EBS Pricing
+- Provisioned storage, $/GB/mo
+- Additional costs for provisioned IOPS
+- Additional costs for EBS snapshots to S3
+*** S3 Pricing
+- Consumed storage, $/GB/mo
+- Additional costs for requests
+  - PUT+COPY+POST+LIST $/1000 req.
+  - GET $/1000 req.
+- Storage classes (S3-IA, S3 Glacier)
+** AWS Calculators
+- AWS Pricing Calculator - estimates a total given a scenario
+- AWS Total Cost of Ownership - compares on-premises vs. AWS
+- AWS Cost Explorer - visualize cost and expenditure over time
+- AWS Cost and Usage Reports
+  - Highly detailed billing information
+  - Save CSV into S3 bucket
+  - Integrate with Redshift, Quicksight
+** AWS Budgets
+- Sends alerts when your cost usage may exceed budgeted amount
+- Sends alerts when under utilizing reserved resources
+** AWS Trusted Advisor
+- Offers best practice recommendations
+- Cost optimization
+- Performance
+- Security
+- Fault tolerance
+*** Seven Core Checks
+1. S3 bucket permissions
+2. Security groups in VPCs, unrestricted ports
+3. IAM usage/permissions
+4. MFA on root account
+5. EBS snapshots publicly readable
+6. RDS snapshots publicly readable
+7. Service limits
+   - Hard limits
+   - Soft limits
+*** Full Benefits
+- Notifications
+- Programmatic access
+** AWS Support
+*** Overview
+#+BEGIN_EXPORT html
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th>Developer</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Trusted Advisor</td>
+    <td>Seven Core checks<br></td>
+    <td>All checks</td>
+    <td>All checks</td>
+  </tr>
+  <tr>
+    <td>Tech support</td>
+    <td>Business hours, email<br><br>One contact, unlimited cases</td>
+    <td>24/7 phone, email, chat access<br><br>Unlimited contacts and cases</td>
+    <td>24/7 phone, email, chat access<br><br>Unlimited contacts and cases</td>
+  </tr>
+  <tr>
+    <td>General guidance</td>
+    <td>&lt; 24 business hours</td>
+    <td>&lt; 24 hours<br></td>
+    <td>&lt; 24 hours</td>
+  </tr>
+  <tr>
+    <td>System impaired</td>
+    <td>&lt; 12 business hours</td>
+    <td>&lt; 12 hours</td>
+    <td>&lt; 12 hours</td>
+  </tr>
+  <tr>
+    <td>Production sys. impaired</td>
+    <td></td>
+    <td>&lt; 4 hours</td>
+    <td>&lt; 4 hours</td>
+  </tr>
+  <tr>
+    <td>Production sys. down</td>
+    <td></td>
+    <td>&lt; 1 hour</td>
+    <td>&lt; 1 hour</td>
+  </tr>
+  <tr>
+    <td>Business-crit. sys. down</td>
+    <td></td>
+    <td></td>
+    <td>&lt; 15 min.</td>
+  </tr>
+  <tr>
+    <td>Architectural guidance</td>
+    <td>General<br></td>
+    <td>Contextual</td>
+    <td>Consultative</td>
+  </tr>
+  <tr>
+    <td>Programmatic case management</td>
+    <td></td>
+    <td>AWS Support API</td>
+    <td>AWS Support API</td>
+  </tr>
+  <tr>
+    <td>Third-Party Software Support</td>
+    <td></td>
+    <td>Interop. &amp; config guidance</td>
+    <td>Interop. &amp; config guidance</td>
+  </tr>
+  <tr>
+    <td>Proactive Programs</td>
+    <td></td>
+    <td>Access to IEM for fee</td>
+    <td>IEM<br>Well-Architected Reviews<br>Operations Reviews<br>TAM<br></td>
+  </tr>
+  <tr>
+    <td>Training</td>
+    <td></td>
+    <td></td>
+    <td>Self-paced labs</td>
+  </tr>
+  <tr>
+    <td>Account assistance</td>
+    <td></td>
+    <td></td>
+    <td>Concierge Support Team</td>
+  </tr>
+  <tr>
+    <td>Pricing</td>
+    <td>$29/mo</td>
+    <td>$100/mo</td>
+    <td>$15K/mo</td>
+  </tr>
+</tbody>
+</table>
+#+END_EXPORT
+*** Basic Support
+- Seven core TA checks
+- No tech support
+- Can submit bugs, feature requests, service limit increases
+*** Developer Support
+- Recommended for testing or early development
+- Seven core TA checks
+- Business hours access to Cloud Support Associates
+- Guidance <24 business hours response time
+- Impairments <12 business hours
+- General guidance
+*** Business Support
+- Full set of TA Checks
+- 24/7 access to Cloud Support Engineers
+- Email, chat, phone
+- 1 to 24-hour response
+- Contextual guidance based on use case
+- Infrastructure Event Management for additional fee
+*** Enterprise Support
+- Full set of TA checks
+- 24/7 access to Cloud Support Engineers
+- Email, chat, phone
+- 15-min to 24-hour response
+- Consultative review
+- Applies to ALL accounts
+- Access to Well-Architected review
+- Access to online labs
+- Access to Technical Account Manager
+** End of Chapter FRQs
+In this section, you are given 5 free response questions, three of which will be a Short Answer Question, and the other two being a simple free response.
+1. Briefly explain ONE difference between RDS pricing and DynamoDB pricing
+2. Briefly explain ONE similarity between RDS pricing and DynamoDB pricing
+3. Explain ONE difference between AWS Cost Explorer and AWS Cost & Usage Reports that distinguish their different purposes.
+4. What type of EC2 instance is most cost effective for processes that can handle interruption?
+5. Why does a user get billed even when they are not running an application on an EC2 instance?
+* Appendix
+** Service Rundown
+Some services that were not mentioned may appear as a distractor.
+*** Database Services
+- DynamoDB - NoSQL *key/value* database
+- DocumentDB - NoSQL *Document* database, MongoDB compatible
+- RDS - *Relational* Database Service that supports multiple engines
+  - Aurora - *Fully managed* database 5x faster than MySQL
+  - Aurora Serverless - only runs when you need it like AWS Lambda
+- Neptune - Managed *Graph* Database
+- Redshift - *Petabyte* warehouse, good for large scale analysis
+- ElastiCache - *Redis* or *Memcached* database
+*** Provisioning Services
+- Elastic Beanstalk - service for deploying and scaling webapps
+- OpsWorks - configuration management service that provides managed instances of *Chef and Puppet*
+- CloudFormation - infrastructure as code, *JSON or YAML*
+- AWS QuickStart - pre-made packages that can configure AWS compute, network, storage, etc.
+- AWS Marketplace - digital catalogue of software listings from independent vendors
+*** Computing
+- EC2 - highly configurable server
+- ECS - Docker as a Service
+- Fargate - microservices where you don't think about the infrastructure
+- EKS - Kubernetes as a Service
+- Lambda - *serverless functions* where you pay for compute time
+- Elastic Beanstalk - orchestrates AWS services
+- AWS Batch - schedules batch computing workloads across compute services
+*** Storage
+- S3 - *object* storage
+- S3 Glacier - low cost storage *archiving and long-term backup*
+- Storage Gateway - hybrid cloud storage
+- EBS - *block* storage that attaches to an EC2 instance
+- EFS - *file* storage that mounts to multiple EC2 instances
+- Snowball - physical migration large amounts of data
+*** Enterprise Integration
+- Direct Connect - dedicated fiber connection to AWS network
+- VPN - secure connection to AWS network
+- Storage Gateway - hybrid storage service
+*** Logging Service
+- CloudTrail - logs all *API calls* between *AWS services* (who can we blame)
+- CloudWatch - tracks performance and can trigger events and alarms

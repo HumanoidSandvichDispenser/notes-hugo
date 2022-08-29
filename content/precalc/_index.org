@@ -1,0 +1,3 @@
+#+TITLE: Precalculus
+#+DESCRIPTION: Precalculus
+#+COVER: /img/forsenE.jpg

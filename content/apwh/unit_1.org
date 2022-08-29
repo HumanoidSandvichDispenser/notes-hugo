@@ -1,0 +1,134 @@
+#+TITLE: Unit 1
+#+DATE: <2021-05-01 Sat>
+
+* Process of State Building Across States
+:PROPERTIES:
+:CUSTOM_ID: process-of-state-building-across-states
+:END:
+** Song Dynasty
+:PROPERTIES:
+:CUSTOM_ID: song-dynasty
+:END:
+The Chinese during this period greatly flourished due to cultural and
+technological advancements.
+
+- Technological Advancement
+  - Gunpowder
+  - Grand Canal
+  - Champa Rice
+- Cultural Advancement
+  - Revival of Confucianism
+  - Revival of Civil Service Exam
+
+** Delhi Sultanate
+:PROPERTIES:
+:CUSTOM_ID: delhi-sultanate
+:END:
+- Established by Muslim Turks
+- Had a difficult time converting Indian society to Islam
+
+** Mamluk Sultanate
+:PROPERTIES:
+:CUSTOM_ID: mamluk-sultanate
+:END:
+- Formerly a slave empire
+- Non-Muslims were enslaved by the Egyptians and forced to serve in the
+  military
+- Mamluks then overthrew the government and established the Mamluk
+  Sultanate
+
+The Vijayanagara Empire built their states and expanded their influence
+by means of trade.
+
+** Kingdom of Mali
+:PROPERTIES:
+:CUSTOM_ID: kingdom-of-mali
+:END:
+- Centralized powers to a much greater extent than their predecessor,
+  Ghana
+- Enormously wealthy
+
+** Aztec Empire
+:PROPERTIES:
+:CUSTOM_ID: aztec-empire
+:END:
+The Aztecs built an empire and ruled remotely through systems such as
+the Tribute System.
+
+- Tribute System was where the conquered people had to pay a "tribute"
+  or tax to their conquerors.
+- Tributes could either be goods or services.
+- Enforced system through a powerful military
+
+** Incan Empire
+:PROPERTIES:
+:CUSTOM_ID: incan-empire
+:END:
+The Incans, unlike the Aztecs, used the Mit'a System.
+
+- Under the Mit'a system, the citizens were required to perform public
+  service works
+
+** European States
+:PROPERTIES:
+:CUSTOM_ID: european-states
+:END:
+European states were locked into a more regional system known as
+Feudalism.
+
+- Feudalism structured a decentralized society with rigid class layers
+- Feudal lords soon lost most of their power to more powerful,
+  centralized monarchs
+
+* Religion
+:PROPERTIES:
+:CUSTOM_ID: religion
+:END:
+In all parts of the world, religion was key to state building.
+
+- Islam was able to create a system of shared beliefs and language which
+  was able to unite regions throughout Afro-Eurasia.
+- Confucianist principles were used to justify the rule of dynastic
+  rulers. The *Civil Service Exam* tested on Confucianism which led to a
+  Confucianist Bureaucracy in the Song Dynasty.
+- South and Southeast Asian rulers used Hinduism and Buddhism to
+  consolidate power in their states. Hinduism's *caste system* was
+  especially important in building social classes.
+- European states alone were especially weak, but Catholicism was able
+  to organize and unite society. Religion was important as religious
+  leaders were often competing with the state's secular authority.
+
+** Religious Conversion
+:PROPERTIES:
+:CUSTOM_ID: religious-conversion
+:END:
+All major world religions were conversionist religions during this time
+period which weakened indigenous religions.
+
+- The three major religions sent out *missionaries* to different
+  regions.
+- Other states used *military invasions* in order to convert the masses.
+  - Populations converted to avoid paying the jizya, or tax on
+    non-Muslims
+  - Populations converted for greater economic or government
+    opportunities
+- Merchants also spread religion and culture along trade routes.
+
+* Technological Advancements
+:PROPERTIES:
+:CUSTOM_ID: technological-advancements
+:END:
+- Champa rice from Vietnam helped grow the Chinese population
+- Paper from China increased literacy rates
+- Increased literacy encouraged learning
+- House of Baghdad
+
+* Nomadic People
+:PROPERTIES:
+:CUSTOM_ID: nomadic-people
+:END:
+- Nomadic people in Afro-Eurasia did not have a permanent home and moved
+  around often
+- Huge, vast empire
+- Political stability and safety
+- Increased trade and cross-cultural exchanges

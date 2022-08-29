@@ -1,15 +1,13 @@
 <div id="nextprev">
 {{ if or .Next .Prev -}}
-    <div class="left">
-    {{- with .Prev }}
-        <h4>PREVIOUS</h4>
-        {{ partial "post-small.html" . }}
+    <div>
+    {{- with .PrevInSection }}
+        PREV: {{ partial "post-small.html" . }}
     {{ end -}}
     </div>
-    <div class="right">
-    {{- with .Next -}}
-        <h4>NEXT</h4>
-        {{ partial "post-small.html" . }}
+    <div>
+    {{- with .NextInSection -}}
+        NEXT: {{ partial "post-small.html" . }}
     {{ end -}}
     </div>
 {{ end -}}

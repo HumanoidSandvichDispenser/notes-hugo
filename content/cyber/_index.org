@@ -1,0 +1,3 @@
+#+TITLE: Cybersecurity & AWS Cloud
+#+DESCRIPTION: weeb propaganda <img class="vertical-center" src="/img/Aware.gif">
+#+COVER: /img/cyber.png

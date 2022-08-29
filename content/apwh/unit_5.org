@@ -1,0 +1,155 @@
+#+TITLE: Unit 5
+#+DATE: <2021-05-09 Sun>
+
+* Enlightenment
+:PROPERTIES:
+:CUSTOM_ID: enlightenment
+:END:
+- Philosophers of the Enlightenment started to push out ideas of social
+  and political structure at the time
+
+  - Locke - Natural rights, right to overthrow governments
+
+  - Rousseau - Social contract
+
+  - Montesquieu - Separation of powers
+
+  - Voltaire - Free speech and religious toleration
+
+- Feminism
+
+- Revolutions
+
+  - All revolutions were inspired by the Enlightenment
+
+  - American Revolution
+
+    - Constitution and Bill of Rights with Enlightenment ideas
+
+    - Inspired other revolutions
+
+    - Declaration of Independence
+
+      - "It is the Right of the People to alter or abolish [the
+        Government]."
+
+  - French Revolution
+
+    - Ended absolute monarchy
+
+    - Civil unrest still continued
+
+    - Declaration of the Rights of Man and of the Citizen
+
+      - Social contract ideas: "Law can only prohibit such actions as
+        are hurtful to society."
+
+  - Haitian Revolution
+
+    - Gained independence
+
+    - Republic of Haiti
+
+    - Toussaint Louverture
+
+  - Latin American Revolutions
+
+    - Creoles led the fight for independence
+
+    - Simon Bolivar
+
+      - "A people is therefore enslaved when the government, by its
+        nature or its vices, _infringes on and usurps the rights of the
+        citizen_ or subject."
+
+** Feminism
+:PROPERTIES:
+:CUSTOM_ID: feminism
+:END:
+- Equal rights of women
+
+  - Oympe de Gouges - Declaration of the Rights of Men and Women
+
+  - Mary Wollstonecraft - Seneca Falls Convention 1848
+
+* Industrial Revolution
+:PROPERTIES:
+:CUSTOM_ID: industrial-revolution
+:END:
+- Various technological advancements and inventions sparked the
+  Industrial Revolution
+
+- Adam Smith's idea of Laissez-faire economics (no government
+  intervention in the economy)
+
+- Geographic and environmental factors such as access to coal, iron, and
+  water were essential to industrialization
+
+  - Coal efficiently produced energy when burned
+
+  - Iron was used to build industrial machines and railroads
+
+  - Water powered the water wheel and steam engine
+
+- Mass urbanization
+
+  - Increased economic output and production
+
+  - More jobs
+
+  - Growing population
+
+  - More stress on workers
+
+  - Increased usage of alcohol
+
+  - Women and children begin working in factories
+
+- Bad working conditions
+
+  - Unsafe equipment or conditions
+
+  - Low wages
+
+| First Industrial Revolution  | Age of Mechanical Production       |
+|                              | Steam Power                        |
+| Second Industrial Revolution | Age of Science and Mass Production |
+|                              | Steel, Chemicals, and Electricity  |
+
+** Responses to Industrialization
+:PROPERTIES:
+:CUSTOM_ID: responses-to-industrialization
+:END:
+- Communist Manifesto by Karl Marx and Fredrich Engels
+
+  - Challenged Laissez-faire economics
+
+  - Workers should own the means of production
+
+- Labor unions
+
+- Safety protocols
+
+- Minimum wages
+
+** Meiji Restoration
+:PROPERTIES:
+:CUSTOM_ID: meiji-restoration
+:END:
+- Matthew Perry forced Japan to open
+
+- Japan begins to industrialize and "westernize"
+
+  - End of Tokugawa Shogunate
+
+  - More Western government
+
+  - Soon lead to Imperialist Japan
+
+* Changes and Continuities
+:PROPERTIES:
+:CUSTOM_ID: changes-and-continuities
+:END:
+The period 1750-1900 was indeed revolutionary as political structures
+and production changed significantly, while continuities of gender
+inequity, racism, and exploitation of lower classes continued.

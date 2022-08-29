@@ -1,0 +1,3 @@
+#+TITLE: AP World History
+#+DESCRIPTION: Advanced Placement World History: Modern
+#+COVER: /img/forsenE.jpg

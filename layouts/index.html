@@ -3,17 +3,34 @@
     <article class="list">
         {{ partial "header.html" . }}
         {{ .Content }}
-        <hr>
-        {{ range .Site.Sections }}
-            <details>
-                <summary>
-                /{{ .Title | lower }}/
-                </summary>
-                {{ range $i, $e := .RegularPages }}
-                    {{ partial "post.html" . }}
-                {{ end }}
-            </details>
-        {{ end }}
+        <h1>{{ .Title }}</h1>
+        <div class="card-list">
+            {{ range .Site.Sections }}
+                <a href="{{ .RelPermalink }}" class="section-card-anchor">
+                    <div class="section-card-container">
+                        <div class="section-card">
+                            <div class="cover">
+                                {{ with .Params.cover }}
+                                    <img src='{{ . }}'>
+                                {{ end }}
+                                <div class="description">
+                                    <p>
+                                        {{ .Description | safeHTML }}
+                                    </p>
+                                    <p class="middle">
+                                        <i class="bi bi-journals"></i>
+                                        {{ len .Pages }}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="title">
+                                {{ .Title }}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {{ end }}
+        </div>
     </article>
 </main>
 {{ end }}

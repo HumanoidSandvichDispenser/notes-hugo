@@ -1,0 +1,86 @@
+div.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.section-card-container {
+    width: 192px;
+    margin: 8px;
+    border-radius: 8px;
+    outline: var(--bg1) 1px ridge;
+    overflow: hidden;
+    background-color: white;
+    transition-duration: 200ms;
+}
+
+div.section-card-container:hover {
+    box-shadow: #00000030 0 0 16px;
+}
+
+a.section-card-anchor {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+a.section-card-anchor:hover {
+    background-color: unset;
+}
+
+div.section-card {
+    color: var(--fg0);
+    padding-bottom: 8px;
+}
+
+div.section-card:hover {
+    color: black;
+}
+
+div.section-card .cover {
+    position: relative;
+    width: 100%;
+}
+
+div.section-card .cover .description {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    text-decoration: none;
+    background-color: white;
+    opacity: 0;
+    vertical-align: middle;
+    align-items: middle;
+    transition-duration: 200ms;
+}
+
+div.section-card:hover .description {
+    opacity: 1;
+}
+
+div.section-card .cover .description p {
+    font-size: 16px;
+    margin: 16px;
+}
+
+div.section-card .cover .description p.middle {
+    text-align: center;
+}
+
+div.section-card .title {
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 8px 16px;
+    /*
+    line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;*/
+}
