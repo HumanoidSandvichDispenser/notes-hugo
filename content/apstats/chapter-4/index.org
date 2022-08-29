@@ -1,0 +1,171 @@
+#+TITLE: Chapter 4 - Quantitative Data
+#+STARTUP: latexpreview
+#+TOC: headlines 1
+
+* Vocabulary
+
+- *histogram* - a graph that displays values over a quantitative interval
+- *bin* - an interval
+- *relative frequency histogram*
+- *stem and leaf plot*
+- *dot plot*
+- *outlier*
+
+* Histogram
+
+A histogram, like all other graphs, requires a specific title. Like a bar graph, the y-axis is the dependent variable (usually the frequency), and the x-axis is an interval of quantitative data known as bins.
+
+A scale marking on the x-axis must describe an exact value. The space between the markings describes the interval between the two markings.
+
+#+PLOT: size:"1,0.5" title:"First/Second Period Test Scores 19th of August 2022" ind:1 type:2d  with:histograms
+| Test Scores (%) | Frequency (%) |
+|-----------------+---------------|
+|              50 |             9 |
+|              60 |            12 |
+|              70 |            23 |
+|              80 |            32 |
+|              90 |            24 |
+
+#+ATTR_ORG: :width 256
+[[./histogram.png]]
+
+* Plots
+
+** Basic Stemplots
+
+\begin{array}{ r | l l l l l }
+4 & 1 & & & & \\
+3 & 0 & 1 & 2 & 4 & \\
+2 & 6 & 7 & 7 & 8 & 9 \\
+1 & 0 & 0 & 2 & 5 & \\
+0 & 6 & 8 & & & \\
+\end{array}
+
+Key:  1 | 0 = 10
+
+** Split Stemplot
+
+A split stemplot can split place values into more specific categories, giving a higher resolution and more detailed plot.
+
+| 4L | 1 |   |   |   |   |
+| 3H |   |   |   |   |   |
+| 3L | 0 | 1 | 2 | 4 |   |
+| 2H | 6 | 7 | 7 | 8 | 9 |
+| 2L |   |   |   |   |   |
+| 1H | 5 |   |   |   |   |
+| 1L | 0 | 0 | 2 |   |   |
+| 0H | 6 | 8 |   |   |   |
+| 0L |   |   |   |   |   |
+
+** Back-to-Back Stemplot
+
+\begin{array}{ r r r | c | l l l }
+\textrm{Boys} & & & & & & \textrm{Girls} \\
+& & 1 & 9 & 3 & 4 & \\
+& 8 & 5 & 8 & 3 & 5 & 8 \\
+8 & 7 & 2 & 7 & 2 & 3 &
+\end{array}
+
+** Dot Plot
+
+** Boxplots
+
+Requires five values *(five number summary)*:
+
+- Minimum
+- First quartile
+- Median
+- Third quartile
+- Maximum
+
+If there are any outliers, the outlier distance must be marked with a dot. The whisker of the graph *can not extend* to touch the outliers. The whisker starts/ends at the next/last non-outlier value.
+
+*** Example Boxplot
+
+The following data is the number of days where more than 0.1 inches of rain fell in 16 randomly selected towns in Pennsylvania during 2021.
+
+#+begin_example
+57, 56, 74, 74, 51, 52, 68, 75, 66, 58, 52, 75, 34, 48, 28, 37
+#+end_example
+
+The data set sorted:
+
+#+begin_example
+57, 56, 74, 74, 51, 52, 68, 75, 66, 58, 52, 75, 34, 48, 28, 37
+#+end_example
+
+Five number summary:
+
+| Min |   28 |
+| Q1  | 49.5 |
+| Mid | 56.5 |
+| Q2  |   71 |
+| Max |   75 |
+
+* Describing Visual Displays
+
+- Shape
+- Outliers
+- Center
+- Spread
+
+** Shape
+
+- Skewed (left or right)
+- Symmetric (or approximately so)
+- Normally distributed (or approximately so)
+- Bimodal
+
+** Outlier
+
+See [[* Outlier][outliers]].
+
+** Center
+
+- Mean
+- Median
+- Mode
+
+** Spread
+
+- Range
+- Standard Deviation
+- IQR
+
+*Note any gaps in the data.* It is important that if there is any gap in the data, report it in the exam to receive full credit.
+
+* Outliers
+
+If an outlier came from an obvious reason, then it can be left out of the dataset. Otherwise, if the causes are unknown or undetermined, then it must be left in the dataset.
+
+** Checking for Outliers
+
+$O_{\textrm{lower}} = Q_1 - \frac{3}{2}(Q_3 - Q_1)$
+
+$O_{\textrm{upper}} = Q_3 + \frac{3}{2}(Q_3 - Q_1)$
+
+1. Find the IQR
+2. Multiply IQR by 1.5
+3. Add or subtract it from both of the quartiles. If any value is less than or greater than that value, then it is considered an outlier.
+
+From the box plot earlier, we can calculate the IQR to be 21.5. Thus the outlier distance is is 32.25. Since Q1 = 49.5, the lower outlier will be any value $x$ such that $x < 49.5 - 32.25 = 17.25$. The upper outlier wil lbe any value $x$ such that $x > 71 + 32.25 = 103.25$.
+
+** Examples
+
+The five number summary for a data set is:
+
+#+begin_example
+[ 35, 49, 51, 57, 64 ]
+#+end_example
+
+1. What is the IQR?
+
+   $\textrm{IQR} = Q_3 - Q_1 = 8$
+   
+2. What is the outlier distance?
+
+  $\Delta O = \frac{3}{2} \textrm{IQR} = 12$
+
+3. Could there be any outliers?
+
+   Yes, 35 is an outlier because it is less than 37, the cutoff for the lower outlier. There are no outliers on the higher end because the cutoff for the higher outlier is 69. The maximum of the dataset is 64.

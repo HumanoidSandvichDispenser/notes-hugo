@@ -55,11 +55,12 @@ Since the causes of death are a proportion that add up to 100%, the complement w
 
 * Marginal Distribution
 
+#+PLOT: title:"Racial groups and education/employment" ind:1 type:2d with:boxes
 #+TBLNAME: Racial groups and education/employment
 |            | White | Minority | Total |
 |------------+-------+----------+-------|
-| 4-yr       |   198 |       44 |   242 |
-| 2-yr       |    36 |        6 |    42 |
+| Four year  |   198 |       44 |   242 |
+| Two year   |    36 |        6 |    42 |
 | Military   |     4 |        1 |     5 |
 | Employment |    14 |        3 |    17 |
 | Other      |    16 |        3 |    19 |

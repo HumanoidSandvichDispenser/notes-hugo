@@ -4,7 +4,9 @@
 
 By definition, the standard deviation $s$ is known as the square root of the variance $s^2$ of a dataset.
 
-$$ s^2 = \frac{\Sigma(x - \bar{x})^2}{n - 1} $$
+\[
+s^2 = \frac{\Sigma(x - \bar{x})^2}{n - 1}
+\]
 
 #+begin_src python
 import math
