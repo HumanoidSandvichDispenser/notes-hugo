@@ -1,0 +1,61 @@
+#+TITLE: Chapter 6 - Standard Deviation as a Ruler & Normal Model
+
+* Z-Score
+
+\[
+Z = \frac{x - \bar{x}}{S}
+\]
+
+$x$ is the data value
+
+$\bar{x}$ is the mean
+
+$S$ is the standard deviation
+
+The z-score is essentially a ratio of a given datapoint's deviation to the standard deviation.
+
+This can only be applied to *normally or approximately normally distributed* data.
+
+** Example
+
+At a selective college, two professors, Dr. V and Dr. W, have a competition to see who can give the most difficult tests in Calculus I. They compared their data from the first test of the semester.
+
+| Professor | mean(x) |  S |
+|-----------+---------+----|
+| Dr. V     |      47 | 18 |
+| Dr. W     |      51 | 12 |
+
+Lyle is a student in Dr. V's class and he scared an 83. Herman is a student in Dr. W's class and he scored an 81. Who did better relative to the rest of his class?
+
+Without knowing the shape or distribution of the data, we must use the *z-score* to determine who did better.
+
+$Z_L = \frac{83 - 47}{18} = 2$
+
+$Z_H = \frac{81 - 51}{12} = 2.5$
+
+Herman did better relative to his class than Lyle did.
+
+* Empirical Rule and the Normal Model
+
+Also known as the 68-95-99.7 rule.
+
+#+ATTR_ORG: :width 512px
+[[./normal-distribution.png]]
+
+The proportional area under the curve between $(a, b)$ determines the probability that any selected datapoint falls within the interval $(a, b)$
+
+If the normal model does not mathematically make sense (normal model runs out of room, going to impossibly negative numbers), then the data is most likely not normally distributed.
+
+** ~normalcdf~ Example
+
+Assuming the mean is 30, the standard deviation is 2, what percentage of the data is between 20 and 26?
+
+$\textrm{normalcdf}(30, 2) = 0.02274984$
+
+On a TI calculator:
+
+~normalcdf(lower, upper, mu, sigma)~
+
+On a Casio calculator:
+
+~NormCD(lower, upper, sigma, mu)~
