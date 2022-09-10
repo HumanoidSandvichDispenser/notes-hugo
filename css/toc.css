@@ -31,17 +31,19 @@
         z-index: 500;
         transition-duration: 200ms;
         padding: 16px;
+        opacity: 0.4;
     }
 
     #toc:hover {
         height: min(1024px, 100% - 128px);
         left: 0;
-        width: 100%;
+        width: calc(100% - 32px);
         margin-left: 0;
         border-radius: 0;
         background: var(--bg0);
         box-shadow: #00000050 2px 2px 16px, #00000080 0 0 1024px;
         overflow-y: scroll;
+        opacity: 0.9;
     }
 
     #toc h1 {
