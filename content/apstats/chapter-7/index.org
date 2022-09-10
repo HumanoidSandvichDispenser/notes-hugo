@@ -1,0 +1,24 @@
+#+TITLE: Chapter 7 - Combining Distributions
+
+wtf are these notes about
+
+Adding two means of two datasets combines the two means.
+
+Subtracting two means finds the difference between two distirbutions.
+
+Must utilize _variance_
+
+$S_1 + S_2$
+
+Variance of 1 + variance of 2 then square root
+
+$S_1 - S_2$
+
+Variance of 1 - variance of 2 then square root
+
+* Example
+
+| Name    |               |                    |
+| Marisol | Average score | Standard deviation |
+|         |               |                    |
+

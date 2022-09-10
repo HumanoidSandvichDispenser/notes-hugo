@@ -154,7 +154,7 @@ Bulid security into every layer of your infrastructure.
 ** Objects
 
 - Objects (files)
-- Files on S3 can be *between 0B and 5TB*
+- A single object on S3 can be *up to 5TB*
 - Upload objects in a single ~PUT~ operation *up to 5 GB*
 - Objects are stored with by key-value
   - The filename is the key and the value is the actual contents of the file
@@ -175,3 +175,42 @@ Bulid security into every layer of your infrastructure.
     - Only lower-case, numbers, periods, and dash
   - Label must start with lowercase
 - Private by default
+
+** Consistency Model
+
+- S3 is *strongly consistent* for all new and existing objects in all regions
+  - Read-after-write consistency
+  - The consistency model offers an advantage for big data workloads
+
+** Storing Data in Amazon S3
+
+*** Storage Classes
+
+- *Standard* - frequently accessed data
+- *Standard IA* - infrequently accessed data; must be readily available
+- *One Zone IA* - infrequently accessed, non-critical data
+- *Intelligent-Tiering* - constantly changing data access patterns
+- *Glacier/Deep Archive* - rarely accessed data archive
+
+*** Costs
+
+- Charged
+  - by storage class and region
+  - per GB per month and region
+  - ~PUT~, ~COPY~, ~POST~, ~LIST~, ~GET~, ~SELECT~, lifecycle transition, data retrieval requests
+- Not charged for:
+  - Inbound traffic
+  - Data between buckets and services in the same region
+  - S3 to CloudFront
+  - ~DELETE~ and ~CANCEL~ requests
+
+** Lifecycle Policies
+
+S3 can be configured with lifecycle policies that automatically manage how an object is stored in S3. Lifecycle policies can move objects between different S3 classes.
+
+** AWS Snowball
+
+Petabyte-scale data transfer where you can upload
+
+* Database Layer
+

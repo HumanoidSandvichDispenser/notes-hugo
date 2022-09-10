@@ -2,6 +2,12 @@
 #+DATE: <2022-08-24 Wed>
 #+startup: latexpreview
 
+* Geometry
+
+** Surface area of a cylinder
+
+$\textrm{SA} = 2\pi r^2 + 2\pi r h$
+
 * Precalculus/Algebra
 
 ** Trig ratios for special angles

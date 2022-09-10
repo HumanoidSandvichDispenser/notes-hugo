@@ -20,6 +20,10 @@ If the sign changes from *positive to negative*, there must exist a *local maxim
 
 If the function has a removable discontinuity, a local maximum exists when  $f(x) > \lim_{c \to x} f(c)$ and a local minimum exists when $f(x) < \lim_{c \to x} f(c)$
 
+** Extreme Value Theorem
+
+If the function is *continuous* on a *closed* interval, then it must have both an absolute maximum and an absolute minimum.
+
 * Mean Value Theorem (Derivatives)
 
 If $f(x)$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then a value $x = c$ must exist in $(a, b)$ such that $f'(c) = \frac{f(b) - f(a)}{b - a}$

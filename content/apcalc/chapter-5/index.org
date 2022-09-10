@@ -1,0 +1,65 @@
+#+TITLE: Chapter 5 - Untitled
+
+* Optimization
+
+1. Assign symbols to all given quantities and quantities to be determined. Make a sketch (if possible). 
+2.  Write a PRIMARY EQUATION for the quantity being maximized or minimized.  (Call this M.) 
+3.  Reduce the primary equation to one having a single independent variable. 
+4.  Determine the maximum/minimum using critical values. 
+5.  Use the first (or second) derivative test and choose the feasible answer.   
+6.  Be sure to answer the question asked.  Include units (if applicable). 
+
+** Example 1
+
+Let the sum of two numbers equal to 16. What are those values that yield the greatest product (maximum)?
+
+$a  + b = 16$
+
+$\frac{d}{db}(ab) = 0$
+
+$a = 16 - b$
+
+$(16 - b)(b) = 16b - b^2$
+
+$16 - 2b = 0$
+
+$b = 8$
+
+$a = 8$
+
+** Example 3
+
+** Example 4
+
+Closest point to $y = 4 - x^2$
+
+$m = \sqrt{x^2 - (2 - x^2)^2}$
+
+$m' = 4x^3 - 6x = 0$
+
+$x = \{ 0, \pm \frac{\sqrt{3}}{2}\}$
+
+** Example 5
+
+Find the largest area you can make with 800 meters of wire, open on the top.
+
+$800 = 2x + y$
+
+$m = xy$
+
+$m = x(800 - 2x)$
+
+$m = 800x - 2x^2$
+
+$m' = 800 - 4x$
+
+$m'' = -4$ (this is a minimum)
+
+$m' = -4(x - 200)$
+
+$x = 200$
+
+$800 = 2(200) + y$
+
+$y = 400$
+

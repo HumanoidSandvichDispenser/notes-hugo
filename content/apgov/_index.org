@@ -1,3 +1,3 @@
 #+TITLE: AP United States Government
-#+DESCRIPTION: As long as I count the votes, what are you going to do about it?
+#+DESCRIPTION: It's a republic, if you can keep it.
 #+COVER: /img/apgov.png

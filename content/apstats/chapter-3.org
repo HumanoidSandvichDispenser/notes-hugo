@@ -1,4 +1,4 @@
-#+TITLE: Chapter 3: Displaying Categorical Data
+#+TITLE: Chapter 3 - Displaying Categorical Data
 
 *Categorical data*, also known as /qualitative data/, is data that can be divided into categories or qualities
   
@@ -7,7 +7,7 @@
 - *frequency table* - a table that shows how frequent a specific category is
 - *proportion* - describes the quantity of the frequency
 - *relative frequency distribution* - what proportion did something happen
-- *dstribution* - how the data is spread out, usually how it is spread out graphically
+- *distribution* - how the data is spread out, usually how it is spread out graphically
 - *area principle* -
 - *contingency table* - a table that displays data involving several independent variables
 - *marginal distribution* - a distribution that takes in the totals of contingency data
