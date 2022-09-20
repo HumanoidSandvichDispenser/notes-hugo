@@ -8,12 +8,8 @@ $\bar{x}$ is the mean
 $S$ is the standard deviation
 The z-score is essentially a ratio of a given datapoint&amp;#39;s deviation to the standard deviation.
 This can only be applied to normally or approximately normally distributed data.
-Example At a selective college, two professors, Dr. V and Dr. W, have a competition to see who can give the most difficult tests in Calculus I.</description></item><item><title>Chapter 7 - Combining Distributions</title><link>http://notes.sandvich.xyz/apstats/chapter-7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.sandvich.xyz/apstats/chapter-7/</guid><description> wtf are these notes about
-Adding two means of two datasets combines the two means.
-Subtracting two means finds the difference between two distirbutions.
-Must utilize variance
-$S_1 + S_2$
-Variance of 1 + variance of 2 then square root
-$S_1 - S_2$
-Variance of 1 - variance of 2 then square root
-Example Name Marisol Average score Standard deviation</description></item></channel></rss>
+Example At a selective college, two professors, Dr. V and Dr. W, have a competition to see who can give the most difficult tests in Calculus I.</description></item><item><title>Chapter 7 - Scatterplots, Association, and Correlation</title><link>http://notes.sandvich.xyz/apstats/chapter-7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.sandvich.xyz/apstats/chapter-7/</guid><description>Scatterplot A scatterplot displays a set of ordered pairs. It is a common way of displaying two-variable data.
+Scatterplots can have varying degrees of linearity.
+Random scatter - no pattern can be determined in the data Positive relationship - positive slope Negative relationship - negative slope Important Ideas Association
+linear non-linear Correlation - only use correlation if there is a linear association
+positive negative constant Strength - how &amp;#34;strong&amp;#34; or tight the linear correlation is</description></item></channel></rss>
