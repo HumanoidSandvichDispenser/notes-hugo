@@ -214,3 +214,70 @@ Petabyte-scale data transfer where you can upload
 
 * Database Layer
 
+** Database Options
+
+*** Relational databases
+
+- Strict schema rules
+- Data integrity
+- Relational database services
+  - RDS
+    - Complex joins of data (multiple tables)
+  - Redshift
+  - Aurora
+    
+*** Non-relational databases
+
+- Scale horizontally
+- Provide higher scalability
+- Best for semistructured/unstructured data
+- Non-relational DB services
+  - DynamoDB
+  - ElastiCache
+  - Neptune
+
+** RDS
+
+*** Use Cases
+
+- Complex joins of data (multiple tables)
+- Servers
+  - Security groups
+  - IAM policies
+  - Isolated in VPC
+
+** DynamoDB
+
+*** Use Cases
+
+- Serverless
+  - IAM policies
+- DynamoDB Transactions
+- JSON
+
+*** Database service
+
+- Non-relational
+- Key-value
+- NoSQL
+
+*** Server
+
+- Serverless
+- Extreme horizontal scaling
+- Low latency
+
+*** Global Tables
+
+- Data is replicated to multiple AWS regions
+- Read replicas
+
+*** Read Consistency
+
+- Eventual consistency
+  - Fully consistent for reads 1 second after write
+- Strong consistency
+  - More consistent
+  - Less effective in power outages
+  - Higher resource consumption
+

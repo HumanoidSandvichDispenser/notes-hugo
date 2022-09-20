@@ -1,4 +1,5 @@
 #+TITLE: Chapter 5 - Untitled
+#+STARTUP: latexpreview
 
 * Optimization
 
@@ -63,3 +64,52 @@ $800 = 2(200) + y$
 
 $y = 400$
 
+* Linearization
+
+If $f$ is differentiable at $x = a$, then the equation of the tangent line, sometimes called $L(x)$, defines the linearization of $f$ at $a$. The approximation is called the linear approximation of $f$ at $a$. The point $x = a$ is called the center of the approximation. Values of $f(x)$ will be "close" to $L(x)$ near the center.
+
+* Differentials
+
+** Example 1
+
+Let $y = 1 - 2x^2$. Find $dy$ when $x = 1$ and $dx = -0.1$. Compare this value with $\Delta y$ for $x = 1$ and $\Delta x = -0.1$
+
+$\frac{dy}{dx} = -4x$
+
+$dy = -4x \cdot dx$
+
+* Related Rates
+
+1. Make a sketch (if possible). *Name* the variables and *label* the constants on your sketch
+2. Write down the known information and the variable we are to find
+3. Write an equation that relates the variables
+4. Differentiate implicitly the equation *with respect to $t$* using the chain rule
+5. Answer the question that was asked with *correct units*
+
+** Sample AP Question 1
+
+The radius of a circle is increasing at a constant rate of 0.2 meters per second. What is the rate of increase in the area of the circle at the instant when the circumference of the circle is $20\pi$ meters?
+
+\[
+C = 20\pi
+\]
+
+\[
+\frac{dr}{dt} = 0.2
+\]
+
+\[
+C = 20\pi = 2\pi r
+\]
+
+\[
+20\pi = 2\pi r, r = 10
+\]
+
+\[
+A = \pi r^2
+\]
+
+\[
+\frac{dA}{dt} = 2\pi r \frac{dr}{dt} = 2\pi (10)(0.2) = 4\pi
+\]

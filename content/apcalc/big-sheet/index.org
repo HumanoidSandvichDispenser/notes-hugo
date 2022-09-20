@@ -4,9 +4,32 @@
 
 * Geometry
 
-** Surface area of a cylinder
+** Area
+
+*** Area of equilateral triangle
+
+$A = \frac{\sqrt{3}}{4} s^2$
+
+*** Trapezoid
+
+$A = h \cdot \frac{1}{2}(b_1 + b_2)$
+
+** Surface Area
+
+*** Cylinder
 
 $\textrm{SA} = 2\pi r^2 + 2\pi r h$
+
+*** Sphere
+
+$\textrm{SA} = 4\pi r^2$
+
+** Pythagorean Triples
+
+- 3, 4, 5
+- 5, 12, 13
+- 7, 24, 25
+- 8, 15, 17
 
 * Precalculus/Algebra
 

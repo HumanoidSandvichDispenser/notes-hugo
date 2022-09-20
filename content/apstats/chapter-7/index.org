@@ -1,24 +1,55 @@
-#+TITLE: Chapter 7 - Combining Distributions
+#+TITLE: Chapter 7 - Scatterplots, Association, and Correlation
 
-wtf are these notes about
+* Scatterplot
 
-Adding two means of two datasets combines the two means.
+A scatterplot displays a set of ordered pairs. It is a common way of displaying two-variable data.
 
-Subtracting two means finds the difference between two distirbutions.
+Scatterplots can have varying degrees of linearity.
 
-Must utilize _variance_
+- *Random scatter* - no pattern can be determined in the data
+- *Positive relationship* - positive slope
+- *Negative relationship* - negative slope
+  
+** Important Ideas
 
-$S_1 + S_2$
+- *Association*
+  - linear
+  - non-linear
+- *Correlation* - only use correlation if there is a linear association
+  - positive
+  - negative
+  - constant
+- *Strength* - how "strong" or tight the linear correlation is
+  - strong
+  - moderate to strong
+  - moderate
+  - weak to moderate
+  - weak
+- *Unusual Features*
+  - outlier point
+  - influential point
+  - high-leverage point
 
-Variance of 1 + variance of 2 then square root
 
-$S_1 - S_2$
+  Using your calculator to create scatterplots
 
-Variance of 1 - variance of 2 then square root
+  Enter data into data list (customarily we put X in L_1 and Y in L_2)
 
-* Example
+  We refer to X as the *explanatory variable* and Y as the *response variable*.
 
-| Name    |               |                    |
-| Marisol | Average score | Standard deviation |
-|         |               |                    |
+  Activate your stat plot features
+  Select the scatter plot icon
 
+  Pick the correct lists and choose a mark
+
+  Use your brain to figure out a good window for the context of the problem.
+
+** Correlation
+
+- Only applies to quantitative variables
+- Does your scatterplot look "approximately linear"?
+- Report correlation values both with and without outliers to see if they make a big difference
+- $r$ = correlation coefficient
+  - $-1 \le r \le 1$
+  - r-value of $\pm 1$ means it is perfectly linear
+  - r-value of $0$ would be random scatter
