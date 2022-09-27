@@ -31,18 +31,11 @@ Scatterplots can have varying degrees of linearity.
   - high-leverage point
 
 
-  Using your calculator to create scatterplots
+Using your calculator to create scatterplots
 
-  Enter data into data list (customarily we put X in L_1 and Y in L_2)
+Enter data into data list (customarily we put X in $L_1$ and Y in $L_2$)
 
-  We refer to X as the *explanatory variable* and Y as the *response variable*.
-
-  Activate your stat plot features
-  Select the scatter plot icon
-
-  Pick the correct lists and choose a mark
-
-  Use your brain to figure out a good window for the context of the problem.
+We refer to X as the *explanatory variable* and Y as the *response variable*.
 
 ** Correlation
 
@@ -53,3 +46,15 @@ Scatterplots can have varying degrees of linearity.
   - $-1 \le r \le 1$
   - r-value of $\pm 1$ means it is perfectly linear
   - r-value of $0$ would be random scatter
+
+*** Interpreting Computer Output Example
+
+#+begin_example
+Variable    Coefficient
+Intercept   5773.27
+Wins        517.609
+#+end_example
+
+For every increase by one win, a predicted amount of 517.609 people will attend the game.
+
+There is a predicted amount of 5773.27 attendees if the team won 0 games.

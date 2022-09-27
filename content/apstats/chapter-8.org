@@ -1,0 +1,36 @@
+#+TITLE: Chapter 8 - Linear Regression
+#+DATE: <2022-09-22 Thu>
+
+* Line of Best Fit
+
+\[
+\hat{y} = a + bx
+\]
+
+Points on the line of best fit are predicted y-values, which is why $\hat{y}$ notation is used.
+
+The value of $r^2$ is the percent of the data's variation in the y-value that is accounted for by the variation of the x-value.
+
+** Example
+
+Explanatory variable: miles traveled in a car
+
+Response variable: gallons of gasoline used
+
+R-squared value: 0.87
+
+This means 87% of the change of gallons can be attributed to the change in miles traveled in a car.
+
+* Residuals
+
+Residuals show how much individual data points differ from their corresponding predicted values.
+
+Their values can either be negative or positive.
+
+\[
+r = y - y_0
+\]
+
+If the residual plot is randomly scattered, then the data is linear. Otherwise, a pattern similar to higher degree functions may indicate a curve in the data.
+
+92.2% of the change in calories can be attributed to its linear relationship with the change in the grams of fat. 8% can be attributed to unknown factors.
