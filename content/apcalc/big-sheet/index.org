@@ -219,3 +219,7 @@ $f'(c) < 0$ max
 
 $f'(c) > 0$ min
 
+
+** Over/underestimation
+
+A linear approx is an overestimate if $f(x)$ is concave down. A linear approx is an underestimate if $f(x)$ is concave up.

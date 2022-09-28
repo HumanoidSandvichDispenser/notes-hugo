@@ -1,4 +1,5 @@
 #+TITLE: Chapter 7 - Scatterplots, Association, and Correlation
+#+DATE: <2022-09-20 Tue>
 
 * Scatterplot
 
