@@ -207,7 +207,7 @@ $(sec^{-1})'(x) = \frac{1}{|x|\sqrt{x^2 - 1}}$
 
 ** Fun Chart
 
-\begin{array}{ c c c }
+\begin{array}{ c c c c }
 f(x) & \cup & \cap \\
 f'(x) & \textrm{inc} & \textrm{dec} \\
 f''(x) & + & -
@@ -223,3 +223,47 @@ $f'(c) > 0$ min
 ** Over/underestimation
 
 A linear approx is an overestimate if $f(x)$ is concave down. A linear approx is an underestimate if $f(x)$ is concave up.
+
+** Integration Rules
+
+\[
+\int_{a}^{b} f(x) dx = \int_{b}^{a} f(x) dx
+\]
+
+\[
+\int_{a}^{b} f(x) dx + \int_{b}^{c} f(x) dx = \int_{a}^{c} f(x) dx
+\]
+
+** Average rate of change of a function
+
+\[
+\frac{f(b) - f(a)}{b - a}
+\]
+
+** Average value of a function
+
+\[
+\frac{1}{b - a} \int_{a}^{b} f(x) dx
+\]
+
+** Average velocity
+
+\[
+\frac{s(b) - s(a)}{b - a}
+\]
+
+** MVT
+
+*** Derivatives
+
+If $f(x)$ is continuous on $[a, b]$ and differentiable on $(a, b)$ then there exists a value $c$ in $(a, b)$ such that $f'(c) = \frac{f(b) - f(a)}{b - a}$
+
+*** Integrals
+
+If $f(x)$ is continuous on $[a, b]$ then there exists a value $c$ in $[a, b]$ such that $f(c) = \frac{1}{b - a} \int_a^b f(x) dx$
+
+** FTC
+
+If $f(x)$ is continuous on $[a, b]$, then $\frac{d}{dx} \int_a^x f(t)dt = f(x)$.
+
+If $f(x)$ is continuous on $[a, b]$ and $F(x)$ is an antiderivative of $f(x)$, then $\int_a^b f(x) = F(b) - F(a)$
