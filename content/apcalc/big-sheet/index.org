@@ -213,21 +213,28 @@ f'(x) & \textrm{inc} & \textrm{dec} \\
 f''(x) & + & -
 \end{array}
 
+*** Super Fun Chart
+
+\begin{array}{ c c c c }
+\int f(x) & \cup & \cap \\
+f(x) & \textrm{inc} & \textrm{dec} \\
+f'(x) & + & -
+\end{array}
+
 ** Second Derivative Tests
 
 $f'(c) < 0$ max
 
 $f'(c) > 0$ min
 
-
-** Over/underestimation
+** Overestimation of Linear Approx.
 
 A linear approx is an overestimate if $f(x)$ is concave down. A linear approx is an underestimate if $f(x)$ is concave up.
 
 ** Integration Rules
 
 \[
-\int_{a}^{b} f(x) dx = \int_{b}^{a} f(x) dx
+\int_{a}^{b} f(x) dx = - \int_{b}^{a} f(x) dx
 \]
 
 \[
@@ -267,3 +274,9 @@ If $f(x)$ is continuous on $[a, b]$ then there exists a value $c$ in $[a, b]$ su
 If $f(x)$ is continuous on $[a, b]$, then $\frac{d}{dx} \int_a^x f(t)dt = f(x)$.
 
 If $f(x)$ is continuous on $[a, b]$ and $F(x)$ is an antiderivative of $f(x)$, then $\int_a^b f(x) = F(b) - F(a)$
+
+** LRAM, RRAM, MRAM
+
+If $f'(x) > 0$ for all $x$, then RRAM would be an overestimate.
+
+If $f'(x) < 0$ for all $x$, then LRAM would be an underestimate.

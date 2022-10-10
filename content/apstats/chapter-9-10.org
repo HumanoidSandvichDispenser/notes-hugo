@@ -1,0 +1,27 @@
+#+TITLE: Chapter 9 & 10 - Regression Wisdom, Re-expression of Data
+#+DATE: <2022-09-30 Fri>
+
+* Slightly Curved Data
+
+Some slightly curved data appears to be linear and possesses a high correlation coefficient. However, the curve of the data will reveal itself in the residuals, which would produce a curved pattern.
+
+* Leverage, Influence, and Outliers
+
+Unusual features on a scatterplot exert too much influence on the linear regression. Sometimes these features display a pattern that isn't actually there. Sometimes it brings the regression line towards its location.
+
+If an unusual feature is within the interval of the other datapoints, it is only an outlier and does not exert much influence.
+
+#+attr_html: :src ../high-leverage-point.png
+[[./high-leverage-point.png]]
+
+* Re-expression of Data
+
+We can use mathemetical tools such as logarithms, exponentials, and square roots to re-express a curved model as a linear model.
+
+** Goals of Re-expression
+
+- Supply more symmetry
+- Adjust scaling to make spreads more similar
+- Make the data nearly linear to perform statistical operations
+  - Curved data is harder perform statistics on
+- Spread out of the clumps of data in a more even way
