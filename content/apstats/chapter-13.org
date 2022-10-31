@@ -1,0 +1,16 @@
+#+TITLE: Chapter 13 - Experimental Design
+
+2. Vocabulary Briefing
+8. Lurking and Confounding Variables
+
+* Lurking and Confounding Variables
+
+Lurking variable is a variable that is not explicitly included in the analysis, but which may influence the results of the analysis. Confounding variable is a variable that is not of interest in the analysis, but which may influence the results of the analysis.
+
+Example of a lurking variable:
+
+The study is investigating the effect of stress on health. The stress variable is measured, but the study does not measure the health of the participants. The health of the participants may be a lurking variable that affects the results of the study.
+
+Example of a confounding variable:
+
+The health of the participants may be a confounding variable that affects the results of the study.

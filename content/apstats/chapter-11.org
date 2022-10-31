@@ -1,0 +1,14 @@
+#+TITLE: Chapter 11 - Simulations
+#+DATE: <2022-10-18 Tue>
+
+1. Identify the simulated item (component)
+2. How will you model the outcome?
+3. How will you simulate the randomness?
+4. State clearly what your response variable is
+5. Run several trials
+   - The more trials you run, the more the data is likely to resemble statistical truth
+     - Regression to the mean
+     - Law of large numbers
+6. Analyze the response variable data
+7. Write an analysis and conclusion
+

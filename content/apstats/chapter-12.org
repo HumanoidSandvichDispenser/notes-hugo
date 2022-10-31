@@ -1,0 +1,57 @@
+#+TITLE: Chapter 12 - Sample Surveys
+#+DATE: <2022-10-20 Thu>
+
+Sample surveys occur in the real world in the form of opinion polls.
+
+A well-constructed sample survey can provide useful information, but it is very possible to fail to set up a reasonable survey and create results that are far from the intended truth.
+
+For example, a /Literary Digest/ poll surveyed 10 million people that would predict Alf Landon winning the 1936 U.S. Election over Franklin D. Roosevelt. However, those 10 million surveyees came from a phone book and drivers' registrations. This would sway the sample to richer people which was not representative of the entire population.
+
+* Biases
+
+Types of biases:
+
+- Selection bias
+  - Faulty mechanism when choosing a sample
+- Response bias
+  - The surveyor influences the surveyee (who may provide a false response)
+- Non-response bias & voluntary response bias
+  - People would not respond to questions/surveys they are not interested in
+  - Groups of people who do not respond would throw off the sample
+
+Problems that may occur in sampling include:
+
+- Convenience sampling
+- Under coverage
+
+* Parameters vs. Statistics
+
+*Parameters* come from populations, while *statistics* come from samples.
+
+\begin{array}{l l l}
+& \textrm{Population Parameter} & \textrm{Sample Statistic} \\
+\textrm{Mean} & \mu & \bar{x} \\
+\textrm{Standard Deviation} & \sigma & S \\
+\end{array}
+
+* Ideas About Sampling
+
+- Sampling frame
+  - List or group of people that could represent the population
+  - e.g. list of students at a high school
+  - e.g. all the students at the cafeteria at 12:00
+- Sampling variability
+  - What groups of people did you sample? How much of the population do they represent?
+
+** Types of Sampling
+
+- Simple Random Sample (SRS)
+  - Every person has an equal chance of being sampled
+- Stratified Random Sample
+  - Proportions of different groups (strata) being sampled
+- Cluster Sampling
+  - Choosing a specific collective group (clusters) of people
+- Systematic Sampling
+  - "1 in /k/"'
+  - A specific counting rule/pattern implemented to find a sample
+- Multi-stage Sampling

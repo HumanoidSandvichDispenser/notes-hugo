@@ -277,6 +277,6 @@ If $f(x)$ is continuous on $[a, b]$ and $F(x)$ is an antiderivative of $f(x)$, t
 
 ** LRAM, RRAM, MRAM
 
-If $f'(x) > 0$ for all $x$, then RRAM would be an overestimate.
+If $f'(x) > 0$ for all $x$, then RRAM would be an overestimate, and LRAM would be an underestimate.
 
-If $f'(x) < 0$ for all $x$, then LRAM would be an underestimate.
+If $f'(x) < 0$ for all $x$, then RRAM would be an underestimate, and RRAM would be an overestimate.
