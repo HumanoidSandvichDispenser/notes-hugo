@@ -1,5 +1,6 @@
 #+TITLE: Chapter 12 - Sample Surveys
 #+DATE: <2022-10-20 Thu>
+#+OPTIONS: latexpreview
 
 Sample surveys occur in the real world in the form of opinion polls.
 

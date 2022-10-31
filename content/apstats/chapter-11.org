@@ -2,7 +2,7 @@
 #+DATE: <2022-10-18 Tue>
 
 1. Identify the simulated item (component)
-2. How will you model the outcome?
+2. How will you model the outcome? What is a successful trial?
 3. How will you simulate the randomness?
 4. State clearly what your response variable is
 5. Run several trials
