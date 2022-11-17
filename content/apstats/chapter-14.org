@@ -1,0 +1,25 @@
+#+TITLE: Chapter 14 - Randomness to Probability
+
+* Vocabulary
+
+- independent event - an event that is not influenced by another event
+- disjoint event - mtually exclusive
+- law of large numbers - in probability, more trials matches the experimental probability to the theoretical probability
+- union - $\cup$ "or"
+- intersection - $\cap$ "and"
+- complement - $A^c$ "not"
+- addition rule - $P(A) + P(B) = P(A \cup B)$ if A and B are mutually exclusive
+  - otherwise, $P(A) + P(B) - P(A \cap B) = P(A \cup B)$
+- multiplication rule - $P(A)P(B) = P(A \cap B)$
+
+* Independent Events
+
+If two events A and B are independent, then
+
+\[
+P(A | B) = P(A)
+\]
+
+or "probability of A given B is equal to probability of A"
+
+The probability of A should be the same whether or not the event B will occur.
