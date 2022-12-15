@@ -2,6 +2,10 @@
 There may not be an absolute extremum in a function if the function is unbounded.
 Local Extrema A local extremum exists at point $x$ if $f&amp;#39;(x) = 0$ with odd multiplicity (i.</description></item><item><title>Big Sheet</title><link>http://notes.sandvich.xyz/apcalc/big-sheet/</link><pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate><guid>http://notes.sandvich.xyz/apcalc/big-sheet/</guid><description>Geometry Area Area of equilateral triangle $A = \frac{\sqrt{3}}{4} s^2$
 Trapezoid $A = h \cdot \frac{1}{2}(b_1 + b_2)$
+Circles \[ A = \pi r^2 \]
+Semi-circle: $\frac{1}{2} A = \frac{1}{2} \pi r^2$
+Triangles Right \[ A = \frac{1}{2}bh \]
+Equilateral \[ A = \frac{\sqrt{3}}{4} x^2 \]
 Surface Area Cylinder $\textrm{SA} = 2\pi r^2 + 2\pi r h$
 Sphere $\textrm{SA} = 4\pi r^2$
 Pythagorean Triples 3, 4, 5 5, 12, 13 7, 24, 25 8, 15, 17 Precalculus/Algebra Trig ratios for special angles \begin{array}{ r | c | c | c | c | c } f &amp;amp; 0 &amp;amp; \frac{\pi}{6} &amp;amp; \frac{\pi}{4} &amp;amp; \frac{\pi}{3} &amp;amp; \frac{\pi}{2} \\ \hline \sin &amp;amp; 0 &amp;amp; \frac{1}{2} &amp;amp; \frac{\sqrt{2}}{2} &amp;amp; \frac{\sqrt{3}}{2} &amp;amp; 1 \\ \cos &amp;amp; 1 &amp;amp; \frac{\sqrt{3}}{2} &amp;amp; \frac{\sqrt{2}}{2} &amp;amp; \frac{1}{2} &amp;amp; 0 \\ \tan &amp;amp; 0 &amp;amp; \frac{1}{\sqrt{3}} &amp;amp; 1 &amp;amp; \sqrt{3} &amp;amp; \textrm{undef} \\ \end{array}</description></item><item><title>Chapter 5 - Untitled</title><link>http://notes.sandvich.xyz/apcalc/chapter-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.sandvich.xyz/apcalc/chapter-5/</guid><description>Optimization Assign symbols to all given quantities and quantities to be determined. Make a sketch (if possible). Write a PRIMARY EQUATION for the quantity being maximized or minimized. (Call this M.) Reduce the primary equation to one having a single independent variable. Determine the maximum/minimum using critical values. Use the first (or second) derivative test and choose the feasible answer. Be sure to answer the question asked. Include units (if applicable).</description></item></channel></rss>
