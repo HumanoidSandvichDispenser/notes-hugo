@@ -1,4 +1,5 @@
 #+TITLE: Chapter 13 - Experimental Design
+#+DATE: <2022-11-10 Thu>
 
 2. Vocabulary Briefing
 8. Lurking and Confounding Variables
