@@ -281,3 +281,61 @@ Petabyte-scale data transfer where you can upload
   - Less effective in power outages
   - Higher resource consumption
 
+* Authentication
+
+** IAM
+
+** AWS Organization
+
+- Allows groups to manage multiple AWS accounts
+- Root organizational units
+
+*** Advantages
+
+- Mutli account vs one account VPC
+  - Easier to separate accounts than creating multiple VPCs
+- Tagging standards for billing purposes
+- Enable CloudTrail on all accounts and send logs to a central logging account's S3 bucket
+
+*** Service Control Policies
+
+- IAM policies applied to every organizational unit
+- Does not apply to the root OU
+  - Root OU will forever have full administrative power
+- Must have explicit allow
+
+** Policy Evaluation
+
+- For a permission to be allowed, it must match both of the following criteria:
+  - It is *NOT* explicitly denied
+  - It is explicitly allowed
+- Any explicit deny will always deny *in all levels*
+  - e.g. if a user's permission is denied by a resource policy, it can not be overridden by an organization SCP nor an identity-based policy
+
+** Evaluation Levels
+
+1. Organization SCPs
+2. Resource-based policies
+3. Identity-based policies
+4. IAM permissions boundaries
+5. Session policies
+
+* Elastic Block Storage
+
+- Network attached storage
+- Preserves data even after termination of an EC2 instance
+- Can only be attached to one EC2 instance at a time
+
+** EBS Volume
+
+- Network drives
+  - There may be latency
+- Locked to an availability zone
+  - To move a volume across, you must create a snapshot
+- Provisioned capacity
+
+** Delete on Termination
+
+- Controls the EBS behavior when an EC2 instance terminates
+  - By default, the root is deleted
+

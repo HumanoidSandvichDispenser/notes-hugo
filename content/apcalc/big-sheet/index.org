@@ -14,6 +14,28 @@ $A = \frac{\sqrt{3}}{4} s^2$
 
 $A = h \cdot \frac{1}{2}(b_1 + b_2)$
 
+*** Circles
+
+\[
+A = \pi r^2
+\]
+
+Semi-circle: $\frac{1}{2} A = \frac{1}{2} \pi r^2$
+
+*** Triangles
+
+**** Right
+
+\[
+A = \frac{1}{2}bh
+\]
+
+**** Equilateral
+
+\[
+A = \frac{\sqrt{3}}{4} x^2
+\]
+
 ** Surface Area
 
 *** Cylinder
@@ -155,6 +177,58 @@ $(e^a)' = e^a$
 | Velocity     | 1st        | Distance over time           |
 | Acceleration | 2nd        | Distance over time over time |
 
+*** Position
+
+\[
+s(t)
+\]
+
+*** Instantaneous Velocity
+
+\[
+v(t) = s'(t) = \frac{ds}{dt}
+\]
+
+*** Displacement
+
+Over a time interval $[a, b]$
+
+\[
+\Delta s = s(b) - s(a)
+\]
+
+\[
+\int_a^b v(t) dt = s(b) - s(a)
+\]
+
+*** Average Velocity
+
+\[
+\frac{\Delta s}{\Delta t} = \frac{1}{b - a} \int_a^b v(t) dt
+\]
+
+\[
+\frac{s(b) - s(a)}{b - a} = \frac{\Delta s}{\Delta t}
+\]
+
+*** Speed
+
+\[
+\left| v(t) \right|
+\]
+
+*** Total Distance Traveled
+
+\[
+\int_a^b \left| v(t) \right| dt
+\]
+
+*** Average Acceleration
+
+\[
+\frac{\Delta v}{\Delta t} = \frac{1}{b - a} \int_a^b a(t) dt
+\]
+
 ** Derivative of an inverse function
 
 $(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}$
@@ -280,3 +354,55 @@ If $f(x)$ is continuous on $[a, b]$ and $F(x)$ is an antiderivative of $f(x)$, t
 If $f'(x) > 0$ for all $x$, then RRAM would be an overestimate, and LRAM would be an underestimate.
 
 If $f'(x) < 0$ for all $x$, then RRAM would be an underestimate, and RRAM would be an overestimate.
+
+** Exponential Growth
+
+\[
+\frac{dy}{dt} = ky \Rightarrow y = y_0e^{kt}
+\]
+
+where $y_0 = C$
+
+$k < 0$ exp. decay
+
+$k > 0$ exp. growth
+
+** Logistic Growth
+
+\[
+\frac{dy}{dt} = ky(L - y) \Rightarrow y = \frac{L}{1 + Ae^{-Lkt}}
+\]
+
+\[
+\lim_{t \to \infty} y = L
+\]
+
+Point of inflection at $\frac{L}{2}$, where $y$ is growing the fastest
+
+** Disk
+
+\[
+A = \pi r^2
+\]
+
+\[
+V = \pi \int (r(x))^2 dx
+\]
+
+** Washer
+
+\[
+A = \pi(R^2 - r^2)
+\]
+
+\[
+V = \pi \int (R(x)^2 - r(x)^2) dx
+\]
+
+** Arc Length
+
+\[
+L = \int_a^b \sqrt{1 + (\frac{dy}{dx})^2} dx
+\]
+
+Depending on the problem, $\frac{dx}{dy}$ may be used instead.

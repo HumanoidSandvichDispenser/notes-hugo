@@ -1,0 +1,34 @@
+#+TITLE: Subnetting
+#+DATE: <2022-10-12 Wed>
+
+Subnetting takes a network and divides it into /subnetworks/.
+
+Example:
+
+~10.0.0.x/24~ splits into ~10.0.0.0~ to ~10.0.0.255~
+
+~10.0.0.x/25~ splits the network into two equal subnets: ~10.0.0.0~ to ~10.0.0.127~ and ~10.0.0.128~ to ~10.0.0.255~
+
+~10.0.0.x/26~ further splits those two parts into four equal subnets.
+
+* Attributes of Subnetting
+
+- Number of IP addresses
+  - How many addresses in the network
+- CIDR/Subnet
+  - The subnet mask that divides a network (and its CIDR notation equivalent)
+- Network ID
+  - First IP address in each subnet
+  - Not allowed to be assigned to a host
+- Broadcast ID
+  - Last IP address in each subnet
+  - Not allowed to be assigned to a host
+- First Host IP
+  - IP address immediately after the Network ID
+  - Assignable to host
+- Last Host IP
+  - IP address immediately before the Broadcast IP
+  - Assignable to host
+- Next Network
+  - Network ID of the next subnet
+  - This will always be the IP address one after the current subnet's broadcast IP
