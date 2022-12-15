@@ -1,0 +1,69 @@
+#+TITLE: Chapter 16 - Random Variables
+#+DATE: <2022-11-29 Tue>
+
+* Discrete vs Continuous
+
+A discrete random variable has a countable number of outcomes. A continuous random variable can occur in infinitely many ways.
+
+A continuous variable can fall anywhere within an interval, but a discrete variable must fall into a specific place.
+
+* Expected Value
+
+An expected value of a variable can be based on a probability distribution.
+
+Here is an example with life insurance.
+
+| Outcome    | Payout | Probability |
+|------------+--------+-------------|
+| Death      | $10000 | 1/1000      |
+| Disability | $5000  | 2/1000      |
+| Neither    | $0     | 997/1000    |
+
+\[
+E(x) = 1E4(\frac{1}{1E3}) + 5E3(\frac{2}{2E3}) + 0(\frac{997}{1E3}) = 20
+\]
+
+This means you expect to pay $20 per policy.
+
+Formally, expected value can be written in the notation:
+
+\[
+\mu = E(x) = \Sigma [x \cdot p(x)]
+\]
+
+** Standard Deviation of a Random Variable
+
+| Outcome    | Payout | Probability | Deviation x - mu  |
+|------------+--------+-------------+-------------------|
+| Death      | $10000 | 1/1000      | 10000 - 20 = 9800 |
+| Disability | $5000  | 2/1000      | 5000 - 20 = 4980  |
+| Neither    | $0     | 997/1000    | 0 - 20 = -20      |
+
+\[
+\Sigma [(\textrm{Dev})^2 \cdot p(x)]
+\]
+
+** Example
+
+A person who is 21+ is playing a card game with one standard deck of playing cards at a casino. The dealer will turn over one card at random. How much should the casino charge to play the game? What is the standard deviation of this dataset?
+
+Here is the payout structure:
+
+| Card         | Payout | Probability | Deviation           |
+|--------------+--------+-------------+---------------------|
+| Any red card | $5     | 1/2         | 5 - 9.23 = -4.23    |
+| Black ace    | $25    | 1/26        | 25 - 9.23 = 15.77   |
+| Two of clubs | $300   | 1/52        | 300 - 9.23 = 290.77 |
+| None         | $0     | 0.557692308 | -9.23               |
+
+\[
+E(x) = \frac{1}{2}(5) + \frac{1}{26}(25) + \frac{1}{52}300 = 9.231
+\]
+
+Therefore, the casino should charge $9.24 or more to play the game to make a profit over time.
+
+\[
+\sigma = \frac{1}{2} (4.23)^2 + \frac{1}{26} (15.77)^2 + \frac{1}{52} = (290.77)^2 + 0.557692308(9.23)^2 = 41.13
+\]
+
+The standard deviation of this game is 41.13
