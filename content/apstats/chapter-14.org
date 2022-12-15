@@ -1,4 +1,5 @@
 #+TITLE: Chapter 14 - Randomness to Probability
+#+DATE: <2022-11-22 Tue>
 
 * Vocabulary
 
