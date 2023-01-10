@@ -1,4 +1,5 @@
 #+TITLE: Chapter 17 - Probability Models
+#+DATE: <2023-01-04 Wed>
 
 * Geometric Probability Model
 
