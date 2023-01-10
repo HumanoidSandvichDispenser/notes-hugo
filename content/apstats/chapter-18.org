@@ -1,0 +1,13 @@
+#+TITLE: Chapter 18 - Sampling Distribution
+
+Sampling distributions can be most useful with a normal curve. In order to make this assumption, certain conditions need to be met.
+
+- Randomization
+  - the sampling method must be known to be random and guarantee normality
+- Independence of selections
+  - Independence must be stated or implied
+  - OR no more than 10% of the population must be sampled
+- Large enough sample condition
+  - For proportions: there must be at least 10 succcesses $np$ and at least 10 failures $n(1 - p)$ which keeps us away from heavily skewed situations
+  - For means: *central limit theorem*
+    - When the sample size is at least 30, the sampling distribution will be approximately normal

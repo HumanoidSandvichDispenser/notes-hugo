@@ -13,7 +13,7 @@ Here's why this is geometric:
 1. There are two outcomes: O-negative blood or NOT O-negative blood
 2. The probability of success is the same for each person
 3. Trials either need to be independent OR contain less thna 10% of hte total population
-4. We are looking for the *first successful outcome*
+4. Looking for *the first successful outcome*
 
 ** Syntax
 
@@ -41,7 +41,7 @@ For an interval $[a, b]$:
 
 ** Example
 
-Sergio is a bowler who rolls strikes 60% of the time. Answer the following questions:
+Sergio is a bowler who rolls strikes 60% of the time.
 
 1. P(first stirke is within his first 3 rolls) = ~GeoCD(3, 0.6)~ = 0.936
 2. P(first stirke is NOT within his first 3 rolls) = ~1 - GeoCD(3, 0.6)~ = 0.064
@@ -57,7 +57,7 @@ Here's how a  binomial situation qualifies:
 1. Two outcomes
 2. Fixed probability
 3. Independent events or less than 10% of the total population
-4. Looking for a certain number of successes
+4. Looking for *a certain number of successes*
 
 ** Syntax
 
@@ -70,7 +70,3 @@ Here's how a  binomial situation qualifies:
 \]
 
 n = number of trials
-
-Using our blood type example from before, find the probability that there are 2 or 3 O-negative people among a group of 20 donors.
-
-~BinomialCD()~
