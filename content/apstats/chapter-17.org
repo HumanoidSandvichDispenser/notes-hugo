@@ -1,0 +1,76 @@
+#+TITLE: Chapter 17 - Probability Models
+
+* Geometric Probability Model
+
+Peopel with O-negative blood are called "universal donors" because O-negative blood can be given to anyone else. Only about 6% of poeple have O-negative blood. How many people would you expect to examine before finding someone wiht O-negative.
+
+\[
+\frac{1}{0.06} = 16.67\%
+\]
+
+Here's why this is geometric:
+
+1. There are two outcomes: O-negative blood or NOT O-negative blood
+2. The probability of success is the same for each person
+3. Trials either need to be independent OR contain less thna 10% of hte total population
+4. We are looking for the *first successful outcome*
+
+** Syntax
+
+~geompdf(p, x)~ - Geometric distribution at a point
+
+~geomcdf(p, x)~ - Cumulative distribution in an interval
+
+*** Casio Calculator
+
+Arguments are in reverse order.
+
+~GeoPD(x, p)~
+
+~GeoCD(x, p)~
+
+For an interval $[a, b]$:
+
+~GeoCD(b - a, p) * (1 - GeoCD(a, p))~
+
+** Standard Deviation Formula
+
+\[
+\sigma = \sqrt{\frac{1 - p}{p^2}}
+\]
+
+** Example
+
+Sergio is a bowler who rolls strikes 60% of the time. Answer the following questions:
+
+1. P(first stirke is within his first 3 rolls) = ~GeoCD(3, 0.6)~ = 0.936
+2. P(first stirke is NOT within his first 3 rolls) = ~1 - GeoCD(3, 0.6)~ = 0.064
+3. P(first strike is on fifth roll) = ~GeoPD(5, 0.6)~ = 0.0154
+4. P(first strike is a roll between his 2nd and 6th rolls inclusive) = 0.396
+
+* Binomial 
+
+A binomial situation varies from a geometric situation in that we are not looking for the first success, but we are looking for the number of successes out of a fixed number of trials.
+
+Here's how a  binomial situation qualifies:
+
+1. Two outcomes
+2. Fixed probability
+3. Independent events or less than 10% of the total population
+4. Looking for a certain number of successes
+
+** Syntax
+
+~BinomialCD(x, n, p)~
+
+** Standard Deviation Formula
+
+\[
+\sigma = \sqrt{np(1 - p)}
+\]
+
+n = number of trials
+
+Using our blood type example from before, find the probability that there are 2 or 3 O-negative people among a group of 20 donors.
+
+~BinomialCD()~
