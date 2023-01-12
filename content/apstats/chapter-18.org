@@ -1,4 +1,5 @@
 #+TITLE: Chapter 18 - Sampling Distribution
+#+DATE: <2023-01-10 Tue>
 
 Sampling distributions can be most useful with a normal curve. In order to make this assumption, certain conditions need to be met.
 
@@ -11,3 +12,55 @@ Sampling distributions can be most useful with a normal curve. In order to make 
   - For proportions: there must be at least 10 succcesses $np$ and at least 10 failures $n(1 - p)$ which keeps us away from heavily skewed situations
   - For means: *central limit theorem*
     - When the sample size is at least 30, the sampling distribution will be approximately normal
+
+* Proportions
+
+*This only applies to proportions.*
+
+The mean proportion of a sampling distribution will be $p$, the parameter (the unknown proportion of the whole population). The best estimate for this center would be represented with $\hat{p}$.
+
+** Standard Deviation or Standard Error
+
+\[
+SE = \sqrt{\frac{pq}{n}}
+\]
+
+where $p$ is the proportion of successes, $q$ is the proportion of failures $1 - p$, and $n$ is the sample size.
+
+* Means
+
+*This only applies to means.*
+
+The mean of a sampling distribution will be $\mu$, the parameter (the unknown mean of the whole population). The best estimate for this would be represented with $\bar{x}$
+
+** Standard Deviation
+
+\[
+SE = \frac{\sigma}{\sqrt{n}}
+\]
+
+** Example
+
+Assessment records indicate that the value of homes in a small city is skewed right, with a mean of $140k and standard deviation of $60k. To check the accuracy of the assessment data, officials plan to conduct a detailed appraisal of 100 homes *selected at random*. Using the 68-95-99.7 Rule, draw and label an appropriate sampling model for the mean value of the homes selected.
+
+\begin{array}{}
+\mu = 14000 \\
+\sigma = 60000 \\
+n = 100
+\end{array}
+
+- [X] random
+- [X] Independent or less than 10%
+- [X] sample size at least 100
+  
+\[
+SE = \frac{\sigma}{\sqrt{n}} = \frac{60000}{10} = 6000
+\]
+
+\begin{array}{l | l}
+\mu - 2 \textrm{SE} & 128000 \\
+\mu - \textrm{SE} & 134000 \\
+\mu & 140000 \\
+\mu + \textrm{SE} & 146000 \\
+\mu + 2 \textrm{SE} & 152000
+\end{array}
