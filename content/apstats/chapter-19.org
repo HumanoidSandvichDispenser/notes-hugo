@@ -1,0 +1,61 @@
+#+TITLE: Chapter 19 - Confidence
+
+* Tradeoffs
+
+The higher the confidence level is, the lower the precision will be.
+
+* Examples
+
+** Example 2
+
+A TV news reporter states the results of a poll of voters, and then says, "the margin of error is plus or minus 4%"
+
+There is a 95% confidence that the response of the population is 4 percent away from response of the sample.
+
+** Example 2
+
+Police set up an auto checkpoint at which drivers are stopped and their cars are inspected for safety problems. They find that 14 of the 134 cars stopped have at least one safety violation. They want to estimate the percentage of all cars that may be unsafe.
+
+\[
+\hat{p} = \frac{14}{134}
+\]
+
+$p$ is the proportion of all cars that are unsafe (i.e. at least one safety violation)
+
+A sampling distribution is appropriate since there are at least 10 successes and 10 failures, less than 10% of the population has been sampled, and the sampling method.
+
+The value of $p$ is with a 95% confidence $0.104477612 \pm 0.026423932$
+
+** Example 3
+
+A TV talk show asks viewers to register their opinions on prayer in schools by logging on to a website. Of the 602 people who voted, 488 favored prayers in school. We want to estimate the level of support among the public.
+
+\[
+\hat{p} = \frac{488}{602}
+\]
+
+The sample *may not be representative of the entire population* because participants voluntarily register to vote, which results in voluntary bias.
+
+* Formula for Confidence Interval
+
+\[
+\hat{p} \pm z^\star \sqrt{\frac{pq}{n}}
+\]
+
+** Examples
+
+A poll asked 538 Americans the question, "Do you believe the death penalty is applied unfairly or fairly in this country today?" 53% responded "fairly".
+
+a. Are the conditions met to create a confidence interval?
+
+There is no way to tell what the sampling method is, so we should assume that the sample is representative for the sake of finding what the proportion of the entire population would be.
+
+b. Create a 95% confidence interval to determine if a majority of the population supports the death penalty.
+
+\[
+0.53 \pm (1.96)\sqrt{\frac{(0.53)(0.47)}{538}}
+\]
+
+The confidence interval is $(0.488, 0.572)$.
+
+Because the confidence interval includes values less than 0.5, we can not conclude whether or not the majority of Americans support the death penalty.
