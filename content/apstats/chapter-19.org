@@ -1,4 +1,5 @@
 #+TITLE: Chapter 19 - Confidence
+#+DATE: <2023-01-19 Thu>
 
 * Tradeoffs
 
