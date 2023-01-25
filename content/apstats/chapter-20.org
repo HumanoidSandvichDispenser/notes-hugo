@@ -1,0 +1,118 @@
+#+TITLE: Chapter 20 - Hypothesis Testing
+#+DATE: <2023-01-24 Tue>
+
+* Ingredients of a Hypothesis Test
+
+- Null hypothesis
+- Alternate (competing hypothesis)
+- Normality
+- p-value
+- Justification
+- Conclusion
+
+** Null Hypothesis
+
+The null hypothesis $H_0$ is the accepted value of the population parameter in question.
+
+$H_0: p = \textrm{value}$ or $H_0: \mu  = \textrm{value}$
+
+** Alternate Hypothesis
+
+The alternate hypothesis $H_A$ is contradictory to the null hypothesis stating what might actually be true.
+
+$H_A: p < \textrm{value}$
+$H_A: p  > \textrm{value}$
+$H_A: p \ne \textrm{value}$
+
+** Normality
+
+The [[file:chapter-18.org][conditions for normality]] must be met.
+
+** p-value
+
+*p-value*: the probability of getting a sample at least as far away from the accepted value as the sample we have.
+
+** Justification
+
+Draw, label, and shade a normal curve.
+
+- ~normalcdf~ for greater-than or less-than comparisons
+- Double for not-equals comparisons
+
+** Conclusion
+
+Are your results statistically significant? Can you reject the null hypothesis? We will only /reject/ or /fail to reject/ the null based on our p-value and confidence level.
+
+* Examples
+
+** Example 1
+
+In the 1950s, only about 40% of high school graduates went on to college. Has the percentage *changed*?
+
+\[
+H_0 : p = 0.4
+\]
+
+\[
+H_A : p \ne 0.4
+\]
+
+** Example 2
+
+20% of cars of a certain model have needed costly transmission work after being driven between 50000 and 100000 miles. The manufacturer hopes that redesign of a transmission component has *solved this problem*.
+
+\[
+H_0 : p = 0.2
+\]
+
+\[
+H_A : p < 0.2
+\]
+
+** Example 3
+
+We field test a new flavor of soft drink, planning to market only if we are sure that *over* 60% of the people like the flavor.
+
+\[
+H_0 : p = 0.6
+\]
+
+\[
+H_A : p > 0.6
+\]
+
+** Example 4
+
+The National Center for Education Statistics monitors many aspects of elementary and secondary education nationwide. Their 1996 numbers are often used as a baseline to assess changes. In 1996, 31% of students reported that their mothers had graduated from college. In 2000, responses from 8368 students found that this figure had grown to 32%. Is this evidence of a change in education level among mothers?
+
+\[
+H_0 : p = 0.31
+\]
+
+\[
+H_A : p \ne 0.31
+\]
+
+Randmness is not stated, but can be considered representative of the population.
+
+\[
+p = 0.31, q = 0.69
+\]
+
+\[
+8368 \cdot 0.31 = 2594 \ge 10
+\]
+
+\[
+8368 \cdot 0.69 = 5774 \ge 10
+\]
+
+\[
+\textrm{SE} = \sqrt{\frac{0.31 \cdot 0.69}{8368}} \approx 0.005
+\]
+
+Critical value
+
+p-value $= 0.0455$
+
+Since our p-value of 0.0455 is less than our alpha value of 0.05, we will reject the null hypothesis. There is strong evidence that the proportion of elementary and secondary students with mothers who graduated from college has changed from 1996 to 2000.

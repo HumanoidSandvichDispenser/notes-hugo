@@ -1,0 +1,12 @@
+#+TITLE: Chapter 9 - Parametrics, Vectors, & Polar
+
+* Finding dy/dx
+
+\[
+\frac{dy}{dx} = \frac{dy}{dt} \cdot \frac{dt}{dx} = \frac{\frac{dy}{dx}}{\frac{dx}{dt}}
+\]
+
+\[
+\frac{dy}{dx} = \frac{2t - 1}{2t + 1}
+\]
+

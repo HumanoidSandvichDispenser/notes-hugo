@@ -406,3 +406,53 @@ L = \int_a^b \sqrt{1 + (\frac{dy}{dx})^2} dx
 \]
 
 Depending on the problem, $\frac{dx}{dy}$ may be used instead.
+
+*** Parametric
+
+\[
+\int_a^b = \sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}
+\]
+
+** Parametric
+
+\[
+\frac{dy}{dx} = \frac{dy}{dt} \cdot \frac{dt}{dx}
+\]
+
+\[
+\frac{d^2y}{dx^2} = \frac{d}{dt} \frac{dy}{dx} \cdot \frac{dt}{dx}
+\]
+
+** Planar Motion
+
+*** Position
+
+\[
+r(t) \langle x(t), y(t) \rangle
+\]
+
+*** Velocity
+
+\[
+v(t) = r'(t) = \langle x'(t), y'(t) \rangle
+\]
+
+*** Speed
+
+\[
+\left| v(t) \right| = \sqrt{x'(t)^2 + y'(t)^2}
+\]
+
+** Polar
+
+\[
+x = r cos \theta
+\]
+
+\[
+y = r sin \theta
+\]
+
+\[
+\frac{dy}{dx} = \frac{\frac{dy}{d \theta}}{\frac{dx}{d \theta}}
+\]
