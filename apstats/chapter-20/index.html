@@ -1,0 +1,47 @@
+<head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Ingredients of a Hypothesis Test Null hypothesis Alternate (competing hypothesis) Normality p-value Justification Conclusion Null Hypothesis The null hypothesis $H_0$ is the accepted value of the population parameter in question.
+$H_0: p = \textrm{value}$ or $H_0: \mu = \textrm{value}$
+Alternate Hypothesis The alternate hypothesis $H_A$ is contradictory to the null hypothesis stating what might actually be true.
+$H_A: p < \textrm{value}$ $H_A: p > \textrm{value}$ $H_A: p \ne \textrm{value}$"><script type=text/javascript src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type=text/x-mathjax-config>
+    MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+    });
+    </script><meta property="og:title" content="Chapter 20 - Hypothesis Testing"><meta property="og:type" content="website"><meta property="og:url" content="http://notes.sandvich.xyz/apstats/chapter-20/"><meta property="og:description" content="Ingredients of a Hypothesis Test Null hypothesis Alternate (competing hypothesis) Normality p-value Justification Conclusion Null Hypothesis The null hypothesis $H_0$ is the accepted value of the population parameter in question.
+$H_0: p = \textrm{value}$ or $H_0: \mu = \textrm{value}$
+Alternate Hypothesis The alternate hypothesis $H_A$ is contradictory to the null hypothesis stating what might actually be true.
+$H_A: p < \textrm{value}$ $H_A: p > \textrm{value}$ $H_A: p \ne \textrm{value}$"><link rel=stylesheet type=text/css href=/css/style.css><link rel=stylesheet type=text/css href=/css/toc.css><link rel=stylesheet type=text/css href=/css/section-card.css><link rel=stylesheet type=text/css href=/css/list.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css><link rel=canonical href=http://notes.sandvich.xyz/apstats/chapter-20/><title>Chapter 20 - Hypothesis Testing
+|
+Notes</title></head><div class=body-content><div id=toc><h1>Table of Contents</h1><nav id=TableOfContents><ul><li><a href=#headline-1>Ingredients of a Hypothesis Test</a><ul><li><a href=#headline-2>Null Hypothesis</a></li><li><a href=#headline-3>Alternate Hypothesis</a></li><li><a href=#headline-4>Normality</a></li><li><a href=#headline-5>p-value</a></li><li><a href=#headline-6>Justification</a></li><li><a href=#headline-7>Conclusion</a></li></ul></li><li><a href=#headline-8>Examples</a><ul><li><a href=#headline-9>Example 1</a></li><li><a href=#headline-10>Example 2</a></li><li><a href=#headline-11>Example 3</a></li><li><a href=#headline-12>Example 4</a></li></ul></li></ul></nav></div><article><header><nav class=navbar><div class=navbar-left><a href=/>home</a></div><div class=navbar-right><a href=https://github.com/humanoidsandvichdispenser/notes-hugo>github</a></div></nav></header><header><h1>Chapter 20 - Hypothesis Testing</h1><hr><table class=single-info><tr id=info-date><td><i class="bi bi-clock"></i></td><td>Tuesday, 24 January 2023</td></tr><tr id=info-reading-time><td><i class="bi bi-hourglass"></i></td><td>3-minute read</td></tr><tr id=info-word-count><td><i class="bi bi-book"></i></td><td>448 words</td></tr><tr id=info-tags><td><i class="bi bi-tag"></i></td><td></td></tr></table></header><div id=outline-container-headline-1 class=outline-2><h2 id=headline-1>Ingredients of a Hypothesis Test</h2><div id=outline-text-headline-1 class=outline-text-2><ul><li>Null hypothesis</li><li>Alternate (competing hypothesis)</li><li>Normality</li><li>p-value</li><li>Justification</li><li>Conclusion</li></ul><div id=outline-container-headline-2 class=outline-3><h3 id=headline-2>Null Hypothesis</h3><div id=outline-text-headline-2 class=outline-text-3><p>The null hypothesis $H_0$ is the accepted value of the population parameter in question.</p><p>$H_0: p = \textrm{value}$ or $H_0: \mu = \textrm{value}$</p></div></div><div id=outline-container-headline-3 class=outline-3><h3 id=headline-3>Alternate Hypothesis</h3><div id=outline-text-headline-3 class=outline-text-3><p>The alternate hypothesis $H_A$ is contradictory to the null hypothesis stating what might actually be true.</p><p>$H_A: p &lt; \textrm{value}$
+$H_A: p > \textrm{value}$
+$H_A: p \ne \textrm{value}$</p></div></div><div id=outline-container-headline-4 class=outline-3><h3 id=headline-4>Normality</h3><div id=outline-text-headline-4 class=outline-text-3><p>The <a href=chapter-18.html>conditions for normality</a> must be met.</p></div></div><div id=outline-container-headline-5 class=outline-3><h3 id=headline-5>p-value</h3><div id=outline-text-headline-5 class=outline-text-3><p><strong>p-value</strong>: the probability of getting a sample at least as far away from the accepted value as the sample we have.</p></div></div><div id=outline-container-headline-6 class=outline-3><h3 id=headline-6>Justification</h3><div id=outline-text-headline-6 class=outline-text-3><p>Draw, label, and shade a normal curve.</p><ul><li><code>normalcdf</code> for greater-than or less-than comparisons</li><li>Double for not-equals comparisons</li></ul></div></div><div id=outline-container-headline-7 class=outline-3><h3 id=headline-7>Conclusion</h3><div id=outline-text-headline-7 class=outline-text-3><p>Are your results statistically significant? Can you reject the null hypothesis? We will only <em>reject</em> or <em>fail to reject</em> the null based on our p-value and confidence level.</p></div></div></div></div><div id=outline-container-headline-8 class=outline-2><h2 id=headline-8>Examples</h2><div id=outline-text-headline-8 class=outline-text-2><div id=outline-container-headline-9 class=outline-3><h3 id=headline-9>Example 1</h3><div id=outline-text-headline-9 class=outline-text-3><p>In the 1950s, only about 40% of high school graduates went on to college. Has the percentage <strong>changed</strong>?</p><p>\[
+H_0 : p = 0.4
+\]</p><p>\[
+H_A : p \ne 0.4
+\]</p></div></div><div id=outline-container-headline-10 class=outline-3><h3 id=headline-10>Example 2</h3><div id=outline-text-headline-10 class=outline-text-3><p>20% of cars of a certain model have needed costly transmission work after being driven between 50000 and 100000 miles. The manufacturer hopes that redesign of a transmission component has <strong>solved this problem</strong>.</p><p>\[
+H_0 : p = 0.2
+\]</p><p>\[
+H_A : p &lt; 0.2
+\]</p></div></div><div id=outline-container-headline-11 class=outline-3><h3 id=headline-11>Example 3</h3><div id=outline-text-headline-11 class=outline-text-3><p>We field test a new flavor of soft drink, planning to market only if we are sure that <strong>over</strong> 60% of the people like the flavor.</p><p>\[
+H_0 : p = 0.6
+\]</p><p>\[
+H_A : p > 0.6
+\]</p></div></div><div id=outline-container-headline-12 class=outline-3><h3 id=headline-12>Example 4</h3><div id=outline-text-headline-12 class=outline-text-3><p>The National Center for Education Statistics monitors many aspects of elementary and secondary education nationwide. Their 1996 numbers are often used as a baseline to assess changes. In 1996, 31% of students reported that their mothers had graduated from college. In 2000, responses from 8368 students found that this figure had grown to 32%. Is this evidence of a change in education level among mothers?</p><p>\[
+H_0 : p = 0.31
+\]</p><p>\[
+H_A : p \ne 0.31
+\]</p><p>Randmness is not stated, but can be considered representative of the population.</p><p>\[
+p = 0.31, q = 0.69
+\]</p><p>\[
+8368 \cdot 0.31 = 2594 \ge 10
+\]</p><p>\[
+8368 \cdot 0.69 = 5774 \ge 10
+\]</p><p>\[
+\textrm{SE} = \sqrt{\frac{0.31 \cdot 0.69}{8368}} \approx 0.005
+\]</p><p>Critical value</p><p>p-value $= 0.0455$</p><p>Since our p-value of 0.0455 is less than our alpha value of 0.05, we will reject the null hypothesis. There is strong evidence that the proportion of elementary and secondary students with mothers who graduated from college has changed from 1996 to 2000.</p></div></div></div></div><br><div id=nextprev><div>PREV: <strong><a class="tag small" href=http://notes.sandvich.xyz/apstats/chapter-19/>Chapter 19 - Confidence</a></strong></div><div></div></div></article></content>
