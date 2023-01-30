@@ -1,0 +1,36 @@
+#+TITLE: Chapter 21 - Comparing Proportions
+#+DATE: <2023-01-30 Mon>
+
+* Vocabulary
+
+- statistically significant - p-value is lower than the $\alpha$ level = reject null hypothesis, otherwise fail to reject
+- $\alpha$ level (or significance level) - complement of confidence level
+- critical value - $Z^*$ value necessary to create confidence intervals
+- type I error - rejection of a true null hypothesis
+- type II error - failure to reject null hypothesis
+- power - probability of rejecting a false null hypothesis
+- effect size - does the data show a truly important difference?
+
+** Type I/II Error
+
+x-axis is the reality/truth of the matter, while the y-axis is the decision made
+
+\begin{array}
+    & H_0 \textrm{is true} & H_0 \textrm{is false} \\
+    \textrm{Reject} H_0 & \textrm{Type I} & \textrm{correct decision} \\
+    \textrm{Fail to reject} H_0 & \textrm{correct decision} & \textrm{Type II} \\
+\end{array}
+
+* Example
+
+Production managers on an assembly line must monitor the output to be sure that the level of defective products remains small. They periodically inspect a random sample of the items produced. If they find a significant increase in the proportion of items that must be rejected, they will halt the asembly process until the problem can be identified and repaired.
+
+In this context, what is a Type I error?
+
+$H_0$ is that the assembly line works.
+
+$H_A$ is that the assembly line produces too many defective products.
+
+A Type I error concludes that the data suggests to reject $H_0$, but $H_0$ is true.
+
+i.e. the assembly line is believed to be defective but in reality works.
