@@ -1,0 +1,89 @@
+#+TITLE: Chapter 22 - Comparing Two Proportions
+#+DATE: <2023-02-15 Wed>
+
+* Standard Error for Two Proportions
+
+\[
+\textrm{SE} = \sqrt{\frac{p_1q_1}{n_1} + \frac{p_2q_2}{n_2}}
+\]
+
+* Assumptions for Normality
+
+** Randomness
+
+Samples must be randomly selected.
+
+** 10% rule and independence
+
+The sample must be at most 10% of the population.
+
+*NEW:* The groups must be independent of each other. For example, people in a sample of men and a sample of women should not be married to each other.
+
+** Successes and Failures
+
+There must be at least 10 successes and 10 failures in the sample.
+
+* Things we can do
+
+- Z-Proportion Z-interval (confidence interval for the difference)
+- Z-Proportion Z-test (test of statistically significant difference)
+   
+* Examples
+
+** Example 1
+
+A presidential candidate fears he has a problem with women voters. His campaign staff plans to run a poll to assess the situation. They'll randomly sample 300 men and 300 women, asking if they have a forable impression of the candidate. Obviously, the staff can't know this, but suppose the candidate has a positive image with 59% of males but with only 59% of females.
+
+*What difference would you expect the poll to show?*
+
+\[
+\left|0.57 - 0.53\right| = 0.06
+\]
+
+*What is the standard error of the difference?*
+
+\[
+SE = \sqrt{\frac{(0.53)(0.47) + (0.57)(0.43)}{300}} = 0.041
+\]
+
+*Could the campaign be misled by the poll, concluding that there really is no gender gap?*
+
+~normalcdf(-1e31, 0, 0.06, 0.041)~
+
+\begin{array}
+\mu = 0.6 \\
+\sigma = 0.041 \\
+\textrm{lower} = -\infty \\
+\textrm{upper} = 0 \\
+\end{array}
+
+** Example 2
+
+The CDC report a survey of randomly selected Americans age 65 and older which found that 411 of 1012 men and 535 of 1062 women suffered from some form of arthritis.
+
+*Create a 95% confidence interval for the difference in proportions of senior men and women who have this disease.*
+
+\[
+\Delta \hat{p} \approx 0.098
+\]
+
+\[
+SE_{\Delta \hat{p}} =
+\sqrt{
+\frac{(\frac{411}{1012})(1 - \frac{411}{1012})}{1012} +
+\frac{(\frac{535}{1062})(1 - \frac{535}{1062})}{1062}
+}
+\approx 0.022
+\]
+
+\[
+\Delta \hat{p} \pm 1.96 SE_{\Delta \hat{p}} = {0.055, 0.140}
+\]
+
+95% confidence interval is $(0.055, 0.140)$
+
+*Interpret the meaning of this interval in the context of the problem.*
+
+We are 95% confident that the true difference in proportions between men and women over age 65 with arthritis is within the interval $(0.055, 0.140)$
+
+*Does this confidence interval suggest that arthritis is more likely to afflict women than men?*
