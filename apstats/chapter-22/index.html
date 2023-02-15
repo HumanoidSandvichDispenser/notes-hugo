@@ -1,0 +1,45 @@
+<head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Standard Error for Two Proportions \[ \textrm{SE} = \sqrt{\frac{p_1q_1}{n_1} + \frac{p_2q_2}{n_2}} \]
+Assumptions for Normality Randomness Samples must be randomly selected.
+10% rule and independence The sample must be at most 10% of the population.
+NEW: The groups must be independent of each other. For example, people in a sample of men and a sample of women should not be married to each other.
+Successes and Failures There must be at least 10 successes and 10 failures in the sample."><script type=text/javascript src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type=text/x-mathjax-config>
+    MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+    });
+    </script><meta property="og:title" content="Chapter 22 - Comparing Two Proportions"><meta property="og:type" content="website"><meta property="og:url" content="http://notes.sandvich.xyz/apstats/chapter-22/"><meta property="og:description" content="Standard Error for Two Proportions \[ \textrm{SE} = \sqrt{\frac{p_1q_1}{n_1} + \frac{p_2q_2}{n_2}} \]
+Assumptions for Normality Randomness Samples must be randomly selected.
+10% rule and independence The sample must be at most 10% of the population.
+NEW: The groups must be independent of each other. For example, people in a sample of men and a sample of women should not be married to each other.
+Successes and Failures There must be at least 10 successes and 10 failures in the sample."><link rel=stylesheet type=text/css href=/css/style.css><link rel=stylesheet type=text/css href=/css/toc.css><link rel=stylesheet type=text/css href=/css/section-card.css><link rel=stylesheet type=text/css href=/css/list.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css><link rel=canonical href=http://notes.sandvich.xyz/apstats/chapter-22/><title>Chapter 22 - Comparing Two Proportions
+|
+Notes</title></head><div class=body-content><div id=toc><h1>Table of Contents</h1><nav id=TableOfContents><ul><li><a href=#headline-1>Standard Error for Two Proportions</a></li><li><a href=#headline-2>Assumptions for Normality</a><ul><li><a href=#headline-3>Randomness</a></li><li><a href=#headline-4>10% rule and independence</a></li><li><a href=#headline-5>Successes and Failures</a></li></ul></li><li><a href=#headline-6>Things we can do</a></li><li><a href=#headline-7>Examples</a><ul><li><a href=#headline-8>Example 1</a></li><li><a href=#headline-9>Example 2</a></li></ul></li></ul></nav></div><article><header><nav class=navbar><div class=navbar-left><a href=/>home</a></div><div class=navbar-right><a href=https://github.com/humanoidsandvichdispenser/notes-hugo>github</a></div></nav></header><header><h1>Chapter 22 - Comparing Two Proportions</h1><hr><table class=single-info><tr id=info-date><td><i class="bi bi-clock"></i></td><td>Wednesday, 15 February 2023</td></tr><tr id=info-reading-time><td><i class="bi bi-hourglass"></i></td><td>2-minute read</td></tr><tr id=info-word-count><td><i class="bi bi-book"></i></td><td>380 words</td></tr><tr id=info-tags><td><i class="bi bi-tag"></i></td><td></td></tr></table></header><div id=outline-container-headline-1 class=outline-2><h2 id=headline-1>Standard Error for Two Proportions</h2><div id=outline-text-headline-1 class=outline-text-2><p>\[
+\textrm{SE} = \sqrt{\frac{p_1q_1}{n_1} + \frac{p_2q_2}{n_2}}
+\]</p></div></div><div id=outline-container-headline-2 class=outline-2><h2 id=headline-2>Assumptions for Normality</h2><div id=outline-text-headline-2 class=outline-text-2><div id=outline-container-headline-3 class=outline-3><h3 id=headline-3>Randomness</h3><div id=outline-text-headline-3 class=outline-text-3><p>Samples must be randomly selected.</p></div></div><div id=outline-container-headline-4 class=outline-3><h3 id=headline-4>10% rule and independence</h3><div id=outline-text-headline-4 class=outline-text-3><p>The sample must be at most 10% of the population.</p><p><strong>NEW:</strong> The groups must be independent of each other. For example, people in a sample of men and a sample of women should not be married to each other.</p></div></div><div id=outline-container-headline-5 class=outline-3><h3 id=headline-5>Successes and Failures</h3><div id=outline-text-headline-5 class=outline-text-3><p>There must be at least 10 successes and 10 failures in the sample.</p></div></div></div></div><div id=outline-container-headline-6 class=outline-2><h2 id=headline-6>Things we can do</h2><div id=outline-text-headline-6 class=outline-text-2><ul><li>Z-Proportion Z-interval (confidence interval for the difference)</li><li>Z-Proportion Z-test (test of statistically significant difference)</li></ul></div></div><div id=outline-container-headline-7 class=outline-2><h2 id=headline-7>Examples</h2><div id=outline-text-headline-7 class=outline-text-2><div id=outline-container-headline-8 class=outline-3><h3 id=headline-8>Example 1</h3><div id=outline-text-headline-8 class=outline-text-3><p>A presidential candidate fears he has a problem with women voters. His campaign staff plans to run a poll to assess the situation. They'll randomly sample 300 men and 300 women, asking if they have a forable impression of the candidate. Obviously, the staff can't know this, but suppose the candidate has a positive image with 59% of males but with only 59% of females.</p><p><strong>What difference would you expect the poll to show?</strong></p><p>\[
+\left|0.57 - 0.53\right| = 0.06
+\]</p><p><strong>What is the standard error of the difference?</strong></p><p>\[
+SE = \sqrt{\frac{(0.53)(0.47) + (0.57)(0.43)}{300}} = 0.041
+\]</p><p><strong>Could the campaign be misled by the poll, concluding that there really is no gender gap?</strong></p><p><code>normalcdf(-1e31, 0, 0.06, 0.041)</code></p><p>\begin{array}
+\mu = 0.6 \\
+\sigma = 0.041 \\
+\textrm{lower} = -\infty \\
+\textrm{upper} = 0 \\
+\end{array}</p></div></div><div id=outline-container-headline-9 class=outline-3><h3 id=headline-9>Example 2</h3><div id=outline-text-headline-9 class=outline-text-3><p>The CDC report a survey of randomly selected Americans age 65 and older which found that 411 of 1012 men and 535 of 1062 women suffered from some form of arthritis.</p><p><strong>Create a 95% confidence interval for the difference in proportions of senior men and women who have this disease.</strong></p><p>\[
+\Delta \hat{p} \approx 0.098
+\]</p><p>\[
+SE_{\Delta \hat{p}} =
+\sqrt{
+\frac{(\frac{411}{1012})(1 - \frac{411}{1012})}{1012} +
+\frac{(\frac{535}{1062})(1 - \frac{535}{1062})}{1062}
+}
+\approx 0.022
+\]</p><p>\[
+\Delta \hat{p} \pm 1.96 SE_{\Delta \hat{p}} = {0.055, 0.140}
+\]</p><p>95% confidence interval is $(0.055, 0.140)$</p><p><strong>Interpret the meaning of this interval in the context of the problem.</strong></p><p>We are 95% confident that the true difference in proportions between men and women over age 65 with arthritis is within the interval $(0.055, 0.140)$</p><p><strong>Does this confidence interval suggest that arthritis is more likely to afflict women than men?</strong></p></div></div></div></div><br><div id=nextprev><div>PREV: <strong><a class="tag small" href=/apstats/chapter-21/>Chapter 21 - Comparing Proportions</a></strong></div><div></div></div></article></content>
