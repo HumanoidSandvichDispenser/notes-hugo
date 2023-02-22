@@ -1,5 +1,6 @@
 #+TITLE: Chapter 22 - Comparing Two Proportions
 #+DATE: <2023-02-15 Wed>
+#+OPTIONS: latexpreview
 
 * Standard Error for Two Proportions
 
@@ -48,13 +49,11 @@ SE = \sqrt{\frac{(0.53)(0.47) + (0.57)(0.43)}{300}} = 0.041
 
 *Could the campaign be misled by the poll, concluding that there really is no gender gap?*
 
-~normalcdf(-1e31, 0, 0.06, 0.041)~
+~normalcdf(-1E31, 0, 0.06, 0.041)~
 
-\begin{array}
-\mu = 0.6 \\
+\begin{array}{l}
+\mu = 0.06 \\
 \sigma = 0.041 \\
-\textrm{lower} = -\infty \\
-\textrm{upper} = 0 \\
 \end{array}
 
 ** Example 2
@@ -86,4 +85,95 @@ SE_{\Delta \hat{p}} =
 
 We are 95% confident that the true difference in proportions between men and women over age 65 with arthritis is within the interval $(0.055, 0.140)$
 
-*Does this confidence interval suggest that arthritis is more likely to afflict women than men?*
+** Example 3
+
+In 1998, a San Diego reproductive clinic reported 42 live births to 157 women under the age of 38, but only 7 live births for 89 clients aged 38 and older. Is this strong evidence of a difference in the effectiveness of the clinic's method for older women?
+
+$H_0 : \Delta \hat{p} = 0$ : there is no difference in the effectiveness of the clinic's method for older women
+
+\[
+SE =
+\sqrt{
+\frac{(0.27)(0.73)}{157} +
+\frac{(0.08)(0.92)}{89}
+}
+\approx 0.045
+\]
+
+~2 * normalcdf(0.19, 1, 0.045, 0) = 2.42E-05~
+
+\begin{array}{l}
+\mu = 0 \\
+\sigma = 0.045
+\end{array}
+
+Since our p-value of $2.42 \cdot 10^{-5}$ is less than our alpha level of $\alpha = 0.05$ (*or any reasonable level of alpha*), we will *reject* the null hypothesis. *The data suggests* that there is a difference in how women younger than 38 years respond to the methods of this clinic compared to how women 38 years or older repsond to the methods of this clinic.
+
+*What is the confidence interval?*
+
+\[
+p \pm = 1.96 \cdot \textrm{SE} = {0.1018, 0.2782}
+\]
+
+We are 95% confident that the methods of this clinic produce different results among the groups of women who are younger than 38 years and the women who are 38 years or older. We are also 95% confident that the true difference in proportion of live births is in the interval $(0.102, 0.278)$
+
+** Example 4
+
+The Employee Benefit Research Institute reports that 27% of males anticipate having enough money to live comfortably in retirement, but only 18% of females express that confidence. If these results were based on samples of 250 people of each gender, would you consider this strong evidence that men and women have different outlooks?
+
+This data can be assumed to be distributed normally because the sample is picked randomly, the data samples are independent of each other, and there are at least 10 successes and 10 failures for each proportion.
+
+$H_0 : \Delta p = 0$ : there is no difference that men and women have different outlooks.
+
+\[
+\Delta \hat{p} = 0.27 - 0.18 = 0.09
+\]
+
+\[
+SE = \sqrt{
+\frac{(0.27)(0.73) + (0.18)(0.82)}{250}
+}
+\approx 0.0371
+\]
+
+~2 * normalcdf(0.09, 1, 0.0371, 0) = 0.0152E-3~
+
+\begin{array}{l}
+\mu = 0 \\
+\sigma = 0.037
+\end{array}
+
+Since our p-value of $0.0152$ is less than our alpha level of $\alpha = 0.05$ (*or any reasonable level of alpha*), we will *reject* the null hypothesis. *The data suggests* that there is a difference how men express confidence of having enough money to live comfortably in retirement compared to how women express confidence of having enouh money to live comfortably in retirement.
+
+** Example 5
+
+A survey of 430 randomly chosen adults found that 21% of the 222 men and 18% of the 208 women had purchased books online.
+
+*Is there evidence that men are more likely than women to make the online purchases of books? Test an appropriate hypothesis and state your conclusion in context.*
+
+The data can be assumed to be normally distributed because there are at least 10 successes, 10 failures. The samples are randomly selected, are independent of each other, and make up less than 10% of the population of the subject in question.
+
+\[
+\Delta \hat{p} = 0.21 - 0.18 = 0.03
+\]
+
+\[
+\textrm{SE} = \sqrt{
+\frac{(0.21)(0.79)}{222} +
+\frac{(0.18)(0.82)}{208}
+}
+\approx 0.0381
+\]
+
+~2 * normalcdf(0.03, 1, 0.0381, 0) = 0.431~
+
+\begin{array}{l}
+\mu = 0 \\
+\sigma = 0.0381
+\end{array}
+
+Since our p-value of $0.431$ is less than our alpha level of $\alpha = 0.05$, we will *fail to reject* the null hypothesis. *The data suggests* that there is no /statistically significant/ difference in how men and women purchase books online.
+
+*If your conclusion is incorrect, which type of error did you commit?*
+
+A type-II error would have been made since we failed to reject the null hypothesis but the truth of the matter states that there is a significant difference.

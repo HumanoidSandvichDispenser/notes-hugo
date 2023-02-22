@@ -15,7 +15,7 @@
 
 x-axis is the reality/truth of the matter, while the y-axis is the decision made
 
-\begin{array}
+\begin{array}{l l l}
     & H_0 \textrm{is true} & H_0 \textrm{is false} \\
     \textrm{Reject} H_0 & \textrm{Type I} & \textrm{correct decision} \\
     \textrm{Fail to reject} H_0 & \textrm{correct decision} & \textrm{Type II} \\
